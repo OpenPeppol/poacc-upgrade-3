@@ -18,5 +18,6 @@ include::usecase2.adoc[]
 include::usecase3.adoc[]
 include::usecase4.adoc[]
 include::usecase5.adoc[]
+include::usecase6.adoc[]
 
 :leveloffset: -1

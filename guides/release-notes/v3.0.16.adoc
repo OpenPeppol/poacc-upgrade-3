@@ -7,12 +7,15 @@ Release date:: November 2025
 
 == BIS documentation
 
-//* BIS Ordering and Order Only
-//** RELEASE NOTES
+* BIS Catalogue with and without response.
+** Added extra use case and sample file which shows how dietary claims and product features can be expressed using code values [EDITORIAL CHANGE]
 
 == Changes to syntax
 * Order transaction (T01)
 ** Added business terms and elements for the delivery address on line level. Previously, only an identifier for the line level delivery address existed and with this change a full physical address is possible to provide. [MINOR CHANGE]
+* Catalogue transactino (T19)
+** Added attribute listVersionID on the AdditionalItemProperty NameCode element. [MINOR CHANGE]
+
 //* Order Change(T114)
 //** RELEASE NOTES
 //* Order Agreement(T110) 

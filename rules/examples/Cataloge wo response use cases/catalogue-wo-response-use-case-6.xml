@@ -83,8 +83,8 @@
 			</cac:Price>
 		</cac:RequiredItemLocationQuantity>
 		<cac:Item>
-			<cbc:Description>Sterile surgery gloves size 10</cbc:Description>
-			<cbc:Name>Sterile surgery gloves </cbc:Name>
+			<cbc:Description>Sterile surgical gloves size 10</cbc:Description>
+			<cbc:Name>Sterile surgical gloves </cbc:Name>
 			<cac:SellersItemIdentification>
 				<cbc:ID>2451015</cbc:ID>
 			</cac:SellersItemIdentification>
@@ -160,9 +160,10 @@
 			<cac:AdditionalItemProperty>
 				<!--Name in in local language -->
 				<cbc:Name>Gluten free</cbc:Name>
-				<!-- Claim type from ClaimTypeCode list -->				
+				<!-- Claim element from ClaimElementCode list -->				
 				<cbc:NameCode listID="urn:gs1:gdd:cl:ClaimElementCode">GLUTEN</cbc:NameCode>
 				<cbc:Value>true</cbc:Value>
+				<!-- Claim type from ClaimTypeCode list -->	
 				<cbc:ValueQualifier>FREE_FROM</cbc:ValueQualifier>
 			</cac:AdditionalItemProperty>
 		</cac:Item>
