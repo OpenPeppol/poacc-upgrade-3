@@ -1731,10 +1731,15 @@
 						<!-- <Value type="EXAMPLE">should we use eClass for examples?</Value> -->
 						<Attribute>
 							<Term>listID</Term>
-							<Name>Name code list id.</Name>
+							<Name>Name code list id</Name>
 							<Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
-
 						</Attribute>
+						<Attribute usage="Optional">
+							<Term>listVersionID</Term>
+							<Name>Name code list version</Name>
+							<Description>The code list version identifier</Description>
+							<Value type="EXAMPLE">3.29</Value>						
+						</Attribute>						
 					</Element>
 					<Element>
 						<Term>cbc:Value</Term>
