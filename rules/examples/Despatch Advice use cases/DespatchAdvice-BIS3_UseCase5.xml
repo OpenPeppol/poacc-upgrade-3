@@ -168,8 +168,8 @@
       <cac:ItemInstance>
         <cbc:SerialID>OR250RHZ444</cbc:SerialID>
 		<cac:AdditionalItemProperty>
-		<cbc:Name>NPLId</cbc:Name>
-		<cbc:Value>20300709400050</cbc:Value>
+		<cbc:Name>MAC</cbc:Name>
+		<cbc:Value>35-209900-176148-1</cbc:Value>
 		</cac:AdditionalItemProperty>
         <cac:LotIdentification>
           <cbc:LotNumberID>898A123</cbc:LotNumberID>
