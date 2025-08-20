@@ -1592,6 +1592,31 @@
 							line.</Description>
 						<Reference type="BUSINESS_TERM">tir16-083</Reference>
 					</Element>
+					<Element cardinality="0..n">
+					<Term>cac:AdditionalItemProperty</Term>
+					<Name>Additional item property information</Name>
+					<Description>A group of business terms providing information about properties of
+						the goods and services invoiced.</Description>
+					<Element>
+						<Term>cbc:Name</Term>
+						<Name>Item property name</Name>
+						<Description>The name of the property.The name must be sufficiently
+							descriptive to define the value. The definition may be supplemented with
+							the property unit of measure when relevant.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir16-p059</Reference>
+						<Value type="EXAMPLE">NPLId</Value>
+					</Element>
+				
+					<Element>
+						<Term>cbc:Value</Term>
+						<Name>Item property value</Name>
+						<Description>The value of the item property.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir16-p060</Reference>
+						<Value type="EXAMPLE">20300709400050</Value>
+					</Element>
+				</Element>
 					<Element cardinality="0..1">
 						<Term>cac:LotIdentification</Term>
 						<Name>Lot identifictation</Name>

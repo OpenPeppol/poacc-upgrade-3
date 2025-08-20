@@ -167,6 +167,10 @@
       </cac:CommodityClassification>
       <cac:ItemInstance>
         <cbc:SerialID>OR250RHZ444</cbc:SerialID>
+		<cac:AdditionalItemProperty>
+		<cbc:Name>NPLId</cbc:Name>
+		<cbc:Value>20300709400050</cbc:Value>
+		</cac:AdditionalItemProperty>
         <cac:LotIdentification>
           <cbc:LotNumberID>898A123</cbc:LotNumberID>
           <cbc:ExpiryDate>2021-07-01</cbc:ExpiryDate>

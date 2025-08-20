@@ -22,6 +22,7 @@ Release date:: November 2025
 //* Order Response transaction Advanced (T116) 
 //* Catalogue transaction (T19)
 //* Despatch Advice (T16) 
+** Added busineess terms and elements for additional item properties on ItemInstance. [MINOR CHANGE]
 //* Punchout transaction (T77)
 //** RELEASE NOTES
 
