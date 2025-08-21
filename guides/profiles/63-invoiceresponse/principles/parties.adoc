@@ -1,7 +1,7 @@
 [[parties-and-roles]]
 = Parties and roles
 
-The table below gives the definitions of the parties and roles in the process of Invoice Response message.
+The table below gives the definitions of the parties and roles in the process of Invoice Response.
 Parties are persons or entities who are responsible for roles.
 They may carry them out themselves or outsource them.
 
@@ -40,7 +40,7 @@ Also, known as Invoicee, Accounts Payable, Debtor
 
 |Service provider
 |Party
-|A party that is contracted by either or both Supplier and/or the Customer to send or receive an Invoice Response message.
+|A party that is contracted by either or both Supplier and/or the Customer to send or receive an Invoice Response.
 |====
 
 .Parties and roles
@@ -55,7 +55,7 @@ Any legal implications of the measures discussed here are outside the scope of t
 === Seller
 
 * Not obliged to support the Invoice Response.
-* In case the Seller has registered support for the Invoice Response, then he is responsible for receiving an Invoice Response message and to take actions in accordance to this specification.
+* In case the Seller has registered support for the Invoice Response, then he is responsible for receiving an Invoice Response and to take actions in accordance to this specification.
 
 === Buyer
 

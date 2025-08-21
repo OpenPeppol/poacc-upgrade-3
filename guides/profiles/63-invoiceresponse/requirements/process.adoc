@@ -10,7 +10,7 @@ These requirements may influence the data requirements in the transaction, but t
 |ID
 |Requirement
 |br111-001
-|There is an agreed way to express when there will be no more Invoice Response message's regarding a particular invoice.
+|There is an agreed way to express when there will be no more Invoice Response's regarding a particular invoice.
 The definition of status of the Invoice (whether approved or rejected) should clearly state whether it is a final status after which there cannot be any further Invoice Response’s sent by the Buyer in relation to that Invoice.
 
 |br111-002

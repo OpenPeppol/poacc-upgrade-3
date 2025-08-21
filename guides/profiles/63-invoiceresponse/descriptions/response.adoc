@@ -2,7 +2,7 @@
 = Response
 
 Is used to indicate the status of the Invoice.
-The response also provides information about the reason for the status as well as instructions on how the receiver of the Invoice Response is expected to react to the Invoice Response message.
+The response also provides information about the reason for the status as well as instructions on how the receiver of the Invoice Response is expected to react to the Invoice Response.
 
 This information is given in the following hierarchy:
 

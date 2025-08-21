@@ -1,11 +1,11 @@
 [[invoice-response-message-in-general]]
-= Invoice Response message in general
+= Invoice Response in general
 
 From the creation of an electronic message, down the transport line that goes through one or more transport networks, to the designated receiver and all way through the eventual processing of the message content; there may be a need to give responses to the relevant parties up-line about the status or results of the actions that the message goes through.
 These responses are of different nature but in the scope of this document they can be divided into the following main groups.
 
 .Scope of different response message
-image::images/IMR.jpg[align="center"]
+image::images/IMR.png[align="center"]
 
 
 == Transport acknowledgements
