@@ -8,7 +8,7 @@ This Peppol BIS provides a set of specifications for implementing a {peppol} bus
 The document is concerned with clarifying requirements for ensuring interoperability of pan-European Public eProcurement and provides guidelines for supporting these requirements and how to implement them.
 This Peppol BIS is developed by OpenPeppol as a new business process.
 
-*The purpose* of this document is to describe a common format for the invoice response message in the European market, and to facilitate an efficient implementation and increased use of electronic collaboration regarding invoice responses based on this format.
+*The purpose* of this document is to describe a common format for the Invoice Response in the European market, and to facilitate an efficient implementation and increased use of electronic collaboration regarding invoice responses based on this format.
 
 
 :leveloffset: +1

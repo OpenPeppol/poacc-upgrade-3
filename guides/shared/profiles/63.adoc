@@ -12,7 +12,7 @@ In the table below you will find the values to be used as the specification iden
 | Element `cbc:ProfileID`
 
 
-| Invoice message response (Trns111)
+| Invoice Response (Trns111)
 | urn:fdc:peppol.eu:poacc:trns:invoice_response:3
 | urn:fdc:peppol.eu:poacc:bis:invoice_response:3
 |===

@@ -1,14 +1,17 @@
 = Version 3.0.16
 [horizontal]
 Release date:: November 2025
-* Date of member review: 2025-MM-DD
-* Date of publication: 2025-MM-DD
-* Mandatory to use from: 2026-MM-DD
+* Date of member review: 2025-09-15
+* Date of publication: 2025-11-24
+* Mandatory to use from: 2026-02-23
 
 == BIS documentation
 
 * BIS Catalogue with and without response.
 ** Added extra use case and sample file which shows how dietary claims and product features can be expressed using code values [EDITORIAL CHANGE]
+
+* Invoice Response T111
+** removed all references to IMR or IRM and the unnecessary word message.
 
 == Changes to syntax
 * Order transaction (T01)
