@@ -2,5 +2,5 @@
     <param name="val"/>
     <variable name="checkdigits" select="substring($val,9,2)"/>
     <variable name="calculated_digits" select="xs:string(97 - (xs:integer(substring($val,1,8)) mod 97))"/>
-    <value-of select="number($checkdigits) = number($calculated_digits)"/>
+    <sequence select="number($checkdigits) = number($calculated_digits)"/>
   </function>

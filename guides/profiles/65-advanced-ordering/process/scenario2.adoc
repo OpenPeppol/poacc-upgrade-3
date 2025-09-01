@@ -1,4 +1,4 @@
-[[use-case-1-ordering-of-numbered-itemsarticles]]
+[[advanced-ordering-scenario2-change-from-buyer]]
 = Scenario 2 – Change of order from buyer
 
 The following diagram shows the business process and choreography for Scenario 2.

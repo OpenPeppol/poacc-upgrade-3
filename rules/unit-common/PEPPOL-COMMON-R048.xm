@@ -5,7 +5,7 @@
 		<scope>PEPPOL-COMMON-R048</scope>
 	</assert>
 	
-
+ <!-- Rule is commented out
     
 	    <test>
 		<assert>
@@ -40,6 +40,6 @@
 	</test>
     
     
-    
+-->
 	
 </testSet>

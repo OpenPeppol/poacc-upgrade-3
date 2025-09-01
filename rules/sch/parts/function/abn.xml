@@ -1,6 +1,6 @@
 <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:abn" as="xs:boolean">
     <param name="val"/>
-    <value-of select="(
+    <sequence select="(
 ((string-to-codepoints(substring($val,1,1)) - 49) * 10) +
 ((string-to-codepoints(substring($val,2,1)) - 48) * 1) +
 ((string-to-codepoints(substring($val,3,1)) - 48) * 3) +

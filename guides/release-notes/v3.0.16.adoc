@@ -15,6 +15,8 @@ Release date:: November 2025
 ** removed all references to IMR or IRM and the unnecessary word message. 
    https://openpeppol.atlassian.net/browse/RFC-480
 
+* Corrected documentation references to use-case IDs to be used as anchors.
+
 == Changes to syntax
 * Order transaction (T01)
 ** Added business terms and elements for the delivery address on line level. Previously, only an identifier for the line level delivery address existed and with this change a full physical address is possible to provide. [MINOR CHANGE]
@@ -52,5 +54,20 @@ Release date:: November 2025
 //|ISO4217 |2 [CUC,ZWL] |1 [XXX]]
 //|UNCL7143 |0 [] |1 [PPI]
 |===
+
+==  EN 16931 schematrons updated
+
+* Common rule R042 updated the test to: (string-length(string()) = 10) and (substring(string(), 1, 2) = 'DK') and (string-length(translate(substring(string(), 3, 8), '1234567890', '')) = 0)
+  ** uses stricter test to only allow with DK prefix
+  ** https://openpeppol.atlassian.net/browse/RFC-491
+
+* NEW common rule R052 added to check for valid Danish chamber of commerce number (P) using test: (string-length(string()) = 8) and (string-length(translate(string(), '1234567890', '')) = 0)
+  ** https://openpeppol.atlassian.net/browse/RFC-491
+
+* Common rule R048 commented out, not used anymore
+
+* Updated companion test files
+
+* Resolved the issue "A function that computes atomic values should use xsl:sequence rather than xsl:value-of"
 
 == Other
