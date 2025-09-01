@@ -1,4 +1,4 @@
-[[use-case-1-ordering-of-numbered-itemsarticles]]
+[[advanced-ordering-scenario1-initial-order]]
 = Scenario 1 – Initial order from buyer
 
 The following diagram shows the business process and choreography for Scenario 1.

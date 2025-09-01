@@ -17,7 +17,7 @@
     </cac:ReferencedContract>
     <cac:ProviderParty>
 		<!-- tag::endpointid-dk[] -->
-        <cbc:EndpointID schemeID="0184">96567899</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0184">DK96567899</cbc:EndpointID>
 		<!-- end::endpointid-dk[] -->
 		<!-- tag::partyid-gln[] -->
         <cac:PartyIdentification>

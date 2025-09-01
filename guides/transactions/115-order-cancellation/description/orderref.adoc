@@ -1,4 +1,4 @@
-[[order-reference]]
+[[order-cancellation-order-reference]]
 = Order reference
 
 The order reference is used to give a reference to the order that is to be cancelled.
