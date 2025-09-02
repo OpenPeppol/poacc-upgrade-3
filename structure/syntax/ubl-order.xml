@@ -1856,7 +1856,7 @@
 						<Element>
 							<Term>cac:Address</Term>
 							<Name>Delivery address</Name>
-							<Element cardinality="1..1">
+							<Element cardinality="0..1">
 								<Term>cbc:StreetName</Term>
 								<Name>Address line 1</Name>
 								<Description>The main address line in a postal address usually the street
