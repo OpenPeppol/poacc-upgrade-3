@@ -1853,6 +1853,15 @@
 					<Element cardinality="0..1">
 						<Term>cac:DeliveryLocation</Term>
 						<Name>Delivery location </Name>
+						<Element cardinality="0..1">
+							<Term>cbc:Name</Term>
+							<Name>Delivery location name</Name>
+							<Description>A name of the location to where the ordered items should be
+								delivered.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p062</Reference>
+							<Value type="EXAMPLE">South side goods arrival dock</Value>
+						</Element>
 						<Element>
 							<Term>cac:Address</Term>
 							<Name>Delivery address</Name>

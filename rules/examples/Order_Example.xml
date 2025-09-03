@@ -389,6 +389,7 @@
 			<cac:Delivery>
 				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
 				<cac:DeliveryLocation>
+					<cbc:Name>South side arrival dock A</cbc:Name>
 					<cac:Address>
 						<cbc:StreetName>Solheimsveien 10</cbc:StreetName>
 						<cbc:AdditionalStreetName>Add</cbc:AdditionalStreetName>
