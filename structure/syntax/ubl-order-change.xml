@@ -789,7 +789,7 @@
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
 						<Description>Scheme identifier for the electronic address</Description>
-						<Value type="FIXED">0088</Value>
+						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
 					<Value type="EXAMPLE">7300010000001</Value>
 				</Element>
