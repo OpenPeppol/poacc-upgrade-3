@@ -29,7 +29,7 @@ Release date:: November 2025
 * Order Change(T114)
 ** Bugfix: Tax category incorrectly hardcoded to EU VAT category code list. Now relaxed to allow for other tax schemes (such as GST) in line with other transactions. 
 	https://openpeppol.atlassian.net/browse/PEPPOL-14263
-** The severity of rule PEPPOL-T114-R008 has been changed from Fatal to Warning. Before the change, this rule caused amounts from deleted lines to be included in the payable amount. By lowering the severity, users can provide deleted lines without triggering a Fatal error. The calculation logic will be corrected in a future release.  
+** The severity of rule PEPPOL-T114-R008 has been changed from Fatal to Warning. Before the change, this rule caused fatal error if amounts from deleted lines are excluded from the payable amount. By lowering the severity, users can provide deleted lines without triggering a Fatal error. The calculation logic will be corrected in a future release.  
 	https://openpeppol.atlassian.net/browse/RFC-492
 
 
