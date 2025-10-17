@@ -71,7 +71,7 @@
                 flag="fatal">Expected total sum of line amounts MUST NOT be negative</assert>
         <assert id="PEPPOL-T114-R008"
                 test="$lineEtensionAmount = $sumLineExtensionAmount"
-                flag="fatal">Expected total sum of line amounts MUST equal the sum of the order line amounts at order line level</assert>
+                flag="warning">Expected total sum of line amounts MUST equal the sum of the order line amounts at order line level</assert>
         <assert id="PEPPOL-T114-R009"
                 test="$allowanceTotalAmount = $sumAllowance"
                 flag="fatal">Expected total sum of allowance at document level MUST be equal to the sum of allowance amounts at document level</assert>
