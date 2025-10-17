@@ -26,14 +26,27 @@ Release date:: November 2025
 ** Added attribute listVersionID on the AdditionalItemProperty NameCode element. [MINOR CHANGE]
    https://openpeppol.atlassian.net/browse/RFC-456
 
-//* Order Change(T114)
-//** RELEASE NOTES
+* Order Change(T114)
+** Bugfix: Tax category incorrectly hardcoded to EU VAT category code list. Now relaxed to allow for other tax schemes (such as GST) in line with other transactions. 
+	https://openpeppol.atlassian.net/browse/PEPPOL-14263
+** The severity of rule PEPPOL-T114-R008 has been changed from Fatal to Warning. Before the change, this rule caused amounts from deleted lines to be included in the payable amount. By lowering the severity, users can provide deleted lines without triggering a Fatal error. The calculation logic will be corrected in a future release.  
+	https://openpeppol.atlassian.net/browse/RFC-492
+
+
+** Bugfix: AccountingCustomerParty electronic address identifier (EndpointID) incorrectly fixed to value 0088. Now changed to use 0088 as example instead of only allowed value.
+	https://openpeppol.atlassian.net/browse/PEPPOL-14264
+	
 //* Order Agreement(T110) 
 //** RELEASE NOTES 
 // * Order Response transaction (T76)
 //** RELEASE NOTES 
-//* Order Response transaction Advanced (T116) 
+
+* Order Response transaction Advanced (T116) 
+** Bugfix: Tax category incorrectly hardcoded to EU VAT category code list. Now relaxed to allow for other tax schemes (such as GST) in line with other transactions. 
+	https://openpeppol.atlassian.net/browse/PEPPOL-14359
+
 //* Catalogue transaction (T19)
+
 * Despatch Advice (T16) 
 ** Added business terms and elements for additional item properties on ItemInstance. [MINOR CHANGE]
    https://openpeppol.atlassian.net/browse/RFC-457
