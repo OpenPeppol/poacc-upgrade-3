@@ -7,6 +7,10 @@ Release date:: November 2025
 
 == BIS documentation
 
+* Order transaction (T01)
+** Rephrased the Order Type Code default value.
+   https://openpeppol.atlassian.net/browse/PEPPOL-14696
+
 * BIS Catalogue with and without response.
 ** Added extra use case and sample file which shows how dietary claims and product features can be expressed using code values [EDITORIAL CHANGE]
    https://openpeppol.atlassian.net/browse/RFC-456
