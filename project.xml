@@ -26,7 +26,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order.xml</Path>
-        <Title>Peppol Order transaction 3.6 (T01)</Title>
+        <Title>Peppol Order transaction 3.7 (T01)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -41,7 +41,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order-change.xml</Path>
-        <Title>Peppol Order Change transaction 3.1 (T114)</Title>
+        <Title>Peppol Order Change transaction 3.2 (T114)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -51,12 +51,12 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order-response-advanced.xml</Path>
-        <Title>Peppol Order Response Advanced transaction 3.1 (T116)</Title>
+        <Title>Peppol Order Response Advanced transaction 3.2 (T116)</Title>
     </Resource>
         <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-catalogue.xml</Path>
-        <Title>Peppol Catalogue transaction 3.4 (T19)</Title>
+        <Title>Peppol Catalogue transaction 3.5 (T19)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -66,7 +66,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-despatch-advice.xml</Path>
-        <Title>Peppol Despatch Advice transaction 3.4 (T16)</Title>
+        <Title>Peppol Despatch Advice transaction 3.5 (T16)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -94,7 +94,7 @@
         <Identifier>T01</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T01.sch</Path>
-        <Title>Business rules for Peppol Order transaction 3.6 </Title>
+        <Title>Business rules for Peppol Order transaction 3.7</Title>
     </Resource>
 	<Resource>
         <Identifier>T76</Identifier>
@@ -112,7 +112,7 @@
         <Identifier>T114</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T114.sch</Path>
-        <Title>Business rules for Peppol Order Change transaction 3.1</Title>
+        <Title>Business rules for Peppol Order Change transaction 3.2</Title>
     </Resource>
     <Resource>
         <Identifier>T115</Identifier>
@@ -124,13 +124,13 @@
         <Identifier>T116</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T116.sch</Path>
-        <Title>Business rules for Peppol Order Response Advanced transaction 3.1</Title>
+        <Title>Business rules for Peppol Order Response Advanced transaction 3.2</Title>
     </Resource>	
 	<Resource>
         <Identifier>T19</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T19.sch</Path>
-        <Title>Business rules for Peppol Catalogue transaction 3.4</Title>
+        <Title>Business rules for Peppol Catalogue transaction 3.5</Title>
     </Resource>
 	<Resource>
         <Identifier>T58</Identifier>
@@ -142,7 +142,7 @@
         <Identifier>T16</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T16.sch</Path>
-        <Title>Business rules for Peppol Despatch Advice transaction 3.4</Title>
+        <Title>Business rules for Peppol Despatch Advice transaction 3.5</Title>
     </Resource>
  
     <Resource>
