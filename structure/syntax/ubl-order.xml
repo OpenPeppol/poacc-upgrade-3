@@ -64,8 +64,8 @@
 		<Element cardinality="0..1">
 			<Term>cbc:OrderTypeCode</Term>
 			<Name>Order type code</Name>
-			<Description>Indicates wether the order is a Purchase order (tir01-153), Consignement order (tir01-p050), Blanket order (tir01-p051) or Call of order (tir01-p052). Default is purchase order. See section Order Type Code in BIS-documentation for handling of order types.</Description>
-			<Reference type="BUSINESS_TERM">tir01-153, tir01-p050, tir01-p051, tir01-p052</Reference>
+			<Description>Indicates wether the message is an Order (tir01-153), Consignement order (tir01-p050), Blanket order (tir01-p051), Call of order (tir01-p052) or Purchase order (tir01-p063). Default is Order (tir01-153). See section Order Type Code in BIS-documentation for handling of order types.</Description>
+			<Reference type="BUSINESS_TERM">tir01-153, tir01-p050, tir01-p051, tir01-p052, tir01-p063</Reference>
 			<Reference type="CODE_LIST">UNCL1001_T01</Reference>
 			<Value type="EXAMPLE">220</Value>
 		</Element>
