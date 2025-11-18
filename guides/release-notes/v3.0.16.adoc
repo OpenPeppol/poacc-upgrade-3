@@ -64,8 +64,8 @@ Release date:: November 2025
 |===
 |codelist|removed|added
 |eas |0 [] |1 [0244]
-|icd |0 [] |2 [0241,0242,0243,0244]
-|ISO4217 |0 [] |1 [CNH]
+|icd |0 [] |4 [0241,0242,0243,0244]
+|ISO4217 |1 [STN] |2 [CNH,STD]
 |===
 
 For the Country code BS (Bahamas), the country name has been changed from "Bahamas" to "Bahamas (The)" in accordance with the ISO 3166-1 standard.
@@ -82,6 +82,8 @@ For the Country code BS (Bahamas), the country name has been changed from "Baham
   ** rule is initially a warning and consecutive release fatal
   
 * Common rule R048 commented out, not used anymore
+
+* Rule PEPPOL-COMMON-R042 added missing rule
 
 * Updated companion test files
 
