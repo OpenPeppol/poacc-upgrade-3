@@ -1,4 +1,4 @@
-[[use-case-1-ordering-of-numbered-itemsarticles]]
+[[advanced-ordering-scenario4-cancellation-from-buyer]]
 = Scenario 4 – Cancellation of order from buyer
 
 The following diagram shows the business process and choreography for Scenario 4.

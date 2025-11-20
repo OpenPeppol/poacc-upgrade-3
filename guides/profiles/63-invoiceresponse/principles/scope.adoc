@@ -1,5 +1,5 @@
 [[scope-of-invoice-response-message]]
-= Scope of Invoice Response message
+= Scope of Invoice Response
 
 Invoice Response is an invoice and credit note specific response message that can be used to inform the Seller of the status of an invoice in the Buyer's approval and payment processes, based on the Buyer’s business rules and/or a Seller/Buyer agreement.
 
@@ -32,6 +32,6 @@ Invoice Response is an invoice and credit note specific response message that ca
 * Several statuses in one response message.
 * Full automation on Seller side – not all the errors have to be encoded.
 * Bi-directional communication – discussion on response.
-* Enquiry of the Invoice response message.
+* Enquiry of the Invoice Response.
 * Transmission level status.
 * Support for attachments.

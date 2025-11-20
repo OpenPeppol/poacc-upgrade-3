@@ -1,0 +1,91 @@
+= Version 3.0.16
+[horizontal]
+Release date:: November 2025
+* Date of member review: 2025-09-15
+* Date of publication: 2025-11-24
+* Mandatory to use from: 2026-02-23
+
+== BIS documentation
+
+* Order transaction (T01)
+** Rephrased the Order Type Code default value.
+
+* BIS Catalogue with and without response.
+** Added extra use case and sample file which shows how dietary claims and product features can be expressed using code values
+   https://openpeppol.atlassian.net/browse/RFC-456
+
+* Invoice Response T111
+** removed all references to IMR or IRM and the unnecessary word message. 
+   https://openpeppol.atlassian.net/browse/RFC-480
+
+* Corrected documentation references to use-case IDs to be used as anchors.
+
+== Changes to syntax
+* Order transaction (T01)
+** Added business terms and elements for the delivery address on line level. Previously, only an identifier for the line level delivery address existed and with this change a full physical address and location name are possible to provide.
+   https://openpeppol.atlassian.net/browse/RFC-466
+
+* Catalogue transaction (T19)
+** Added attribute listVersionID on the AdditionalItemProperty NameCode element.
+   https://openpeppol.atlassian.net/browse/RFC-456
+
+* Order Change(T114)
+** Bugfix: Tax category incorrectly hardcoded to EU VAT category code list. Now relaxed to allow for other tax schemes (such as GST) in line with other transactions. 
+
+** The severity of rule PEPPOL-T114-R008 has been changed from Fatal to Warning. Before the change, this rule caused fatal error if amounts from deleted lines are excluded from the payable amount. By lowering the severity, users can provide deleted lines without triggering a Fatal error. The calculation logic will be corrected in a future release.  
+	https://openpeppol.atlassian.net/browse/RFC-492
+
+
+** Bugfix: AccountingCustomerParty electronic address identifier (EndpointID) incorrectly fixed to value 0088. Now changed to use 0088 as example instead of only allowed value.
+	
+//* Order Agreement(T110) 
+//** RELEASE NOTES 
+// * Order Response transaction (T76)
+//** RELEASE NOTES 
+
+* Order Response transaction Advanced (T116) 
+** Bugfix: Tax category incorrectly hardcoded to EU VAT category code list. Now relaxed to allow for other tax schemes (such as GST) in line with other transactions. 
+
+//* Catalogue transaction (T19)
+
+* Despatch Advice (T16) 
+** Added business terms and elements for additional item properties on ItemInstance.
+   https://openpeppol.atlassian.net/browse/RFC-457
+//* Punchout transaction (T77)
+//** RELEASE NOTES
+
+== Changes to code lists and validation artefacts
+//** RELEASE NOTES
+
+* Codelist publication date: 2025-10-23
+* Validation artefacts UBL and CII 1.3.15 publication date: 2025-10-23
+
+[cols="1,1,1"]
+|===
+|codelist|removed|added
+|eas |0 [] |1 [0244]
+|icd |0 [] |4 [0241,0242,0243,0244]
+|ISO4217 |1 [STN] |2 [CNH,STD]
+|===
+
+For the Country code BS (Bahamas), the country name has been changed from "Bahamas" to "Bahamas (The)" in accordance with the ISO 3166-1 standard.
+
+
+==  EN 16931 schematrons updated
+
+* Added rule PEPPOL-COMMON-R052, which checks that the Danish Chamber of Commerce number (P) consists of exactly eight characters and contains only digits.
+  ** https://openpeppol.atlassian.net/browse/RFC-491
+  ** rule is initially a warning and consecutive release fatal
+
+* Added rule PEPPOL-COMMON-R053, which checks that the Danish ERSTORG number (SE) is ten characters long, starts with “DK”, and that the remaining characters are digits.
+  ** https://openpeppol.atlassian.net/browse/RFC-491
+  ** rule is initially a warning and consecutive release fatal
+  
+* Common rule R048 commented out, not used anymore
+
+* Rule PEPPOL-COMMON-R042 added missing rule
+
+* Updated companion test files
+
+* Resolved the issue "A function that computes atomic values should use xsl:sequence rather than xsl:value-of"
+

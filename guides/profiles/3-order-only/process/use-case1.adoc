@@ -1,4 +1,4 @@
-[[use-case-1-ordering-of-numbered-itemsarticles]]
+[[order-only-use-case-1-numbered-items]]
 = Use case 1 – Ordering of numbered items/articles
 
 This use case contains an order of numbered items/articles.

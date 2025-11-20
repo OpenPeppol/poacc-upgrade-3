@@ -16,7 +16,7 @@ The Invoice Response is one directional message only - from Buyer to Seller.
 Invoice Response is meant to be sent from Buyer to Seller informing about invoice status inside the Buyer’s business process.
 
 |OP-BR111-R002
-|Each Invoice Response message is intended to carry one status code (top level status) at a time, for an individual invoice.
+|Each Invoice Response is intended to carry one status code (top level status) at a time, for an individual invoice.
 To inform about several statuses of an Invoice then several messages shall be used in sequence.
 An invoice can only have one status at each time.
 
@@ -36,7 +36,7 @@ I.e. Seller may ignore them.footnote:exept[]
 |A Buyer shall provide first Invoice Response within 3 working days.
 
 |OP-BR111-R007
-|An Invoice Response message doesn’t prescribe the invoice workflow process for the Buyer.
+|An Invoice Response doesn’t prescribe the invoice workflow process for the Buyer.
 Different Buyers may have different workflows processes for the invoices.
 
 |OP-BR111-R008

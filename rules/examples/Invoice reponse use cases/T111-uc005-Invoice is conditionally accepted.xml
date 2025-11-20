@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
                 Content:
-                This file contains a Peppol Invoice Message Response, profile 63.
+                This file contains a Peppol Invoice Response, profile 63.
 				It demonstrates Use Case 5 — Invoice is rejected requesting replacement. 
 				
 				The buyer sets a new due date as 2018-01-15 using the Business term identifier BT-9 for Due Date as defined in EN 16931 

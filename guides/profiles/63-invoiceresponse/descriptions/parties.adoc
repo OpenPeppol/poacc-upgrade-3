@@ -39,9 +39,9 @@ This should not be general company email and phone unless the sender has in plac
 [[receiverparty]]
 == ReceiverParty
 
-The party that sent the Invoice that the IMR is responding to.
+The party that sent the Invoice that the message is responding to.
 This is also the receiver of the Invoice Response.
-This may be the Seller who issued the invoice or a service provider who handles the invocing process on behalf of the Seller.
+This may be the Seller who issued the invoice or a service provider who handles the invoicing process on behalf of the Seller.
 If this is a service provider, then the actual Seller may be identified as part of the invoice reference information.
 
 .UBL example:

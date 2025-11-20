@@ -1,7 +1,7 @@
 [[typical-use-cases]]
 = Typical use cases
 
-The following use cases demonstrate how the Invoice Response message can be used in the described situations.
+The following use cases demonstrate how the Invoice Response can be used in the described situations.
 While the use cases are drawn up to illustrate the general functionality of this BIS 63A, implementers are cautioned that national accounting rules may pose additional requirements on the handling of invoices.
 
 [cols="1,5",options="header",]

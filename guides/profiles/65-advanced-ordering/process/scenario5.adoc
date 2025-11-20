@@ -1,4 +1,4 @@
-[[use-case-1-ordering-of-numbered-itemsarticles]]
+[[advanced-ordering-scenario5-cancellation-from-seller]]
 = Scenario 5 – Cancellation of order from seller
 
 The following diagram shows the business process and choreography for Scenario 5.

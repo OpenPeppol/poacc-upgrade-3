@@ -9,7 +9,7 @@ The current BIS specifications addressed by this project are the following.
 * Peppol BIS 30A Despatch Advice
 * Peppol BIS 36A Message Level Response
 * Peppol BIS 42A Order Agreement
-* Peppol BIS 63A Invoice Message Response
+* Peppol BIS 63A Invoice Response
 
 In the work on each BIS, the following key tasks are identified.
 

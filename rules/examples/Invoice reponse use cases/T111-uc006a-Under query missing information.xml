@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
                 Content:
-                This file contains a Peppol Invoice Message Response, profile 63.
+                This file contains a Peppol Invoice Response, profile 63.
 				It demonstrates Use Case 6a — Invoice is under query because of wrong or missing information. 
 				
 				The use case assumes missing purchase order reference and proposes that the reference should be PO0001, the invoice is put under query 2 days after it was issued.

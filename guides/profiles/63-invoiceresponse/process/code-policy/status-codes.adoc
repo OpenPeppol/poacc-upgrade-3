@@ -29,7 +29,7 @@ Indicates that the Buyer expects a response from the Seller in accordance to the
 If no response is expected, then the Buyer will proceed with the processing of the invoice without interruption.
 If a response is expected, then the Buyer will not proceed with the processing until the Seller has provided the response (externally).
 
-Clarification required:: Indicates that when Invoice Response message contains this code then a clarification must be provided by the Buyer in the form of a Status Reason code (See {link-codelist}) or text or both.
+Clarification required:: Indicates that when Invoice Response contains this code then a clarification must be provided by the Buyer in the form of a Status Reason code (See {link-codelist}) or text or both.
 
 Mandatory::
 Indicates that a Buyer who supports this BIS shall at minimum be able to report these statuses in the processing of the invoice.
@@ -39,7 +39,7 @@ Final::
 Indicates that this is a final status in the processing of the referenced invoice.
 The Seller will not receive any further Invoice Response messages referencing this invoice.
 
-.The Status codes used in an Invoice Response message are defined in the below table and are a subset UNECE code list 4343 with additional codes.
+.The Status codes used in an Invoice Response are defined in the below table and are a subset UNECE code list 4343 with additional codes.
 [cols="1h,1,3,3,1,1,1,1",options="header"]
 |====
 |Status Code
@@ -66,7 +66,7 @@ Although it can be used also for rejection for commercial reasons (invoice not c
 
 (1) Status code PD (Paid) together with Clarification Reason code PPD (Partially Paid) is the case when an invoice is partially paid with the intention of later paying the full invoice amount as was accepted.
 
-The sequence of the status codes is fixed to allow the Seller, as receiver of the Invoice Response message, to advance the status of the invoice in his systems in an orderly way. See <<invoice-response-process-rules>>.
+The sequence of the status codes is fixed to allow the Seller, as receiver of the Invoice Response, to advance the status of the invoice in his systems in an orderly way. See <<invoice-response-process-rules>>.
 This requires the Buyer to be conservative in reporting status and only advance an invoice when the status is reasonably certain.
 
 The status of an invoice must advance in the following sequence, but any status may be the first one used or may be omitted.

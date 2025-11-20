@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t01-base-3.0">
+	<assert>
+		<description>Invalid Danish ERSTORG number (SE) provided.</description>
+		<scope>PEPPOL-COMMON-R053</scope>
+	</assert>
+    <test>
+		<assert>
+			<success>PEPPOL-COMMON-R053</success>
+		</assert>
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+			<cac:BuyerCustomerParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:RegistrationName>Customer A A/S</cbc:RegistrationName>
+						<cbc:CompanyID schemeID="0198">DK12345678</cbc:CompanyID>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:BuyerCustomerParty>
+			<cac:SellerSupplierParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:RegistrationName>Supplier A/S</cbc:RegistrationName>
+						<cbc:CompanyID schemeID="0198">DK12345678</cbc:CompanyID>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:SellerSupplierParty>
+		</Order>
+	</test>
+    <test>
+		<assert>
+			<warning number="2">PEPPOL-COMMON-R053</warning>
+		</assert>
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+			<cac:BuyerCustomerParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:RegistrationName>Customer A A/S</cbc:RegistrationName>
+						<cbc:CompanyID schemeID="0198">1234567</cbc:CompanyID>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:BuyerCustomerParty>
+			<cac:SellerSupplierParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:RegistrationName>Supplier A/S</cbc:RegistrationName>
+						<cbc:CompanyID schemeID="0198">DK1234567890</cbc:CompanyID>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:SellerSupplierParty>
+		</Order>
+	</test>
+
+</testSet>

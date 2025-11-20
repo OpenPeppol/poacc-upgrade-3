@@ -387,6 +387,23 @@
 			<cbc:PartialDeliveryIndicator>true</cbc:PartialDeliveryIndicator>
 			<cbc:AccountingCost>ProjectID123</cbc:AccountingCost>
 			<cac:Delivery>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
+				<cac:DeliveryLocation>
+					<cbc:Name>South side arrival dock A</cbc:Name>
+					<cac:Address>
+						<cbc:StreetName>Solheimsveien 10</cbc:StreetName>
+						<cbc:AdditionalStreetName>Add</cbc:AdditionalStreetName>
+						<cbc:CityName>Lørenskog</cbc:CityName>
+						<cbc:PostalZone>1473</cbc:PostalZone>
+						<cbc:CountrySubentity>Region</cbc:CountrySubentity>
+						<cac:AddressLine>
+							<cbc:Line>3rd Address line</cbc:Line>
+						</cac:AddressLine>
+						<cac:Country>
+							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:Address>
+				</cac:DeliveryLocation>
 				<cac:RequestedDeliveryPeriod>
 					<cbc:StartDate>2012-10-15</cbc:StartDate>
 					<cbc:EndDate>2012-10-31</cbc:EndDate>

@@ -1,0 +1,44 @@
+[[use-case-6-catalogue-with-articles-features]]
+= Use case 6 – Catalogue with articles features and dietary claims
+
+This use case includes a catalogue containing articles showing how dietary claims and features can be specified and coded using GS1 GDSN codelists for diet type, claim type, claim element and feature codes.
+
+[cols="2,4",options="header",]
+|====
+|*Use Case No* |6
+|*Use Case Name* |Catalogue with article features and dietary claims.
+|*Use Case Description* a|
+The provider sends a catalogue to the receiver.
+
+The catalogue contains articles that the buyer and seller have agreed on in a contract.
+
+The articles have information about dietary claims that the buyer is using to filter/search for.
+
+After receiving the catalogue, the buyer accepts the catalogue without any response message.
+
+|*Parties involved* a|
+Catalogue Provider (same legal entity as the Supplier/Seller in this use case).
+
+Catalogue Receiver (same legal entity as the Customer/Buyer in this use case).
+
+|*Assumptions* a|
+1.  The Seller and the Buyer have a contract of products and services that the buyer may purchase from the Seller.
+2.  The parties have agreed to exchange the catalogue.
+3.  The articles are:
+a.  Surgical gloves which are sterile.
+b.  Mothers milk substitution.
+c.  Gluten free bake-up bread.
+
+|*The flow* a|
+1.  The Seller identifies the contracted items.
+2.  The Provider creates a Catalogue message.
+3.  The Provider sends the message to the Receiver.
+4.  The Buyer verifies the content in the message and considers whether to accept or reject the catalogue.
+5.  The Buyer accepts the Catalogue and inserts the articles from the catalogue message in the local ERP-system.
+
+|*Result* a|
+1.  The Buyer have all the articles and the contracted prices in the ERP-system and may start ordering.
+2.  The ordering process is easy when you have all necessary information in the ERP-system.
+
+|*XML example file* |See Appendix A for a sample file illustrating Use Case 6 in the download section on the main page.
+|====

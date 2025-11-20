@@ -1,4 +1,4 @@
-[[order-reference]]
+[[order-response-advanced-order-reference]]
 = Order reference
 
 Reference to the related order must be done on Header level.

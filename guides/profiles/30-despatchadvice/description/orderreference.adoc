@@ -1,4 +1,4 @@
-[[order-reference]]
+[[despatch-advice-order-reference]]
 = Order reference
 
 Used to provide a reference to the purchase order on which the Despatch Advice is based. 

@@ -16,7 +16,7 @@
 |A|OP-T111-R006	|The Endpoint ID for receiving sending Invoice Response SHALL be specified.	|Fatal
 |A|OP-T111-R007	|The party receiving Invoice Response SHALL be specified.	|Fatal
 |A|OP-T111-R008	|An Invoice Response SHALL contain a document reference #pointing towards the business message that the response relates to.#	|Fatal
-|M|OP-T111-R009	|IF status code is one of: CA, UQ or RE then there SHALL be at a clarification code in Invoice Message Response.	|Fatal
+|M|OP-T111-R009	|IF status code is one of: CA, UQ or RE then there SHALL be at a clarification code in Invoice Response.	|Fatal
 |====
 
 == Code list rules
