@@ -8,6 +8,13 @@ Release date:: May 2026
 == BIS documentation
 
 == Changes to syntax
+* Order transaction (T01) [MINOR]
+** Added business term for providing reference to quotation line from order line. Rule added that the quotation line reference is only allowed when the quotation document reference is also provided.
+   https://openpeppol.atlassian.net/browse/RFC-530
+
+* Order Change(T114) [MINOR]
+** Added business term for providing reference to quotation line from order line. Rule added that the quotation line reference is only allowed when the quotation document reference is also provided.
+   https://openpeppol.atlassian.net/browse/RFC-530
 
 == Changes to code lists and validation artefacts
 

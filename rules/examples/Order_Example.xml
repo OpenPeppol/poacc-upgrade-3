@@ -448,5 +448,8 @@
 				</cac:AdditionalItemProperty>
 			</cac:Item>
 		</cac:LineItem>
+		<cac:QuotationLineReference>
+			<cbc:LineID>12</cbc:LineID>
+		</cac:QuotationLineReference>
 	</cac:OrderLine>
 </Order>
