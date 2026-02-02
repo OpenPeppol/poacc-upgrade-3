@@ -174,6 +174,14 @@
                     flag="fatal">Allowance or charge amounts MUST NOT be negative.</assert>
     </rule>
 
+    <!-- Quotation line reference -->
+    <rule context="cac:QuotationLineReference/cbc:LineID">
+        <assert id="PEPPOL-T114-R035"
+                test="exists(/*/cac:QuotationDocumentReference/cbc:ID)"
+                flag="fatal">The quotation document reference MUST be provided when referencing a quotation line</assert>
+    </rule>
+	
+
     <rule context="cac:AllowanceCharge[cbc:ChargeIndicator = 'false']/cbc:AllowanceChargeReasonCode">
                 <assert id="PEPPOL-T114-CL001"
                         test="

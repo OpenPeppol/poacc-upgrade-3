@@ -2476,6 +2476,18 @@
 					</Element>
 				</Element>
 			</Element>
+			<Element>
+				<Term>cac:QuotationLineReference</Term>
+				<Name>Reference to a quotation line</Name>
+				<Element>
+					<Term>cbc:LineID</Term>
+					<Name>Quotation line reference</Name>
+					<Description>Used to reference the line of the quotation that this order corresponds to. The reference to the quotation document is provided on header level in the order.</Description>
+					<Reference type="BUSINESS_TERM">tir01-p064</Reference>
+					<Reference type="RULE">PEPPOL-T01-R035</Reference>
+					<Value type="EXAMPLE">3</Value>
+				</Element>
+			</Element>
 		</Element>
 	</Document>
 </Structure>
