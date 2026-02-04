@@ -20,6 +20,16 @@
 	<cac:OrderReference>
 		<cbc:ID>AEG012345</cbc:ID>
 	</cac:OrderReference>
+	<cac:AdditionalDocumentReference>
+	<cbc:ID>doc-34</cbc:ID>
+	<cbc:DocumentType>Timesheet</cbc:DocumentType>
+	<cac:Attachment>
+	<cbc:EmbeddedDocumentBinaryObject mimeCode="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" filename="Hours-spent.xlsx" >QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
+	<cac:ExternalReference>
+	<cbc:URI>http://www.example.com/image.jpg</cbc:URI>
+	</cac:ExternalReference>
+	</cac:Attachment>
+	</cac:AdditionalDocumentReference>
 	<cac:DespatchSupplierParty>
 		<cac:Party>
 			<cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>

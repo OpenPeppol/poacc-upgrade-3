@@ -246,6 +246,7 @@
 					identifier.</Description>
 				<DataType>Document reference</DataType>
 				<Reference type="BUSINESS_TERM">tir01-019</Reference>
+				<Value type="EXAMPLE">W912HN-01-C-0022 0034</Value>
 			</Element>
 		</Element>
 		<Element cardinality="0..1">
@@ -324,6 +325,7 @@
 							name and number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-032</Reference>
+						<Value type="EXAMPLE">Example road 1</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:AdditionalStreetName</Term>
@@ -333,6 +335,7 @@
 							secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-027</Reference>
+						<Value type="EXAMPLE">Example road 2</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
@@ -341,6 +344,7 @@
 							name is written in full rather than as a code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-031</Reference>
+						<Value type="EXAMPLE">Stockholm</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:PostalZone</Term>
@@ -350,6 +354,7 @@
 							Code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-024</Reference>
+						<Value type="EXAMPLE">123 45</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CountrySubentity</Term>
@@ -358,6 +363,7 @@
 							country by using text.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-141</Reference>
+						<Value type="EXAMPLE">Uppland</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -401,6 +407,7 @@
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir01-034</Reference>
 						<Reference type="RULE">PEPPOL-T01-R026</Reference>
+							<Value type="EXAMPLE">NO999888777</Value>
 					</Element>
 					<Element>
 						<Term>cac:TaxScheme</Term>
@@ -424,6 +431,7 @@
 							fiscal authority.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-044</Reference>
+						<Value type="EXAMPLE">Example Company AB</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CompanyID</Term>
@@ -453,6 +461,7 @@
 								village.</Description>
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">tir01-045</Reference>
+							<Value type="EXAMPLE">Stockholm</Value>
 						</Element>
 						<Element>
 							<Term>cac:Country</Term>
