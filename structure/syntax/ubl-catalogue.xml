@@ -226,6 +226,7 @@
                         country by using text.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-p029e</Reference>
+					<Value type="EXAMPLE">someRegion</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:AddressLine</Term>
@@ -580,6 +581,7 @@
                             secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-022</Reference>
+						<Value type="EXAMPLE">Address line 2</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
@@ -607,6 +609,7 @@
                             country by using text.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-025</Reference>
+						<Value type="EXAMPLE">someRegion</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -749,6 +752,7 @@
 							secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p042</Reference>
+						<Value type="EXAMPLE">Address line 2</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
@@ -776,6 +780,7 @@
 							country by using text.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p045</Reference>
+						<Value type="EXAMPLE">someRegion</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -971,6 +976,7 @@
                     item.</Description>
 				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">tir19-040</Reference>
+				<Value type="EXAMPLE">Warranty information</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:PackLevelCode</Term>
@@ -1021,6 +1027,7 @@
 					<DataType>Price Amount</DataType>
 					<Reference type="BUSINESS_TERM">tir19-043</Reference>
 					<Reference type="RULE">PEPPOL-T19-R006</Reference>
+					
 					<Attribute>
 						<Term>currencyID</Term>
 						<Name>Currency identifier</Name>
@@ -1028,6 +1035,7 @@
 						<Reference type="CODE_LIST">ISO4217</Reference>
 						<Value type="EXAMPLE">EUR</Value>
 					</Attribute>
+					<Value type="EXAMPLE">52</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:Quantity</Term>
@@ -1035,12 +1043,14 @@
 					<Description>The quantity of standard units that are in each consumable unit.</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-044</Reference>
+					<Value type="EXAMPLE">20</Value>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Standard unit of measure</Name>
 						<Description>The standard unit of measure used to enable comparison of item price to other items.See guideline on Items and packing units in a catalogue.</Description>
 						<Reference type="BUSINESS_TERM">tir19-085</Reference>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
+						<Value type="EXAMPLE">EA</Value>
 					</Attribute>
 				</Element>
 			</Element>
@@ -1060,6 +1070,7 @@
 					<Description>The quantity that applies to the relationship.</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-046</Reference>
+					<Value type="EXAMPLE">20</Value>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Packed units</Name>
@@ -1090,6 +1101,7 @@
 					<Description>The quantity that applies to the relationship.</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-119</Reference>
+					<Value type="EXAMPLE">20</Value>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Related item unit</Name>
@@ -1116,6 +1128,7 @@
 					<Description>The quantity that applies to the relationship.</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-049</Reference>
+					<Value type="EXAMPLE">20</Value>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Required item units</Name>
@@ -1135,6 +1148,7 @@
 					<Description>The sellers identifier for the related item.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-120</Reference>
+					<Value type="EXAMPLE">ID23</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:Quantity</Term>
@@ -1142,6 +1156,7 @@
 					<Description>The quantity that applies to the relationship.</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-121</Reference>
+					<Value type="EXAMPLE">20</Value>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Replaced item units</Name>
@@ -1215,6 +1230,7 @@
                             name and number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-108</Reference>
+						<Value type="EXAMPLE">address line 1</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:AdditionalStreetName</Term>
@@ -1224,6 +1240,7 @@
                             secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-109</Reference>
+						<Value type="EXAMPLE">Address line 2</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
@@ -1234,6 +1251,7 @@
                             than as a code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-060tir19-110</Reference>
+						<Value type="EXAMPLE">Stockholm</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:PostalZone</Term>
@@ -1243,6 +1261,7 @@
                             Post Code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-111</Reference>
+						<Value type="EXAMPLE">123 45</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CountrySubentity</Term>
@@ -1252,6 +1271,7 @@
                             etc. within a country by using text.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-062tir19-112</Reference>
+						<Value type="EXAMPLE">someRegion</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -1261,6 +1281,7 @@
 							<Name>Address line 3</Name>
 							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 							<DataType>Text</DataType>
+							<Value type="EXAMPLE">adress line 3</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
@@ -1301,6 +1322,7 @@
 							<Reference type="CODE_LIST">ISO4217</Reference>
 							<Value type="EXAMPLE">EUR</Value>
 						</Attribute>
+						<Value type="EXAMPLE">52</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:BaseQuantity</Term>
@@ -1425,6 +1447,7 @@
 					<Description>A Brand name for the item</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-p018</Reference>
+					<Value type="EXAMPLE">Manufacturer</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:BuyersItemIdentification</Term>
@@ -1481,6 +1504,7 @@
 							the item with its identification according to a standard system.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-092</Reference>
+						<Value type="EXAMPLE">11111155</Value>
 
 						<Attribute>
 							<Term>schemeID</Term>
@@ -1512,6 +1536,7 @@
 						<Reference type="CODE_LIST">UNCL1001</Reference>
 						<Reference type="CODE_LIST">Image</Reference>
 						<Reference type="BUSINESS_TERM">tir19-086a</Reference>
+						<Value type="EXAMPLE">PRODUCT_IMAGE</Value>
 					</Element>
 					<Element cardinality="0..n">
 						<Term>cbc:DocumentDescription</Term>
@@ -1519,6 +1544,7 @@
 						<Description>A short description of the document type.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-106</Reference>
+						<Value type="EXAMPLE">Description</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:Attachment</Term>
@@ -1623,6 +1649,8 @@
 						<Reference type="BUSINESS_TERM">tir19-p027</Reference>
 						<Reference type="BUSINESS_TERM">tir19-p049</Reference>
 						<Reference type="CODE_LIST">TransactionCondition</Reference>
+						<Value type="EXAMPLE">CT</Value>	
+						
 						
 					</Element>
 				</Element>
@@ -1636,6 +1664,7 @@
 								the United Nations, expressed as a code.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-072</Reference>
+						<Value type="EXAMPLE">ADR</Value>	
 
 
 						<Reference type="CODE_LIST">UNCL8273</Reference>
@@ -1649,6 +1678,7 @@
 								the road/rail environment.</Description>
 						<!-- <Reference>Identifier</Reference> -->
 						<Reference type="BUSINESS_TERM">tir19-073</Reference>
+						<Value type="EXAMPLE">SomeIdentifier</Value>	
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -1935,6 +1965,7 @@
                             attributeID</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p038</Reference>
+							<Value type="EXAMPLE">Description</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:MinimumMeasure</Term>
