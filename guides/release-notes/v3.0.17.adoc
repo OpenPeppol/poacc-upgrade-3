@@ -7,6 +7,9 @@ Release date:: May 2026
 
 == BIS documentation
 
+* Invoice Response BIS
+** New profile added for a process where the invoice response is a required step in the collaboration. The profile (02) requires a separate SMP registration. The same profile identifier has been added to BIS Billing 3.0.
+
 == Changes to syntax
 * Order transaction (T01) [MINOR]
 ** Added business term for providing reference to quotation line from order line. Rule added that the quotation line reference is only allowed when the quotation document reference is also provided.

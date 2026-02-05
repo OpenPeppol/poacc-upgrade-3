@@ -2,7 +2,7 @@
 [[prof-63]]
 = Customization and Profile identifiers
 
-In the table below you will find the values to be used as the specification identifier and the business process type for this profile
+In the table below you will find the values to be used as the specification identifier and the business process type for this profile and for the Billing with Response profile. The "Billing with Response" profile is a process where the Invoice response is a required step in the collaboration. 
 
 
 [cols="2s,5a,5a", options="header"]
@@ -15,4 +15,8 @@ In the table below you will find the values to be used as the specification iden
 | Invoice Response (Trns111)
 | urn:fdc:peppol.eu:poacc:trns:invoice_response:3
 | urn:fdc:peppol.eu:poacc:bis:invoice_response:3
+
+| Invoice Response (Trns111)
+| urn:fdc:peppol.eu:poacc:trns:invoice_response:3
+| urn:fdc:peppol.eu:2017:poacc:billing:02:1.0
 |===
