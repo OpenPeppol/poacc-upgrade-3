@@ -435,6 +435,7 @@
                             give further details supplementing the main line.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir110-052</Reference>
+						<Value type="EXAMPLE">address line 2</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
@@ -462,6 +463,7 @@
                             province etc.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir110-055</Reference>
+						<Value type="EXAMPLE">Uppland</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -763,6 +765,7 @@
 						<Description>The subdivision of a country such as region, county, state,
 							province etc.</Description>
 						<DataType>Text</DataType>
+						<Value type="EXAMPLE">Uppland</Value>
 
 					</Element>
 					<Element cardinality="0..1">
@@ -843,11 +846,13 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:AdditionalStreetName</Term>
-						<Name>Address line 1</Name>
+						<Name>Address line 2</Name>
 						<Description>An additional address line in an address that can be used to
                             give further details supplementing the main line.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir110-073</Reference>
+						<Value type="EXAMPLE">address line 2</Value>
+
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
@@ -1429,6 +1434,7 @@
 						<Description>The type of the item price. The type may be given by using codes from UN/CEFACT code list 5387.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-110-017</Reference>
+						<Value type="EXAMPLE">AAA</Value>
 					</Element>
 
 					<Element cardinality="0..1">
@@ -1571,6 +1577,7 @@
 							<Reference type="CODE_LIST">UNCL1001</Reference>
 							<Reference type="CODE_LIST">Image</Reference>
 							<Reference type="BUSINESS_TERM">tir110-p008</Reference>
+							<Value type="EXAMPLE">270</Value>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:DocumentType</Term>
@@ -1745,11 +1752,12 @@
 							<Description>Code for the item property according to a property code system.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-101</Reference>
+							<Value type="EXAMPLE">NameCode</Value>
 							<Attribute>
 								<Term>listID</Term>
 								<Name>Name code list id.</Name>
 								<Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
-
+								<Value type="EXAMPLE">Codelist</Value>
 							</Attribute>
 						</Element>
 						<Element>
@@ -1768,12 +1776,14 @@
                                 descriptive.</Description>
 							<DataType>Quantity</DataType>
 							<Reference type="BUSINESS_TERM">tir110-100</Reference>
+							<Value type="EXAMPLE">12</Value>
 							<Attribute>
 								<Term>unitCode</Term>
 								<Name>Value quantity unit of measure</Name>
 								<Description>The unit of measure that applies to the value quantity.</Description>
 								<DataType>Code</DataType>
 								<Reference type="CODE_LIST">UNECERec20</Reference>
+								<Value type="EXAMPLE">EA</Value>
 							</Attribute>
 						</Element>
 						<Element cardinality="0..1">
@@ -1782,6 +1792,7 @@
               <Description>Standardized and predefined classification of items properties.</Description>
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">tir110-p004</Reference>
+							<Value type="EXAMPLE">Classification</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..n">
