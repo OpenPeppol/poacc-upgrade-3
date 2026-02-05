@@ -24,11 +24,11 @@
         <Element>
             <Term>cbc:ProfileID</Term>
             <Name>Business process type identifier</Name>
-            <Description>Identifies the BII profile or business process context in which the
+            <Description>Identifies the profile or business process context in which the
                 transaction appears.</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir111-005</Reference>
-            <Value type="FIXED">urn:fdc:peppol.eu:poacc:bis:invoice_response:3</Value>
+            <Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:bis:invoice_response:3</Value>
         </Element>
         <Element>
             <Term>cbc:ID</Term>
