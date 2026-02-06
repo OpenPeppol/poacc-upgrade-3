@@ -329,6 +329,7 @@
 							name and number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-T77-007</Reference>
+						<Value type="EXAMPLE">address line 1</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:AdditionalStreetName</Term>
@@ -338,6 +339,7 @@
 							secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-T77-008</Reference>
+						<Value type="EXAMPLE">address line 2</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
@@ -346,6 +348,7 @@
 							name is written in full rather than as a code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-T77-010</Reference>
+						<Value type="EXAMPLE">Stockholm</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:PostalZone</Term>
@@ -355,6 +358,7 @@
 							Post Code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-T77-011</Reference>
+						<Value type="EXAMPLE">123 45</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CountrySubentity</Term>
@@ -363,6 +367,7 @@
 							country by using text.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-T77-012</Reference>
+						<Value type="EXAMPLE">Uppland</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -442,6 +447,7 @@
 							codes from UN/CEFACT code list 5387.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-T77-015</Reference>
+						<Value type="EXAMPLE">AAA</Value>
 					</Element>
 				</Element>
 				<Element>

@@ -18,6 +18,9 @@ Release date:: May 2026
 * Order Change(T114) [MINOR]
 ** Added business term for providing reference to quotation line from order line. Rule added that the quotation line reference is only allowed when the quotation document reference is also provided.
    https://openpeppol.atlassian.net/browse/RFC-530
+   
+* All transactions [Editorial]
+** Examples added when missing for all business terms
 
 == Changes to code lists and validation artefacts
 

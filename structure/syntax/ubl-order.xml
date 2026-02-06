@@ -246,6 +246,7 @@
 					identifier.</Description>
 				<DataType>Document reference</DataType>
 				<Reference type="BUSINESS_TERM">tir01-019</Reference>
+				<Value type="EXAMPLE">W912HN-01-C-0022 0034</Value>
 			</Element>
 		</Element>
 		<Element cardinality="0..1">
@@ -324,6 +325,7 @@
 							name and number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-032</Reference>
+						<Value type="EXAMPLE">Example road 1</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:AdditionalStreetName</Term>
@@ -333,6 +335,7 @@
 							secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-027</Reference>
+						<Value type="EXAMPLE">Example road 2</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
@@ -341,6 +344,7 @@
 							name is written in full rather than as a code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-031</Reference>
+						<Value type="EXAMPLE">Stockholm</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:PostalZone</Term>
@@ -350,6 +354,7 @@
 							Code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-024</Reference>
+						<Value type="EXAMPLE">123 45</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CountrySubentity</Term>
@@ -358,6 +363,7 @@
 							country by using text.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-141</Reference>
+						<Value type="EXAMPLE">Uppland</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -401,6 +407,7 @@
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir01-034</Reference>
 						<Reference type="RULE">PEPPOL-T01-R026</Reference>
+							<Value type="EXAMPLE">NO999888777</Value>
 					</Element>
 					<Element>
 						<Term>cac:TaxScheme</Term>
@@ -424,6 +431,7 @@
 							fiscal authority.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-044</Reference>
+						<Value type="EXAMPLE">Example Company AB</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CompanyID</Term>
@@ -453,6 +461,7 @@
 								village.</Description>
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">tir01-045</Reference>
+							<Value type="EXAMPLE">Stockholm</Value>
 						</Element>
 						<Element>
 							<Term>cac:Country</Term>
@@ -483,6 +492,7 @@
 						<Description>The name of the contact person.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-050</Reference>
+						<Value type="EXAMPLE">John Doe</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Telephone</Term>
@@ -491,6 +501,7 @@
 							direct number, this is that number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-047</Reference>
+						<Value type="EXAMPLE">070123456</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:ElectronicMail</Term>
@@ -499,6 +510,7 @@
 							direct e-mail this is that email.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-049</Reference>
+						<Value type="EXAMPLE">mail@mail.com</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -569,6 +581,7 @@
 							name and number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-063</Reference>
+						<Value type="EXAMPLE">Street 1</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:AdditionalStreetName</Term>
@@ -578,6 +591,7 @@
 							secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-064</Reference>
+						<Value type="EXAMPLE">Street 2</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
@@ -586,6 +600,7 @@
 							name is written in full rather than as a code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-065</Reference>
+						<Value type="EXAMPLE">Stockholm</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:PostalZone</Term>
@@ -595,6 +610,7 @@
 							Code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-068</Reference>
+						<Value type="EXAMPLE">123 45</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CountrySubentity</Term>
@@ -603,6 +619,7 @@
 							country by using text.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-142</Reference>
+						<Value type="EXAMPLE">Uppland</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -645,6 +662,7 @@
 							fiscal authority.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p038</Reference>
+						<Value type="EXAMPLE">Seller Company AB</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CompanyID</Term>
@@ -674,6 +692,7 @@
 								village.</Description>
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p040</Reference>
+							<Value type="EXAMPLE">Stockholm</Value>
 						</Element>
 						<Element>
 							<Term>cac:Country</Term>
@@ -704,6 +723,7 @@
 						<Description>The name of the contact person.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-074</Reference>
+						<Value type="EXAMPLE">Contact Person</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Telephone</Term>
@@ -712,6 +732,7 @@
 							direct number, this is that number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-077</Reference>
+						<Value type="EXAMPLE">070 112233</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:ElectronicMail</Term>
@@ -720,6 +741,7 @@
 							direct e-mail this is that email.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-076</Reference>
+						<Value type="EXAMPLE">mail@mail.com</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -777,6 +799,7 @@
 						<Description>The name of the contact person.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-086</Reference>
+						<Value type="EXAMPLE">John Doe</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Telephone</Term>
@@ -785,6 +808,7 @@
 							direct number, this is that number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-083</Reference>
+						<Value type="EXAMPLE">070 112233 </Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:ElectronicMail</Term>
@@ -793,6 +817,7 @@
 							direct e-mail this is that email.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-085</Reference>
+						<Value type="EXAMPLE">mail@mail.com</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -876,6 +901,7 @@
 							secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p014</Reference>
+						<Value type="EXAMPLE">address line 2</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
@@ -884,6 +910,7 @@
 							name is written in full rather than as a code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p009</Reference>
+						<Value type="EXAMPLE">Stockholm</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:PostalZone</Term>
@@ -893,6 +920,7 @@
 							Code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p015</Reference>
+						<Value type="EXAMPLE">123 45</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CountrySubentity</Term>
@@ -901,6 +929,7 @@
 							country by using text.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p016</Reference>
+						<Value type="EXAMPLE">Uppland</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -945,6 +974,7 @@
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p018</Reference>
 						<Reference type="RULE">PEPPOL-T01-R026</Reference>
+						<Value type="EXAMPLE">NO999888777</Value>
 					</Element>
 					<Element>
 						<Term>cac:TaxScheme</Term>
@@ -969,6 +999,7 @@
 							relevant fiscal authority.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-159</Reference>
+						<Value type="EXAMPLE">Invoicee Company AB</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CompanyID</Term>
@@ -999,6 +1030,7 @@
 								village.</Description>
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">tir01-160</Reference>
+							<Value type="EXAMPLE">Stockholm</Value>
 						</Element>
 						<Element>
 							<Term>cac:Country</Term>
@@ -1029,6 +1061,7 @@
 						<Description>The name of the contact person.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p025</Reference>
+						<Value type="EXAMPLE">John Doe</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Telephone</Term>
@@ -1037,6 +1070,7 @@
 							direct number, this is that number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p026</Reference>
+						<Value type="EXAMPLE">070 112233 </Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:ElectronicMail</Term>
@@ -1045,6 +1079,7 @@
 							direct e-mail this is that email.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p027</Reference>
+						<Value type="EXAMPLE">mail@mail.com</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -1091,6 +1126,7 @@
 							name and number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-092</Reference>
+						<Value type="EXAMPLE">address line 1</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:AdditionalStreetName</Term>
@@ -1100,6 +1136,7 @@
 							secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-093</Reference>
+						<Value type="EXAMPLE">address line 2</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
@@ -1108,6 +1145,7 @@
 							name is written in full rather than as a code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-096</Reference>
+						<Value type="EXAMPLE">Stockholm</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:PostalZone</Term>
@@ -1117,6 +1155,7 @@
 							Code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-097</Reference>
+						<Value type="EXAMPLE">123 45</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CountrySubentity</Term>
@@ -1125,6 +1164,7 @@
 							country by using text.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-144</Reference>
+						<Value type="EXAMPLE">Uppland</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -1168,6 +1208,7 @@
 						of the period.Format ="YYYY-MM-DD"</Description>
 					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">tir01-099</Reference>
+					<Value type="EXAMPLE">2026-01-01</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:StartTime</Term>
@@ -1184,6 +1225,7 @@
 						the period.Format ="YYYY-MM-DD"</Description>
 					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">tir01-100</Reference>
+						<Value type="EXAMPLE">2026-02-01</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:EndTime</Term>
@@ -1243,6 +1285,7 @@
 							name and number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p029</Reference>
+						<Value type="EXAMPLE">address line 1</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:AdditionalStreetName</Term>
@@ -1252,6 +1295,7 @@
 							secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p030</Reference>
+						<Value type="EXAMPLE">address line 2</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
@@ -1260,6 +1304,7 @@
 							name is written in full rather than as a code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p031</Reference>
+						<Value type="EXAMPLE">Stockholm</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:PostalZone</Term>
@@ -1269,6 +1314,7 @@
 							Code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p032</Reference>
+						<Value type="EXAMPLE">123 45</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CountrySubentity</Term>
@@ -1277,6 +1323,7 @@
 							country by using text.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p033</Reference>
+						<Value type="EXAMPLE">Uppland</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -1319,6 +1366,7 @@
 						<Description>The name of the contact person.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-103</Reference>
+						<Value type="EXAMPLE">John Doe</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Telephone</Term>
@@ -1327,6 +1375,7 @@
 							direct number, this is that number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-104</Reference>
+						<Value type="EXAMPLE">070 112233 </Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:ElectronicMail</Term>
@@ -1335,6 +1384,7 @@
 							direct e-mail this is that email.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-106</Reference>
+						<Value type="EXAMPLE">mail@mail.com</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -1365,6 +1415,7 @@
 					<Term>cbc:ID</Term>
 					<Name>Shipment identifier</Name>
 					<Description>Element is mandated by syntax structure use value NA</Description>
+					<Value type="EXAMPLE">NA</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:ShippingPriorityLevelCode</Term>
@@ -1407,6 +1458,7 @@
 					Terms.</Description>
 				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">tir01-108</Reference>
+				<Value type="EXAMPLE">Special Conditions</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:DeliveryLocation</Term>
@@ -1431,6 +1483,7 @@
 				<Description>Payment terms for the order described in text</Description>
 				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">tir01-p010</Reference>
+				<Value type="EXAMPLE">Net within 30 days</Value>
 			</Element>
 		</Element>
 		<Element cardinality="0..n">
@@ -1471,6 +1524,7 @@
 				<DataType>Text</DataType>
 				<Reference type="RULE">PEPPOL-T01-R023</Reference>
 				<Reference type="BUSINESS_TERM">tir01-112</Reference>
+				<Value type="EXAMPLE">Discount</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:MultiplierFactorNumeric</Term>
@@ -1758,6 +1812,7 @@
 					line as a whole.</Description>
 				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">tir01-123</Reference>
+				<Value type="EXAMPLE">note</Value>
 			</Element>
 			<Element>
 				<Term>cac:LineItem</Term>
@@ -1830,6 +1885,7 @@
 						expressed as text.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir01-125</Reference>
+					<Value type="EXAMPLE">The buyer's accounting information</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:Delivery</Term>
@@ -1872,6 +1928,7 @@
 							name and number.</Description>
 								<DataType>Text</DataType>
 								<Reference type="BUSINESS_TERM">tir01-p055</Reference>
+								<Value type="EXAMPLE">address line 1</Value>
 							</Element>
 							<Element cardinality="0..1">
 								<Term>cbc:AdditionalStreetName</Term>
@@ -1881,6 +1938,7 @@
 							secondary house number in a complex or in a building.</Description>
 								<DataType>Text</DataType>
 								<Reference type="BUSINESS_TERM">tir01-p056</Reference>
+								<Value type="EXAMPLE">address line 2</Value>
 							</Element>
 							<Element cardinality="0..1">
 								<Term>cbc:CityName</Term>
@@ -1889,6 +1947,7 @@
 							name is written in full rather than as a code.</Description>
 								<DataType>Text</DataType>
 								<Reference type="BUSINESS_TERM">tir01-p057</Reference>
+								<Value type="EXAMPLE">Stockholm</Value>
 							</Element>
 							<Element cardinality="0..1">
 								<Term>cbc:PostalZone</Term>
@@ -1898,6 +1957,7 @@
 							Code.</Description>
 								<DataType>Text</DataType>
 								<Reference type="BUSINESS_TERM">tir01-p058</Reference>
+								<Value type="EXAMPLE">123 45</Value>
 							</Element>
 							<Element cardinality="0..1">
 								<Term>cbc:CountrySubentity</Term>
@@ -1906,6 +1966,7 @@
 							country by using text.</Description>
 								<DataType>Text</DataType>
 								<Reference type="BUSINESS_TERM">tir01-p059</Reference>
+								<Value type="EXAMPLE">Uppland</Value>
 							</Element>
 							<Element cardinality="0..1">
 								<Term>cac:AddressLine</Term>
@@ -2207,6 +2268,7 @@
 							the item. A detailed description of the item.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-133</Reference>
+						<Value type="EXAMPLE">Item Description</Value>
 					</Element>
 					<Element>
 						<Term>cbc:Name</Term>
@@ -2216,6 +2278,7 @@
 							description.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-135</Reference>
+						<Value type="EXAMPLE">Item Name</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:BuyersItemIdentification</Term>
@@ -2407,10 +2470,12 @@
 							<Description>Code for the item property according to a property code system.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p024</Reference>
+							<Value type="EXAMPLE">PropertyCode</Value>
 							<Attribute>
 								<Term>listID</Term>
 								<Name>Name code list id.</Name>
 								<Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+								<Value type="EXAMPLE">PropertyCodeList</Value>
 							</Attribute>
 						</Element>
 						<Element>
@@ -2446,6 +2511,7 @@
 							<Description>Standardized and predefined classification of items properties.</Description>
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p021</Reference>
+							<Value type="EXAMPLE">PropertyClassification</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..n">
@@ -2459,6 +2525,7 @@
 							<Description>An identifier that is specific to the items in the order
 								line.</Description>
 							<Reference type="BUSINESS_TERM">tir01-p023</Reference>
+							<Value type="EXAMPLE">Itemidentifier</Value>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cac:LotIdentification</Term>
@@ -2471,6 +2538,7 @@
 								<Description>An identifier for the production lot which the order
 									line items come from.</Description>
 								<Reference type="BUSINESS_TERM">tir01-p022</Reference>
+								<Value type="EXAMPLE">LOTID</Value>
 							</Element>
 						</Element>
 					</Element>
