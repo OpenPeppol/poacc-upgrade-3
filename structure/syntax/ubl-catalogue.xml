@@ -1063,6 +1063,7 @@
 					<Description>The sellers identifier for the related item.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-045</Reference>
+					<Value type="EXAMPLE">ID20</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:Quantity</Term>
@@ -1094,6 +1095,7 @@
 					<Description>The sellers identifier for the related item.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-118</Reference>
+					<Value type="EXAMPLE">ID21</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:Quantity</Term>
@@ -1121,6 +1123,7 @@
 					<Description>The sellers identifier for the related item.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-048</Reference>
+					<Value type="EXAMPLE">ID22</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:Quantity</Term>
@@ -1357,6 +1360,7 @@
                             Quantity. If not present, assumed value is 1</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p035</Reference>
+						<Reference type="CODE_LIST">2</Reference>
 					</Element>
 
 					<Element cardinality="0..1">
@@ -1423,6 +1427,7 @@
                         orderable unit.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-036</Reference>
+					<Value type="EXAMPLE">2</Value>
 				</Element>
 				<Element>
 					<Term>cbc:Name</Term>
