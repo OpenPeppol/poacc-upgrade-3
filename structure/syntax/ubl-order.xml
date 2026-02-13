@@ -2439,7 +2439,7 @@
 								<Term>schemeDataURI</Term>
 								<Name>Scheme Data URI</Name>
 								<Description>Scheme Data URI</Description>
-								<Value type="EXAMPLE">sdfdf</Value>
+								<Value type="EXAMPLE">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Value>
 							</Attribute>
 							<Attribute usage="Optional">
 								<Term>schemeID</Term>

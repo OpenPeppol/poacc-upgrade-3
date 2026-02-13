@@ -381,6 +381,7 @@
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir114-034</Reference>
 						<Reference type="RULE">PEPPOL-T114-R026</Reference>
+						<Value type="EXAMPLE">NO999888777</Value>
 					</Element>
 					<Element>
 						<Term>cac:TaxScheme</Term>
@@ -2230,6 +2231,7 @@
 									identifier</Name>
 								<Description>The identification scheme version identifier of the
 									Item classification identifier</Description>
+									<Value type="EXAMPLE">20.0602</Value>
 							</Attribute>
 							<Attribute usage="Optional">
 								<Term>name</Term>
@@ -2287,7 +2289,7 @@
 								<Term>schemeDataURI</Term>
 								<Name>Scheme Data URI</Name>
 								<Description>Scheme Data URI</Description>
-								<Value type="EXAMPLE">sdfdf</Value>
+								<Value type="EXAMPLE">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Value>
 							</Attribute>
 							<Attribute usage="Optional">
 								<Term>schemeID</Term>
