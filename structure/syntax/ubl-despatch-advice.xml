@@ -873,8 +873,8 @@
 					<DataType>Code</DataType>
 					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">CTN</Value>
-					<Value type="EXAMPLE">1</Value>
 				</Attribute>
+				<Value type="EXAMPLE">1</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:GrossVolumeMeasure</Term>
