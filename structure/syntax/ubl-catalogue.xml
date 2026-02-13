@@ -1168,6 +1168,7 @@
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
+					 <Value type="EXAMPLE">1</Value>
 				</Element>
 			</Element>
 			<Element cardinality="0..n">
@@ -1187,6 +1188,7 @@
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
+					 <Value type="EXAMPLE">1</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:MinimumQuantity</Term>
@@ -1204,6 +1206,7 @@
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
+					 <Value type="EXAMPLE">1</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:MaximumQuantity</Term>
@@ -1221,6 +1224,7 @@
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
+					 <Value type="EXAMPLE">1</Value>
 				</Element>
 				<Element cardinality="0..n">
 					<Term>cac:ApplicableTerritoryAddress</Term>
@@ -1351,6 +1355,7 @@
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-093</Reference>
 						<Reference type="CODE_LIST">UNCL5387</Reference>
+						<Value type="EXAMPLE">CAT</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:OrderableUnitFactorRate</Term>
@@ -1361,6 +1366,7 @@
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p035</Reference>
 						<Reference type="CODE_LIST">2</Reference>
+						<Value type="EXAMPLE">1</Value>
 					</Element>
 
 					<Element cardinality="0..1">
@@ -1640,7 +1646,7 @@
 							<Description>The textual equivalent of the code value</Description>
 							<Value type="EXAMPLE">Office furniture</Value>	
 						</Attribute>
-
+						<Value type="EXAMPLE">KO2012140200</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..n">
@@ -1734,7 +1740,7 @@
 								<Term>schemeDataURI</Term>
 								<Name>Scheme Data URI</Name>
 								<Description>Scheme Data URI</Description>
-								<Value type="EXAMPLE">sdfdf</Value>
+								<Value type="EXAMPLE">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Value>
 							</Attribute>
 							<Attribute usage="Optional">
 								<Term>schemeID</Term>
@@ -1763,6 +1769,7 @@
 						<Description>Code for the item property according to a property code system.</Description>
 						<DataType>CODE</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p039</Reference>
+						<Value type="EXAMPLE">aCode</Value>
 						<!-- <Value type="EXAMPLE">should we use eClass for examples?</Value> -->
 						<Attribute>
 							<Term>listID</Term>
@@ -1961,7 +1968,9 @@
 							<DataType>Code</DataType>
 							<Reference type="CODE_LIST">UNECERec20</Reference>
 							<Value type="EXAMPLE">CMT</Value>
+							
 						</Attribute>
+						<Value type="EXAMPLE">1</Value>
 					</Element>
 					<Element cardinality="0..n">
 						<Term>cbc:Description</Term>
@@ -1987,6 +1996,7 @@
 							<Reference type="CODE_LIST">UNECERec20</Reference>
 							<Value type="EXAMPLE">CMT</Value>
 						</Attribute>
+						<Value type="EXAMPLE">1</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:MaximumMeasure</Term>
@@ -2003,6 +2013,7 @@
 							<Reference type="CODE_LIST">UNECERec20</Reference>
 							<Value type="EXAMPLE">CMT</Value>
 						</Attribute>
+						<Value type="EXAMPLE">1</Value>
 					</Element>
 				</Element>
 			</Element>

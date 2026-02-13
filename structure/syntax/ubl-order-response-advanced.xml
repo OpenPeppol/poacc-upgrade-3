@@ -594,7 +594,7 @@
 								<Description>The textual equivalent of the code value</Description>
 								<Value type="EXAMPLE">Office furniture</Value>
 							</Attribute>
-
+							<Value type="EXAMPLE">9873242</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">

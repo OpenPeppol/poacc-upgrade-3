@@ -269,6 +269,7 @@
 						<Description>The name of the dispatching party</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir16-007</Reference>
+						<Value type="EXAMPLE">John Doe</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -873,6 +874,7 @@
 					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">CTN</Value>
 				</Attribute>
+				<Value type="EXAMPLE">1</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:GrossVolumeMeasure</Term>
@@ -889,6 +891,7 @@
 					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">M3</Value>
 				</Attribute>
+				<Value type="EXAMPLE">1</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:TotalTransportHandlingUnitQuantity</Term>
@@ -1322,6 +1325,7 @@
 					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">C62</Value>
 				</Attribute>
+				<Value type="EXAMPLE">2</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:OutstandingQuantity</Term>
@@ -1339,6 +1343,7 @@
 					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">C62</Value>
 				</Attribute>
+				<Value type="EXAMPLE">1</Value>
 			</Element>
 			<Element cardinality="0..n">
 				<Term>cbc:OutstandingReason</Term>
@@ -1476,6 +1481,7 @@
 						<Description>with specific properties, e.g., Item 123 = Chair / Item 123 Ext
 							45 = brown chair.</Description>
 						<Reference type="BUSINESS_TERM">tir16-056</Reference>
+						<Value type="EXAMPLE">Item 123</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..n">
@@ -1553,7 +1559,7 @@
 								<Term>schemeDataURI</Term>
 								<Name>Scheme Data URI</Name>
 								<Description>Scheme Data URI</Description>
-								<Value type="EXAMPLE">sdfdf</Value>
+								<Value type="EXAMPLE">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Value>
 							</Attribute>
 							<Attribute usage="Optional">
 								<Term>schemeID</Term>
