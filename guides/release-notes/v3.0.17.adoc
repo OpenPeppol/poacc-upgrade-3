@@ -8,7 +8,7 @@ Release date:: May 2026
 == BIS documentation
 
 * Invoice Response BIS
-** New profile added for a process where the invoice response is a required step in the collaboration. The profile (02) requires a separate SMP registration. The same profile identifier has been added to BIS Billing 3.0.
+** New profile added for a process where the invoice response is a required step in the collaboration. The profile requires a separate SMP registration. The same profile identifier has been added to BIS Billing 3.0.
 
 == Changes to syntax
 * Order transaction (T01) [MINOR]
