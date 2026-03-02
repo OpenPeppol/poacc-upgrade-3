@@ -19,6 +19,10 @@ Release date:: May 2026
 ** Added business term for providing reference to quotation line from order line. Rule added that the quotation line reference is only allowed when the quotation document reference is also provided.
    https://openpeppol.atlassian.net/browse/RFC-530
    
+* Order Response Advanced transaction (T116) [EDITORIAL]
+** Bugfix: Correction of example value for CustomizationID
+https://openpeppol.atlassian.net/browse/PEPPOL-17392
+ 
 * All transactions [Editorial]
 ** Examples added when missing for all business terms
 
