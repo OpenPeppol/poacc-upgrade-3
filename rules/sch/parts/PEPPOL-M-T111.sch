@@ -28,4 +28,11 @@
 				flag="fatal">Clarification Reason "PPD" SHALL only be used in compination with Status "PD".</assert>
 	</rule>
 
+	<rule context="cbc:ProfileID">
+		<assert id="PEPPOL-T111-R005"
+				test="normalize-space(.) = 'urn:fdc:peppol.eu:poacc:bis:invoice_response:3' or normalize-space(.) = 'urn:peppol:bis:billing_with_response'"
+				flag="fatal">Process identifier SHALL have the value 'urn:fdc:peppol.eu:poacc:bis:invoice_response:3' or 'urn:peppol:bis:billing_with_response'.
+		</assert>
+	</rule>
+
 </pattern>
