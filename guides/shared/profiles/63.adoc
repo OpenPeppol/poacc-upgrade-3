@@ -18,5 +18,5 @@ In the table below you will find the values to be used as the specification iden
 
 | Invoice Response (Trns111)
 | urn:fdc:peppol.eu:poacc:trns:invoice_response:3
-| urn:fdc:peppol.eu:2017:poacc:billing:02:1.0
+| urn:peppol:bis:billing_with_response
 |===
