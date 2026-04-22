@@ -1,0 +1,11 @@
+
+[[introduction]]
+= Introduction
+
+This BIS is a result of work within {openpeppol} and is published as part of the {peppol} specifications.
+
+This BIS describes the business process for billing with a mandatory structured invoice response. It combines the Peppol BIS Billing and the Peppol BIS Invoice Response into a single collaboration profile.
+
+The sole distinction of this BIS is that the exchange of an invoice response is mandatory. Here, the Buyer is required to send at least one Invoice Response for each invoice or credit note received.
+
+All rules, constraints, code lists, and transaction requirements defined in both specifications apply fully and without modification. Implementers should refer to each respective BIS for the full set of requirements.
