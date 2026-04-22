@@ -17,7 +17,7 @@
     <Documentation path="profiles/42-orderagreement/">- Peppol BIS Order Agreement 3.0</Documentation>
     <Documentation path="profiles/36-mlr/">- Peppol BIS Message Level Response 3.0</Documentation>
     <Documentation path="profiles/63-invoiceresponse/">- Peppol BIS Invoice Response 3.2</Documentation>
-    <Documentation path="profiles/66-billing-with-response/">- Peppol BIS Billing with Response 3.0</Documentation>
+    <Documentation path="profiles/66-billing-with-response/">- Peppol BIS Billing with response 3.0</Documentation>
     <Documentation path="profiles/65-advanced-ordering/">- Peppol BIS Advanced Ordering 3.0</Documentation>
     <!-- <Documentation path="work/">Overview and processing of alignments</Documentation> -->
     <!-- <Documentation path="review/">Review of alignments</Documentation> -->
