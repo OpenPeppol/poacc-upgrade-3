@@ -11,21 +11,32 @@ Release date:: May 2026
 ** A new BIS which combines BIS Billing and BIS Invoice response is added. A new profile identifier is defined which indicates the process where the invoice response is a required step. The profile requires a separate SMP registration. The same profile identifier has been added to BIS Billing 3.0.
 
 == Changes to syntax
-* Order transaction (T01) [MINOR]
+* Order transaction (T01)
 ** Added business term for providing reference to quotation line from order line. Rule added that the quotation line reference is only allowed when the quotation document reference is also provided.
    https://openpeppol.atlassian.net/browse/RFC-530
 
-* Order Change(T114) [MINOR]
+* Order Change(T114
 ** Added business term for providing reference to quotation line from order line. Rule added that the quotation line reference is only allowed when the quotation document reference is also provided.
    https://openpeppol.atlassian.net/browse/RFC-530
    
-* Order Response Advanced transaction (T116) [EDITORIAL]
+* Order Response Advanced transaction (T116)
 ** Bugfix: Correction of example value for CustomizationID
 https://openpeppol.atlassian.net/browse/PEPPOL-17392
  
-* All transactions [Editorial]
+* All transactions
 ** Examples added when missing for all business terms
 
 == Changes to code lists and validation artefacts
+* Changed rule PEPPOL-COMMON-R052 and PEPPOL-COMMON-R053 to be errors instead of warnings, as the rules are now mandatory for all profiles.
+
+[cols="1,1,1,1"]
+|===
+|codelist|removed|added|description changed
+|eas |0 [] |4 [0242,0245,0246,0248] |2 [0096,0199]
+|icd |0 [] |4 [0245,0246,0247,0248] |4 [0096,0158,0241,0243]
+|ISO4217 |3 [ANG,BGN,STD] |2 [STN,XCG] |0 []
+|UNCL7161 |0 [] |17 [CAX,CAY,CAZ,DAC,DAF,DAG,DAH,DAI,DAJ,DAK,DAL,DAM,DAN,DAO,DAP,DAQ,PRV] |0 []
+|===
 
 ==  EN 16931 schematrons updated
+

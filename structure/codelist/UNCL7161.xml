@@ -477,6 +477,21 @@
         <Name>Product take back fee</Name>
         <Description>The fee the consumer must pay the manufacturer to take back the product.</Description>
     </Code>
+
+    <Code>
+		<Id>CAX</Id>
+		<Name>Quality control released</Name>
+	</Code>
+
+    <Code>
+		<Id>CAY</Id>
+		<Name>Quality control held</Name>
+	</Code>
+
+    <Code>
+		<Id>CAZ</Id>
+		<Name>Quality control embargo</Name>
+	</Code>
     <Code>
         <Id>CD</Id>
         <Name>Car loading</Name>
@@ -502,11 +517,76 @@
         <Name>Layout/design</Name>
         <Description>The service of providing layout/design.</Description>
     </Code>
+
+    <Code>
+		<Id>DAC</Id>
+		<Name>Assortment allowance</Name>
+	</Code>
     <Code>
         <Id>DAD</Id>
         <Name>Driver assigned unloading</Name>
         <Description>The service of unloading by the driver.</Description>
     </Code>
+
+    <Code>
+		<Id>DAF</Id>
+		<Name>Debtor bound</Name>
+	</Code>
+
+    <Code>
+		<Id>DAG</Id>
+		<Name>Dealer allowance</Name>
+	</Code>
+
+    <Code>
+		<Id>DAH</Id>
+		<Name>Allowance transferable to the consumer</Name>
+	</Code>
+
+    <Code>
+		<Id>DAI</Id>
+		<Name>Growth of business</Name>
+	</Code>
+
+    <Code>
+		<Id>DAJ</Id>
+		<Name>Introduction allowance</Name>
+	</Code>
+
+    <Code>
+		<Id>DAK</Id>
+		<Name>Multi-buy promotion</Name>
+	</Code>
+
+    <Code>
+		<Id>DAL</Id>
+		<Name>Partnership</Name>
+	</Code>
+
+    <Code>
+		<Id>DAM</Id>
+		<Name>Return handling</Name>
+	</Code>
+
+    <Code>
+		<Id>DAN</Id>
+		<Name>Minimum order not fulfilled charge</Name>
+	</Code>
+
+    <Code>
+		<Id>DAO</Id>
+		<Name>Point of sales threshold allowance</Name>
+	</Code>
+
+    <Code>
+		<Id>DAP</Id>
+		<Name>Wholesaling discount</Name>
+	</Code>
+
+    <Code>
+		<Id>DAQ</Id>
+		<Name>Documentary credits transfer commission</Name>
+	</Code>
     <Code>
         <Id>DL</Id>
         <Name>Delivery</Name>
@@ -682,6 +762,11 @@
         <Name>Palletizing</Name>
         <Description>The service of palletizing.</Description>
     </Code>
+
+    <Code>
+		<Id>PRV</Id>
+		<Name>Price variation</Name>
+	</Code>
     <Code>
         <Id>RAB</Id>
         <Name>Repacking</Name>
@@ -818,6 +903,4 @@
         <Description>A code assigned within a code list to be used on an interim basis and as
             defined among trading partners until a precise code can be assigned to the code
             list.</Description>
-    </Code>
-
-</CodeList>
+    </Code></CodeList>
