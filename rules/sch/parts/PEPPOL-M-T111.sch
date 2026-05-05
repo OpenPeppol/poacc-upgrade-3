@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
 
 	<rule context="cac:Response[contains( ' CA UQ RE ',concat(' ',normalize-space(cbc:ResponseCode),' '))]">
@@ -23,15 +23,15 @@
 		<assert id="PEPPOL-T111-R004"
 				test="exists(cbc:StatusReason)"
 				flag="fatal">[PEPPOL-T111-R004]-If Clarification code is PPD, indicating partial payment, then Clarification reason SHALL be provided.</assert>
-				<assert id="PEPPOL-T111-R005"
+		<assert id="PEPPOL-T111-R005"
 				test="exists(/cbc:ResponseCode='PD')"
-				flag="fatal">[PEPPOL-T111-R005]-Clarification Reason "PPD" SHALL only be used in compination with Status "PD".</assert>
+				flag="fatal">[PEPPOL-T111-R005]-Clarification Reason "PPD" SHALL only be used in combination with Status "PD".</assert>
 	</rule>
 
 	<rule context="cbc:ProfileID">
-		<assert id="PEPPOL-T111-R005"
+		<assert id="PEPPOL-T111-R008"
 				test="normalize-space(.) = 'urn:fdc:peppol.eu:poacc:bis:invoice_response:3' or normalize-space(.) = 'urn:peppol:bis:billing_with_response'"
-				flag="fatal">[PEPPOL-T111-R005]-Process identifier SHALL have the value 'urn:fdc:peppol.eu:poacc:bis:invoice_response:3' or 'urn:peppol:bis:billing_with_response'.
+				flag="fatal">[PEPPOL-T111-R008]-Process identifier SHALL have the value 'urn:fdc:peppol.eu:poacc:bis:invoice_response:3' or 'urn:peppol:bis:billing_with_response'.
 		</assert>
 	</rule>
 

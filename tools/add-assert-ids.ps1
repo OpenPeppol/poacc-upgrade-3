@@ -6,7 +6,7 @@ param(
     [switch]$ForceWrite,
 
     [string[]]$FilePaths = @(
-        Get-ChildItem -Path "..\rules\sch" -Filter "*.sch" -File -Recurse |
+        Get-ChildItem -Path "rules\sch" -Filter "*.sch" -File -Recurse |
             Sort-Object FullName |
             ForEach-Object { $_.FullName }
     )
