@@ -1,9 +1,9 @@
-= Version 3.0.17
+= Version 3.0.17T01
 [horizontal]
 Release date:: May 2026
-* Date of member review: 2026-MM-DD
-* Date of publication: 2026-MM-DD
-* Mandatory to use from: 2026-MM-DD
+* Date of member review: 2026-03-02
+* Date of publication: 2026-05-18
+* Mandatory to use from: 2026-08-24
 
 == BIS documentation
 
@@ -15,7 +15,7 @@ Release date:: May 2026
 ** Added business term for providing reference to quotation line from order line. Rule added that the quotation line reference is only allowed when the quotation document reference is also provided.
    https://openpeppol.atlassian.net/browse/RFC-530
 
-* Order Change(T114
+* Order Change(T114)
 ** Added business term for providing reference to quotation line from order line. Rule added that the quotation line reference is only allowed when the quotation document reference is also provided.
    https://openpeppol.atlassian.net/browse/RFC-530
    
@@ -39,4 +39,16 @@ https://openpeppol.atlassian.net/browse/PEPPOL-17392
 |===
 
 ==  EN 16931 schematrons updated
+* New warning rules for Dutch identifiers with scheme 0106, 0190, 0217, 9944, and NL VAT numbers added to UBL and CII schematrons:
+  ** PEPPOL-COMMON-R054: Identifiers with scheme 0106 should be 8 digits
+  ** PEPPOL-COMMON-R055: Identifiers with scheme 0190 should be 20 digits
+  ** PEPPOL-COMMON-R056-1: Identifiers with scheme 9944 should have the format NL123456789B12
+  ** PEPPOL-COMMON-R056-2: VAT identifiers starting with NL should have the format NL123456789B12
+  ** PEPPOL-COMMON-R057: Identifiers with scheme 0217 should be 12 digits
+  ** rules will become fatal in future release, but are warnings in this release to allow for transition period for implementers to update their systems and data.
+
+== Other changes
+* Changed release notes for 3.0.16 on PEPPOL-COMMON-R052 to reflect correct rule check to be ten digits instead of eight digits.
+* vefa/validator bumped from 2.3.1 to 2.4.0, to mitigate certificate expiry date.
+* added assert ids to all schematrons for better traceability and maintenance. No changes to the actual rules, just addition of unique identifiers to each assert statement.
 
