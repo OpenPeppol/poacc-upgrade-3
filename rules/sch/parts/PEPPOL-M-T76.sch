@@ -52,10 +52,10 @@
         flag="fatal">[PEPPOL-T76-R007]-An order response with code CA (Conditionally accepted) must provide order lines.</assert>
         <assert id="PEPPOL-T76-R008"
         test="(normalize-space(.) = 'AP' and count(../cac:OrderLine) = 0) or normalize-space(.) != 'AP'"
-        flag="fatal">[PEPPOL-T76-R008]-An order response with code AP (Accepted) should NOT provide order lines.</assert>
+        flag="fatal">[PEPPOL-T76-R008]-An order response with code AP (Accepted) must NOT provide order lines.</assert>
         <assert id="PEPPOL-T76-R009"
         test="(normalize-space(.) = 'RE' and count(../cac:OrderLine) = 0) or normalize-space(.) != 'RE'"
-        flag="fatal">[PEPPOL-T76-R009]-An order response with code RE (Rejected) should NOT provide order lines.</assert>
+        flag="fatal">[PEPPOL-T76-R009]-An order response with code RE (Rejected) must NOT provide order lines.</assert>
         <assert id="PEPPOL-T76-R010"
         test="(normalize-space(.) = 'AB' and count(../cac:OrderLine) = 0) or normalize-space(.) != 'AB'"
         flag="fatal">[PEPPOL-T76-R010]-An order response with code AB (Acknowledged) must NOT provide order lines.</assert>

@@ -22,6 +22,11 @@ Release date:: May 2026
 * Order Response Advanced transaction (T116)
 ** Bugfix: Correction of example value for CustomizationID
 https://openpeppol.atlassian.net/browse/PEPPOL-17392
+
+* Order Response Advanced (T116) and Order Response (T76)
+** Bugfix: changed should into must for the following rules:
+   PEPPOL-T76-R008 An order response with code AP (Accepted) must NOT provide order lines.
+   PEPPOL-T76-R009 An order response with code RE (Rejected) must NOT provide order lines.
  
 * All transactions
 ** Examples added when missing for all business terms
