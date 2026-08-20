@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
-    <Name>Peppol BIS version 3 - DEV 2026-Q2 Release</Name>
+    <Name>Peppol BIS version 3 - 2026-November Release</Name>
     <!-- Introduction -->
     <Documentation path="">INTRODUCTION</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
@@ -54,7 +54,7 @@
         <Path>structure/syntax/ubl-order-response-advanced.xml</Path>
         <Title>Peppol Order Response Advanced transaction 3.2 (T116)</Title>
     </Resource>
-        <Resource>
+    <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-catalogue.xml</Path>
         <Title>Peppol Catalogue transaction 3.5 (T19)</Title>
@@ -97,13 +97,13 @@
         <Path>rules/sch/parts/PEPPOL-M-T01.sch</Path>
         <Title>Business rules for Peppol Order transaction 3.7</Title>
     </Resource>
-	<Resource>
+    <Resource>
         <Identifier>T76</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T76.sch</Path>
         <Title>Business rules for Peppol Order Response transaction 3.3</Title>
     </Resource>
-	<Resource>
+    <Resource>
         <Identifier>T110</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T110.sch</Path>
@@ -126,14 +126,14 @@
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T116.sch</Path>
         <Title>Business rules for Peppol Order Response Advanced transaction 3.2</Title>
-    </Resource>	
-	<Resource>
+    </Resource>
+    <Resource>
         <Identifier>T19</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T19.sch</Path>
         <Title>Business rules for Peppol Catalogue transaction 3.5</Title>
     </Resource>
-	<Resource>
+    <Resource>
         <Identifier>T58</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T58.sch</Path>
@@ -145,14 +145,14 @@
         <Path>rules/sch/parts/PEPPOL-M-T16.sch</Path>
         <Title>Business rules for Peppol Despatch Advice transaction 3.5</Title>
     </Resource>
- 
+
     <Resource>
         <Identifier>T77</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T77.sch</Path>
         <Title>Business rules for Peppol Punch Out transaction 3.3</Title>
     </Resource>
-  
+
     <Resource>
         <Identifier>T71</Identifier>
         <Type>native:Schematron</Type>
@@ -191,11 +191,11 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/PackagingMarkedLabelAccreditationCode.xml</Path>
-    </Resource>	
+    </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/NA.xml</Path>
-    </Resource>	
+    </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ActionCode_header.xml</Path>
@@ -280,15 +280,15 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL5387.xml</Path>
     </Resource>
-	<Resource>
+    <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/TransactionConditions.xml</Path>
-    </Resource>	
+    </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL4219.xml</Path>
     </Resource>
-	<Resource>
+    <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNECERec19.xml</Path>
     </Resource>
@@ -320,7 +320,7 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ProductTraceIDschemeID.xml</Path>
     </Resource>
-	
+
 
     <!-- Files -->
     <Resource>
