@@ -13,17 +13,17 @@ This information is given in the following hierarchy:
 Each Invoice Response may only reference one invoice and that invoice can only have one status at a time.
 If the status of that Invoice changes the respective change must be reported with another Invoice Response.
 
-The status clarification for the given status can be of either or both of two types - reason of that status and/or action expected by Seller.
-The purpose of this is to help Seller to understand the status and to resolve it in the correct way.
+The status clarification for the given status can be of either or both of two types - reason of that status and/or action expected from the issuer.
+The purpose of this is to help the issuer understand the status and resolve it in the correct way.
 
 As example if an invoice is rejected it will be represented as status code RE (Rejected) in the Invoice Response.
 For clarification, the Invoice Response would then state why it is rejected and there may be more than one reason.
-The clarification may further give the instructions regarding actions expected from the Seller, for example to cancel the Invoice with a Credit Note and issue a new corrective Invoice.
+The clarification may further give instructions regarding actions expected from the issuer, for example to cancel the Invoice with a Credit Note and issue a new corrective Invoice.
 
-To assist with resolution the Buyer might want to provide instructions on what is the correct data.
+To assist with resolution, the receiver might want to provide instructions on the correct data.
 
 
-.UBL example where TAX is VAT:
+.UBL standard billing example where TAX is VAT:
 [source, xml]
 ----
 <cac:DocumentResponse>

@@ -209,3 +209,16 @@ Service provider +
 Seller
 |Result |Seller is notified that an Invoice has been accepted and will be paid on due date.
 |====
+
+[[uc9]]
+.Use case 9 — Self-billed invoice is rejected by the Seller.
+[cols="1h,5",options="header"]
+|====
+|Use Case number |9
+|Use Case Name |Self-billed invoice is rejected by the Seller.
+|Assumption and description |The Buyer issued a self-billed invoice on behalf of the Seller. The Seller cannot accept the self-billed invoice because a reference is incorrect.
+|The flow |The Seller sends an Invoice Response with status 'Rejected' and a clarification to the Buyer. The Seller is represented as `cac:SenderParty`, the Buyer as `cac:ReceiverParty`, and the referenced self-billed invoice uses document type code `389`.
+|Parties involved |Seller +
+Buyer
+|Result |The Buyer is informed that the self-billed invoice was rejected and can resolve the issue with the Seller.
+|====

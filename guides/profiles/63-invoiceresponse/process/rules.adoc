@@ -11,9 +11,9 @@ The Invoice Response process governs how and when the transactions are issued an
 
 |OP-BR111-R001
 a|
-The Invoice Response is one directional message only - from Buyer to Seller.
+The Invoice Response is a one directional message from the receiver of the referenced business document to its issuer.
 
-Invoice Response is meant to be sent from Buyer to Seller informing about invoice status inside the Buyer’s business process.
+For standard billing, the Buyer sends the Invoice Response to the Seller. For self-billing, the Seller sends the Invoice Response to the Buyer. The response informs the issuer about the document status inside the receiver's business process.
 
 |OP-BR111-R002
 |Each Invoice Response is intended to carry one status code (top level status) at a time, for an individual invoice.
@@ -25,19 +25,19 @@ An invoice can only have one status at each time.
 
 |OP-BR111-R004
 |If an invoice has been given the status Rejected or Paid, then no further Invoice Response may be sent regarding that invoice.
-I.e. Seller may ignore them.footnote:exept[Business situations that require exceptions to these rules are not prohibited by this BIS but are not supported by the Invoice Response described in it.
+I.e. the issuer may ignore them.footnote:exept[Business situations that require exceptions to these rules are not prohibited by this BIS but are not supported by the Invoice Response described in it.
 Such business situations must be handled externally between the trading parties.]
 
 |OP-BR111-R005
 |If an invoice has been given status Approved, then that may only be followed with an Invoice Response giving status Paid.
-I.e. Seller may ignore them.footnote:exept[]
+I.e. the issuer may ignore them.footnote:exept[]
 
 |OP-BR111-R006
-|A Buyer shall provide first Invoice Response within 3 working days.
+|The receiver of the invoice or credit note shall provide the first Invoice Response within 3 working days.
 
 |OP-BR111-R007
-|An Invoice Response doesn’t prescribe the invoice workflow process for the Buyer.
-Different Buyers may have different workflows processes for the invoices.
+|An Invoice Response doesn’t prescribe the invoice workflow process for the receiver.
+Different receivers may have different workflow processes for invoices.
 
 |OP-BR111-R008
 |An Invoice Response does not have any legal power.
@@ -73,7 +73,7 @@ PD:: Paid (Final status, The status code “Paid” will probably not be used in
 The process may start at any status and not all statuses must be reported.
 
 |OP-BR111-R013
-|Seller can dispute any status presented by Buyer in Invoice Response with an external process.
+|The issuer can dispute any status presented by the receiver in an Invoice Response with an external process.
 
 |OP-BR111-R014
 |Document type code must conform to the document type code of the original message the response is sent to (usually 380 for the commercial invoice and 381 for credit note).
