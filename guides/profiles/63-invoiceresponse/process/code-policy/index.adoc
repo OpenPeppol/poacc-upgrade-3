@@ -2,8 +2,8 @@
 = Code Policy
 
 Key information in an Invoice Response is the reporting of the status of the invoice.
-The objective of the status code is to provide the Seller with a clear indication of the status of the referenced invoice inside the Buyers process in a way that allows the Seller to clearly identify if an action is required on his behalf.
-The status code can be supplemented with a clarification or an action code or textual note that explains the status and assists the Seller in deciding on correct reaction.
+The objective of the status code is to provide the issuer with a clear indication of the status of the referenced invoice inside the receiver's process in a way that allows the issuer to clearly identify if an action is required.
+The status code can be supplemented with a clarification, an action code, or a textual note that explains the status and assists the issuer in deciding on the correct reaction.
 
 The codes in the Invoice Response are given in the following structure.
 
@@ -17,7 +17,7 @@ Each Invoice Response must have one and only one status code.
 
 For each Invoice Response (status) there is the option of providing one or more clarification.
 
-For each clarification there is the option to provide data that the Buyer proposes as a correction.
+For each clarification there is the option to provide data that the receiver proposes as a correction.
 
 .Example
 ====

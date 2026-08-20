@@ -1,12 +1,13 @@
 [[document-reference]]
 = Document reference
 
-Used to provide a reference to the business document e.g. the invoice or credit note, to which the Invoice Response is is responding.
+Used to provide a reference to the business document, e.g. the invoice, self-billed invoice, or credit note, to which the Invoice Response is responding.
 
 IMPORTANT: One Invoice Response may only reference one business document.
 
 The type of the business document must also be included in the document reference element.
 Document Type Code is coded according to code list 1001 issued by UN/CEFACT.
+For a self-billed invoice, the Document Type Code is `389`.
 
 See chapter {link-codelist} for a complete list of all the document types.
 

@@ -26,15 +26,17 @@ Examples of customer roles: buyer, consignee, debtor, contracting body.
 
 |Seller
 |Role
-a|One who issues an invoice for items or services sold to a Buyer and to whom a debt is owed.
-The Party that claims the payment and is responsible for resolving billing issues and arranging settlement.
+a|One who supplies items or services to a Buyer and to whom a debt is owed.
+In standard billing, the Seller issues the invoice. In self-billing, the Buyer issues the self-billed invoice on behalf of the Seller.
+The Seller claims the payment and is responsible for resolving billing issues and arranging settlement.
 
 Also, known as Invoice Issuer, Accounts Receivable, Creditor, Economic operator.
 
 |Buyer
 |Role
-a|One who receives an invoice for items or services bought from a Seller and who owes debt.
-The Party responsible for making settlements relating to a purchase.
+a|One who buys items or services from a Seller and who owes debt.
+In standard billing, the Buyer receives the invoice. In self-billing, the Buyer issues the self-billed invoice to the Seller.
+The Buyer is responsible for making settlements relating to a purchase.
 
 Also, known as Invoicee, Accounts Payable, Debtor
 
@@ -52,17 +54,19 @@ image::images/roles.png[align="center"]
 Following paragraphs list the responsibilities and activities carried out by each party in the Invoice Response process from a technical, practical and informative perspective.
 Any legal implications of the measures discussed here are outside the scope of this document.
 
-=== Seller
+=== Issuer of the invoice or credit note
 
-* Not obliged to support the Invoice Response.
-* In case the Seller has registered support for the Invoice Response, then he is responsible for receiving an Invoice Response and to take actions in accordance to this specification.
+* Not obliged to support the Invoice Response unless required by the applicable profile or a bilateral agreement.
+* If the issuer has registered support for the Invoice Response, the issuer is responsible for receiving an Invoice Response and taking actions in accordance with this specification.
+* The issuer is the Seller in standard billing and the Buyer in self-billing.
 
-=== Buyer
+=== Receiver of the invoice or credit note
 
-* Not obliged to send an Invoice Response.
+* Not obliged to send an Invoice Response unless required by the applicable profile or a bilateral agreement.
 * Responsible for creating the Invoice Response.
 * Responsible for complying with the business rules used in invoice validations.
 * Responsible for when and how to use the Invoice Response in the frame of the Invoice Response document.
-* Responsible for expressing what action is expected from the Seller.
-* It is recommended that the Buyer maintains visibility of all Invoice Response messages created by him or on his behalf in order to solve potential issues with the Seller.
-* May have a bilateral agreement with Seller for using Invoice Response.
+* Responsible for expressing what action is expected from the issuer.
+* It is recommended that the receiver maintains visibility of all Invoice Response messages created by or on behalf of the receiver in order to solve potential issues with the issuer.
+* May have a bilateral agreement with the issuer for using Invoice Response.
+* The receiver is the Buyer in standard billing and the Seller in self-billing.

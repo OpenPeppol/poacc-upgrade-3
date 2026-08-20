@@ -20,6 +20,7 @@ While the use cases are drawn up to illustrate the general functionality of this
 |<<uc6c,6c>>  |Invoice is in under query because of wrong details, partial credit note requested.
 |<<uc7,7>>  |Invoice payment has been initiated.
 |<<uc8,8>>  |Invoice is accepted by a third party acting on behalf of the Buyer.
+|<<uc9,9>>  |Self-billed invoice is rejected by the Seller.
 |====
 
 [NOTE]

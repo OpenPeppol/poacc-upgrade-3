@@ -3,18 +3,20 @@
 
 The sending and receiving parties are those that exchange the Invoice Response.
 These may be the Buyer and the Seller or service providers acting on their behalf.
+In standard billing, the Buyer is the sender and the Seller is the receiver. In self-billing, the Seller is the sender and the Buyer is the receiver.
 
 [[senderparty]]
 == SenderParty
 
 The party that sends the Invoice Response.
-This may be the Buyer who received the invoice, or it may be a service provider processing the invoice on behalf of the Buyer.
-If the Invoice Response is issued by a service provider the name of the actual Buyer may be given with the invoice reference.
+This is the party that received the referenced invoice or credit note: the Buyer in standard billing and the Seller in self-billing.
+It may also be a service provider processing the document on behalf of that party.
+If the Invoice Response is issued by a service provider, the relevant Buyer and Seller may be given with the invoice reference.
 
 The information given for the sender is his EndpointID which is his Peppol Participant Identifier (PPID). The party identifier may be given as well and the schema that the identifier is based on.
 The name of the sender is then provided.
 
-Contact information for the sender (Buyer) is the person that the receiver (Seller) can contact when resolving an issue reported in the Invoice Response.
+Contact information for the sender identifies the person that the receiver can contact when resolving an issue reported in the Invoice Response.
 This should not be general company email and phone unless the sender has in place a process that would direct the contact efficiently to a relevant person.
 
 .UBL example:
@@ -41,8 +43,9 @@ This should not be general company email and phone unless the sender has in plac
 
 The party that sent the Invoice that the message is responding to.
 This is also the receiver of the Invoice Response.
-This may be the Seller who issued the invoice or a service provider who handles the invoicing process on behalf of the Seller.
-If this is a service provider, then the actual Seller may be identified as part of the invoice reference information.
+This is the Seller in standard billing and the Buyer in self-billing.
+It may also be a service provider who handles the invoicing process on behalf of that party.
+If this is a service provider, the relevant Buyer and Seller may be identified as part of the invoice reference information.
 
 .UBL example:
 [source, xml]
@@ -61,8 +64,8 @@ If this is a service provider, then the actual Seller may be identified as part 
 [[issuer-and-recipient-parties]]
 == Issuer and Recipient parties
 
-In the case when the Invoice processing is handled by a service provider on behalf or the Buyer or the Seller then the sending/receiving party is not the Buyer/Seller stated in the Invoice document.
-In those cases, it is required to identify the Buyer and the Seller as declared in the referenced Invoice.
+When Invoice processing is handled by a service provider on behalf of the Buyer or the Seller, the sending or receiving party is not the Buyer or Seller stated in the Invoice document.
+In those cases, it is required to identify the Buyer and the Seller as declared in the referenced Invoice. These commercial roles do not determine the direction of the Invoice Response.
 This shall be done by giving an identifier and a name.
 
 .UBL example:
