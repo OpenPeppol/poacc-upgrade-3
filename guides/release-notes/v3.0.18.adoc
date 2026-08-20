@@ -1,0 +1,25 @@
+= Version 3.0.18
+[horizontal]
+Release date:: November 2026
+* Date of member review: 2026-09-14
+* Date of publication: 2026-11-23
+* Mandatory to use from: 2027-02-24
+
+== BIS documentation
+
+* Invoice Response BIS 3.0 (Profile 63)
+** Extended to support Invoice Responses to self-billed invoices and credit notes. In self-billing, the Seller sends the Invoice Response to the Buyer that issued the referenced document. The same Invoice Response syntax, validation rules, status codes, and clarification codes apply to both standard billing and self-billing.
+
+== Changes to syntax
+
+== Changes to code lists and validation artefacts
+
+[cols="1,1,1,1"]
+|===
+|codelist|removed|added|description changed
+|===
+
+==  EN 16931 schematrons updated
+
+== Other changes
+
