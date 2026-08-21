@@ -118,7 +118,6 @@
 					validity end date</Description>
 				<DataType>Date</DataType>
 				<Reference type="BUSINESS_TERM">tir114-010</Reference>
-				<Reference type="RULE">PEPPOL-T114-R002</Reference>
 				<Value type="EXAMPLE">2022-03-01</Value>
 			</Element>
 		</Element>

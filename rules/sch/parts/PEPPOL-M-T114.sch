@@ -29,14 +29,6 @@
                 flag="fatal">[PEPPOL-T114-R028]-Elements of data type amount cannot have more than 2 decimals (I.e. all amounts except unit price amounts)</assert>
     </rule>
 
-    <!-- Document level -->
-    <rule context="ubl:OrderChange">
-        <assert id="PEPPOL-T114-R002"
-                test="cac:ValidityPeriod/cbc:EndDate"
-                flag="warning">[PEPPOL-T114-R002]-An order change SHOULD provide information about its validity end date.</assert>
-    </rule>
-
-
     <!-- Originator party -->
     <rule context="cac:OriginatorCustomerParty">
         <assert id="PEPPOL-T114-R014"
