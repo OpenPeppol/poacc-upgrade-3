@@ -19,6 +19,7 @@
   <include href="function/checkCodiceIPA.xml"/>
   <include href="function/abn.xml"/>  
   <include href="function/checkSEOrgnr.xml"/>
+  <include href="function/check-lux-0240.xml"/>
 
   <include href="common/empty-elements.sch"/>
   <include href="common/rules.sch"/>
