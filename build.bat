@@ -4,6 +4,14 @@ setlocal
 :: Get the directory of the script
 set "PROJECT=%~dp0"
 set "PROJECT=%PROJECT:~0,-1%"  :: Remove trailing backslash if any
+set "BUILD_LOG=%PROJECT%\build.log"
+
+call :build > "%BUILD_LOG%" 2>&1
+set "BUILD_RESULT=%ERRORLEVEL%"
+call :report "%BUILD_LOG%"
+endlocal & exit /b %BUILD_RESULT%
+
+:build
 
 :: Delete target folder if found
 if exist "%PROJECT%\target" (
@@ -50,6 +58,8 @@ docker run --rm -i -v "%PROJECT%:/documents" -v "%PROJECT%\target:/target" difi/
 
 :: Fix ownership (Windows doesn't use the same concept of user/group ownership, so this part is usually not necessary)
 :: You can skip this part or just leave it for Unix-like environments using Docker.
+exit /b %ERRORLEVEL%
 
-endlocal
-
+:report
+powershell -NoProfile -Command "$matches = Select-String -LiteralPath '%~1' -Pattern '(?i)(?:^|\|-|\[)(?:WARN(?:ING)?|ERROR)(?=\s|:|\]|$)'; if ($matches) { Write-Host ''; Write-Host 'Warnings and errors from %~1:'; foreach ($match in $matches) { '{0}: {1}' -f $match.LineNumber, $match.Line } } else { Write-Host ''; Write-Host 'Warnings and errors from %~1: None.' }; $testSummary = @(Select-String -LiteralPath '%~1' -Pattern '(?i)tests performed'); Write-Host ''; Write-Host 'Build log from the last tests performed line:'; if ($testSummary.Count -gt 0) { Get-Content -LiteralPath '%~1' | Select-Object -Skip ($testSummary[$testSummary.Count - 1].LineNumber - 1) } else { Write-Host 'No test summary found.' }"
+goto :eof
