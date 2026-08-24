@@ -6,7 +6,7 @@ The Order Change line status code indicates the action requested for the order l
 [cols="1,11",options="header"]
 |====
 |Code
-|Proposed use
+|Usage
 
 |1 - Added
 |Use when adding a new order line to the order.
