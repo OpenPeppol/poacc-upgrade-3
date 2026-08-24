@@ -9,8 +9,10 @@ Reference to the related order must be done on Header level.
 include::{snippet-response-dir}/snippet-1.xml[tags=order-ref]
 ----
 * When responding to an OrderCancellation, the Seller should populate both OrderReference (referencing the original Order) and OrderChangeDocumentReference (referencing the OrderCancellation).
-If lines are sent in the Order Response Advanced, reference to the related order line must be sent.
+
 * As a general principle, when responding to either an OrderChange or an OrderCancellation, both references shall always be provided — the original Order reference and the change/cancellation reference.
+
+If lines are sent in the Order Response Advanced, reference to the related order line must be sent.
 
 .Example of order line reference on line level:
 [source, xml, indent=0]
