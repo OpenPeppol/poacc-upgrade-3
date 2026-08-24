@@ -10,7 +10,19 @@ Release date:: November 2026
 * Invoice Response BIS 3.0 (Profile 63)
 ** Extended to support Invoice Responses to self-billed invoices and credit notes. In self-billing, the Seller sends the Invoice Response to the Buyer that issued the referenced document. The same Invoice Response syntax, validation rules, status codes, and clarification codes apply to both standard billing and self-billing.
 
+* BIS Advanced Ordering 3.0
+**Added Clarification on the Rejection guidance FOR Order Response Advanced section 7.2
+
 == Changes to syntax
+
+* Punchout transaction (T77)
+**added PackagingMarkedLabelAccreditationCode code list to item label to align with order messages.
+
+* Order Change(T114)
+** Added shippingPriorityLevelCode (Optional) and ManufacturersItemIdentification(Optional) to OrderChange in order to align with order messages
+
+* Order transaction (T01)
+** Changed cardinality to Orderline RequestedDeliveryPeriod from mandatory to optional
 
 == Changes to code lists and validation artefacts
 
@@ -29,3 +41,9 @@ Release date:: November 2026
 
 == Other changes
 
+
+
+
+
+
+added Clarification on the Order Response Advanced Rejection guidance
