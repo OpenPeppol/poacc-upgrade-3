@@ -14,6 +14,8 @@ include::elements/country.adoc[]
 
 include::elements/uom.adoc[]
 
+include::elements/linestatus.adoc[]
+
 include::../../../shared/codes/vat-category.adoc[]
 
 

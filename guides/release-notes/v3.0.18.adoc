@@ -10,13 +10,19 @@ Release date:: November 2026
 * Invoice Response BIS 3.0 (Profile 63)
 ** Extended to support Invoice Responses to self-billed invoices and credit notes. In self-billing, the Seller sends the Invoice Response to the Buyer that issued the referenced document. The same Invoice Response syntax, validation rules, status codes, and clarification codes apply to both standard billing and self-billing.
 
+* Advanced Ordering BIS 3.0 (Profile 65)
+** Added a new section describing the business use of the Order Change line status codes, including code 74 - Reopened, which is used to make a previously deleted order line active again. Added a matching entry to the code list chapter, and a note in scenario 2 on when a buyer may reopen a line. Added an Order Change example showing a line being reopened after deletion.
+
 == Changes to syntax
+* Order Change (T114)
+** Clarified the name and description of `cbc:LineStatusCode` to state that it carries the Order Change subset of UNCL1229, and to reference the new Advanced Ordering BIS guidance on the business use of codes 1, 2, 3, 4 and 74.
 
 == Changes to code lists and validation artefacts
 
 [cols="1,1,1,1"]
 |===
 |codelist|removed|added|description changed
+|UNCL1229_CHANGE |0 [] |0 [] |1 [74]
 |===
 
 ==  EN 16931 schematrons updated
@@ -28,4 +34,5 @@ Release date:: November 2026
 * Removed rules PEPPOL-T01-R002 and PEPPOL-T114-R002 (warning) which required Order and OrderChange to allways provide a validity end date.
 
 == Other changes
+* Added an Order Change example file for Advanced Ordering BIS scenario 2 (`OrderChange_sc2b.xml`) showing an order line being reopened with code 74 after having been deleted in a previous Order Change (`OrderChange_sc2.xml`).
 

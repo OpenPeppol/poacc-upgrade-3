@@ -1776,8 +1776,8 @@
 				</Element>
 				<Element>
 					<Term>cbc:LineStatusCode</Term>
-					<Name>Response code</Name>
-					<Description>A code that indicates status of the referenced order line</Description>
+					<Name>Order Change line status code</Name>
+					<Description>A code from the Order Change subset of UNCL1229 that indicates the requested action for the order line. See the Advanced Ordering BIS guidance for the business use of codes 1, 2, 3, 4 and 74.</Description>
 					<Reference type="CODE_LIST">UNCL1229_CHANGE</Reference>
 					<Value type="EXAMPLE">3</Value>
 				</Element>

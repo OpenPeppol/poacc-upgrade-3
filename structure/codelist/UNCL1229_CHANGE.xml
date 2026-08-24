@@ -30,7 +30,7 @@
     <Code>
         <Id>74</Id>
         <Name>Reopened</Name>
-        <Description>Opened again</Description>
+        <Description>The order line is made active again after it was previously deleted. This code shall be used only for the same order line that was deleted; it shall not be used to add a new line.</Description>
     </Code>
 
 </CodeList>

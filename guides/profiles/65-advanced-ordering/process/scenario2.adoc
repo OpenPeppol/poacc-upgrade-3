@@ -26,6 +26,7 @@ The initial order may or may not have been changed by buyer or seller, so the or
 
 |The flow
 a|The buyer creates an Order Change with changes to one or more order lines. +
+A buyer may reopen a previously deleted order line by using line status code 74 - Reopened. +
 The seller receives the Order Change and sends an Order Response Advanced to either
 
 * Accept to deliver the changed order
