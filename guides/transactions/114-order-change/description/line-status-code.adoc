@@ -24,13 +24,6 @@ The Order Change line status code indicates the action requested for the order l
 |Use only to make an order line active again after that line was previously deleted with code 2. The reopened line retains the identity of the deleted order line and shall contain the full current line content required for subsequent processing.
 |====
 
-[NOTE]
-====
-Code 74 - Reopened does not add a new line and does not change a line that remains active. It reverses a previous deletion of the same order line, identified by the same `cbc:ID`. If quantity, price, delivery, item or other business data must also change, send their new values in the reopened line. If a new, unrelated line is required, use code 1 - Added instead.
-
-Code 74 only reverses a deletion made by the buyer using code 2 in a previous Order Change. It is not used to reinstate a line that the seller rejected in an Order Response Advanced (line response code 7), since the buyer has not deleted that line.
-====
-
 .UBL example of an order line reopened with code 74, after having been deleted in a previous Order Change:
 [source, xml, indent=0]
 ----
