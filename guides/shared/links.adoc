@@ -56,6 +56,7 @@
 :ISO6523: https://www.iso.org/standard/25773.html[ISO/IEC 6523]
 :UNCL7143: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7143.htm[UN/CEFACT code list 7143, D.16B]
 :UNCL1001: https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred1001.htm[UN/CEFACT code list 1001, D.17A]
+:UNCL1229: https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred1229.htm[UN/CEFACT code list 1229, D.17A]
 :UNCL4343: https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred4343.htm[UN/CEFACT code list 4343, D.17A]
 :cef-codelists: https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Code+lists#Codelists-1[CEF Code lists]
 

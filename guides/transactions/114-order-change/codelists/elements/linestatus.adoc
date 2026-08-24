@@ -1,0 +1,37 @@
+= Line status code
+
+[cols="1,4"]
+|===
+h| Qualifier
+| None (fixed subset of UNCL1229)
+h| Document location
+| `cbc:LineStatusCode`
+h| Source codelist
+a| Subset of {UNCL1229}. +
+See <<order-change-line-status-code>> for the business use of each code.
+|===
+
+Valid values are listed in the table below:
+
+[cols="1,4", options="header"]
+.Code list
+|===
+| Code
+| Description
+
+| 1
+| Order line is added.
+
+| 2
+| Order line is deleted.
+
+| 3
+| Order line is changed.
+
+| 4
+| Order line is not affected by the Order Change.
+
+| 74
+| Order line is reopened after a previous deletion.
+
+|===
