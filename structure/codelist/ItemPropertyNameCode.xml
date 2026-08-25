@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+	<Title>Item Property Name Code (OpenPeppol)</Title>
+	<Identifier>IPNC</Identifier>
+	<Version>1.1.1</Version>
+	<Agency>openPEPPOL</Agency>
+	<!-- The code values in this list are based on the GS1 GDD list for ReferencedFileTypeCode -->
+	<Code>
+		<Id>ConfigurationValue</Id>
+		<Name>Configuration Value</Name>
+	</Code>
+	<Code>
+		<Id>GUIDIdentifier</Id>
+		<Name>GUID Identifier</Name>
+	</Code>
+	<Code>
+		<Id>TreatmentCode</Id>
+		<Name>Treatment Code</Name>
+	</Code>
+	<Code>
+		<Id>EPDDataSetID</Id>
+		<Name>EPD Data Set ID</Name>
+	</Code>
+	<Code>
+		<Id>EPDDataSetURL</Id>
+		<Name>EPD Data Set URL</Name>
+	</Code>
+	<Code>
+		<Id>GWP-GHG_A1-3_vA1</Id>
+		<Name>GWP GHG A1-3 vA1 EPD value</Name>
+	</Code>
+	<Code>
+		<Id>GWP-GHG_A1-3_vA2</Id>
+		<Name>GWP GHG A1-3 vA2 EPD value</Name>
+	</Code>
+	<Code>
+		<Id>GWP-GHG_A1-3_vA3</Id>
+		<Name>GWP GHG A1-3 vA3 EPD value</Name>
+	</Code>
+	<Code>
+		<Id>ProgramOperator</Id>
+		<Name>Program Operator</Name>
+	</Code>
+	<Code>
+		<Id>EPDNumber</Id>
+		<Name>EPD Number</Name>
+	</Code>
+	<Code>
+		<Id>EPDProductName</Id>
+		<Name>EPD Product Name</Name>
+	</Code>
+	<Code>
+		<Id>EPDHRURL</Id>
+		<Name>EPD HR URL</Name>
+	</Code>	
+		<Code>
+		<Id>MotherEPDID</Id>
+		<Name>Mother EPD ID</Name>
+	</Code>	
+	<Code>
+		<Id>BoVResourceID</Id>
+		<Name>Boverket Resource ID</Name>
+	</Code>
+	<Code>
+		<Id>TrVResourceID</Id>
+		<Name>Trafikverket Resource ID</Name>
+	</Code>
+	<Code>
+		<Id>Price</Id>
+		<Name>Price</Name>
+	</Code>
+	<Code>
+		<Id>Rental</Id>
+		<Name>Rental</Name>
+	</Code>	
+</CodeList>

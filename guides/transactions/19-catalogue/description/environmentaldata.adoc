@@ -1,7 +1,7 @@
 [[product-climate-data]]
 == Product Climate Data
 
-To determine the CO~2~ equivalent in kilograms for the despatch line, in total, the following calculation must be performed:
+To determine the CO~2~ equivalent in kilograms for the catalogue line, in total, the following calculation must be performed:
 
 *CO~2~eq despatch line = (Net net weight) x (GWP GHG value per kilogram) x Quantity*
 
@@ -16,16 +16,14 @@ According to table 9 and 10 below.
 The GWP GHG value per kilogram can be either a generic value from an authority or specific value from an Enviromental Product Declaration (EPD).
 
 To be able to calculate product climate data the related CO~2~ value and the weight of products are needed. 
-The net weight per item is the recommended way to provide the weight information to the customer. See related information here: link:{ada-dir}/cac-DespatchLine/cac-Item/cac-Dimension/[cac-Dimension]
-
+The net weight per item is the recommended way to provide the weight information to the customer. 
 .Example:
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-30-1.xml[tags=itemnetweight]
 ----
-Item identifiers are used for the receiver to understand what article has been received, at least one identifier is required, see related information here: <<item-description-and-identification>>
-In some cases, the authority has specific requirements carbon accounting in regards to where the products are beeing used. This requirement can be fulfilled by the use of Buyers item identification. See related information here: 
-link:{ada-dir}/cac-DespatchLine/cac-Item/cac-BuyersItemIdentification/[cac:BuyersItemIdentification]
+Item identifiers are used for the receiver to understand what article has been received, at least one identifier is required.
+In some cases, the authority has specific requirements carbon accounting in regards to where the products are beeing used. This requirement can be fulfilled by the use of Buyers item identification.
 
 .Example:
 [source, xml, indent=0]
@@ -91,7 +89,6 @@ Please note that "GWP-GHG" and "GWP-IOBC" are interchangable terms and can be us
 |Mother EPD ID |MotherEPDID |IPNC |If a daughter EPD is utilized, the identifier of the corresponding mother EPD should be provided in this element.
 |====
 
-See <<reference-to-other-documents>> for more info how to link or attach the PDF.
 
 .Example:
 [source, xml, indent=0]
