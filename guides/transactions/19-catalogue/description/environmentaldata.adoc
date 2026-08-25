@@ -58,7 +58,7 @@ include::{snippet-dir}/snippet-30-4.xml[tags=genericproductclimatedata]
 ===  Environmental Product Declaration (EPD) 
 
 Environmental Product Declaration (EPD) provides specific CO~2~ data related to the product.
-EPD:s are related to despatch line but since it is environmental related information it is presented in this section.
+EPD:s are related to catalogue line but since it is environmental related information it is presented in this section.
 
 Please note that "GWP-GHG" and "GWP-IOBC" are interchangable terms and can be used interchangeably, but in this document
 "GWP-GHG" is used. The term "GWP-IOBC" is commonly utilized by certain program operators, which are organizations responsible for publishing Environmental Product Declarations (EPDs).
