@@ -15,15 +15,19 @@ Release date:: November 2026
 ** Added a new section describing the business use of the Order Change line status codes, including code 74 - Reopened, which is used to make a previously deleted order line active again. Added a matching entry to the code list chapter, and a note in scenario 2 on when a buyer may reopen a line. Added an Order Change example showing a line being reopened after deletion. https://openpeppol.atlassian.net/browse/RFC-573
 **Added Clarification on the Rejection guidance FOR Order Response Advanced section 7.2
 
+* BIS Catalogue with and without response (Profile 1 and Profile 64)
+**Added section 6.16 describing the calculations and usage of Product climate data, including new codelist for Item Property Name Codes(IPNC). https://openpeppol.atlassian.net/browse/RFC-540
+
+
 == Changes to syntax
 * Order Change (T114)
-** Clarified the name and description of `cbc:LineStatusCode` to state that it carries the Order Change subset of UNCL1229, and to reference the new Advanced Ordering BIS guidance on the business use of codes 1, 2, 3, 4 and 74.
+** Clarified the name and description of `cbc:LineStatusCode` to state that it carries the Order Change subset of UNCL1229, and to reference the new Advanced Ordering BIS guidance on the business use of codes 1, 2, 3, 4 and 74. https://openpeppol.atlassian.net/browse/RFC-493
 
 * Punchout transaction (T77)
 **added PackagingMarkedLabelAccreditationCode code list to item label to align with order messages. https://openpeppol.atlassian.net/browse/RFC-536
 
 * Order Change(T114)
-** Added shippingPriorityLevelCode (Optional) and ManufacturersItemIdentification(Optional) to OrderChange in order to align with order messages https://openpeppol.atlassian.net/browse/RFC-493
+** Added shippingPriorityLevelCode (Optional) and ManufacturersItemIdentification(Optional) to OrderChange in order to align with order messages 
 
 * Order transaction (T01)
 ** Changed cardinality to Orderline RequestedDeliveryPeriod from mandatory to optional https://openpeppol.atlassian.net/browse/RFC-593

@@ -753,7 +753,6 @@
 						<Term>cbc:ID</Term>
 						<Name>ID</Name>
 						<Description>ID of the property if assigned by an Agency</Description>
-						<Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
 						<Attribute usage="Optional">
 							<Term>schemeDataURI</Term>
 							<Name>Scheme Data URI</Name>
@@ -772,6 +771,7 @@
 							<Description>Scheme version identifier</Description>
 							<Value type="EXAMPLE">2022</Value>
 						</Attribute>
+						<Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
 					</Element>
 					<Element>
 						<Term>cbc:Name</Term>

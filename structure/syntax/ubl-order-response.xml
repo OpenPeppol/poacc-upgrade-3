@@ -644,13 +644,13 @@
 							<Description>Code for the item property according to a property code system.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir76-p004</Reference>
-							<Value type="EXAMPLE">Code</Value>
 							<Attribute>
 								<Term>listID</Term>
 								<Name>Name code list id.</Name>
 								<Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
 								<Value type="EXAMPLE">CodeList</Value>
 							</Attribute>
+							<Value type="EXAMPLE">Code</Value>
 						</Element>
 						<Element>
 							<Term>cbc:Value</Term>
