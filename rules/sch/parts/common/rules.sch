@@ -103,6 +103,6 @@
     <!-- Luxembourg Register of Legal Persons number (Matricule) validation -->
     <rule context="cbc:EndpointID[@schemeID = '0240'] | cac:PartyIdentification/cbc:ID[@schemeID = '0240'] | cbc:CompanyID[@schemeID = '0240']">
       <assert id="PEPPOL-COMMON-R059"
-        test="u:check-lux-0240(normalize-space(.))" flag="fatal">[PEPPOL-COMMON-R059]-Luxembourg Register of Legal Persons number (Matricule) MUST be stated in the correct format.</assert>
+        test="u:check-lux-0240(normalize-space(.))" flag="warning">[PEPPOL-COMMON-R059]-Luxembourg Register of Legal Persons number (Matricule) MUST be stated in the correct format.</assert>
     </rule>
 </pattern>
