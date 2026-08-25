@@ -73,3 +73,4 @@
 :codelist-EAS: link:/poacc/upgrade-3/codelist/eas/[EAS codes]
 :vat-codes: link:/poacc/upgrade-3/codelist/UNCL5305/[Code list UNCL5305]
 :mime-codes: link:/poacc/upgrade-3/codelist/MimeCode/[Mime codes]
+:codelist-ItemPropertyNameCode: link:/poacc/upgrade-3/codelist/ItemPropertyNameCode/[ItemPropertyNameCode]
