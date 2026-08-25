@@ -257,9 +257,14 @@
 				<cbc:Value>6000000020</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Trafikverket Resource ID</cbc:Name>
-				<cbc:NameCode listID="IPNC">TrVResourceID</cbc:NameCode>
+				<cbc:Name>SYKE CO2 ID</cbc:Name>
+				<cbc:NameCode listID="IPNC">SYKECO2ID</cbc:NameCode>
 				<cbc:Value>123456789</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Ökobaudat UUID</cbc:Name>
+				<cbc:NameCode listID="IPNC">OekobaudatUUID</cbc:NameCode>
+				<cbc:Value>873699e3-39ee-432a-883d-9942d65d92af</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<!-- end::genericproductclimatedata[] -->
 			<!-- tag::epd[] -->

@@ -66,6 +66,14 @@
 		<Name>Trafikverket Resource ID</Name>
 	</Code>
 	<Code>
+		<Id>SYKECO2ID</Id>
+		<Name>SYKE CO2 ID</Name>
+	</Code>
+	<Code>
+		<Id>OekobaudatUUID</Id>
+		<Name>Ökobaudat UUID</Name>
+	</Code>
+	<Code>
 		<Id>Price</Id>
 		<Name>Price</Name>
 	</Code>

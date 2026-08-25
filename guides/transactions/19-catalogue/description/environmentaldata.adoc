@@ -43,8 +43,10 @@ The list id IPNC is a reference to the code list {codelist-ItemPropertyNameCode}
 [cols="1,1,1,3",options="header",stripes=even]
 |====
 |Name |NameCode |listID |Definition
-|Boverket Resource ID |BoVResourceID |IPNC | A representative Resource ID according to the Swedish National Board of Housing, Building and Planning (Boverket) generic product type. Use NA as value if no relevant Resource ID exists.
-|Trafikverket Resource ID |TrVResourceID |IPNC | A representative Resource ID according to the Swedish Transport Administration (Trafikverket) generic product type. Use NA as value if no relevant Resource ID exists.
+|Boverket Resource ID |BoVResourceID |IPNC | A representative Resource ID according to the Swedish National Board of Housing, Building and Planning (Boverket) generic product type. Use NA as value if no relevant Resource ID exists https://klimatdatabasen.boverket.se/[Boverkets Climate Database].
+|SYKE CO2 ID |SYKECO2ID|IPNC | A representative Resource ID according to the Finnish National Emissions Database (CO2data.fi), maintained by SYKE, for the generic construction product type. Use NA as value if no relevant Resource ID exists https://co2data.fi/[co2data].
+|Ökobaudat UUID |OekobaudatUUID |IPNC | A representative UUID according to the German ÖKOBAUDAT database (BMWSB) for the generic or product-specific building material dataset. Use NA as value if no relevant Resource ID exists https://www.oekobaudat.de/en.html[oekobaudat].
+
 |====
 
 If no suitable generic value can be found in the resource lists, it is recommended to use 'NA' to indicate that there are no applicable resources available for the item.
