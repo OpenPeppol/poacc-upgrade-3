@@ -1373,6 +1373,15 @@
 					<Value type="EXAMPLE">NA</Value>
 				</Element>
 				<Element cardinality="0..1">
+					<Term>cbc:ShippingPriorityLevelCode</Term>
+					<Name>Requested shipping priority</Name>
+					<Description>The priority level requested by the buyer for the shipping of the order. Use value: "1" for Express/urgent/rush.</Description>
+					<DataType>code</DataType>
+					<Reference type="BUSINESS_TERM">tir114-p039</Reference>
+					<Reference type="CODE_LIST">UNCL4219</Reference>
+					<Value type="EXAMPLE">1</Value>
+				</Element>
+				<Element cardinality="0..1">
 					<Term>cac:TransportHandlingUnit</Term>
 					<Name>Transport handling unit</Name>
 					<Element cardinality="0..1">
@@ -2167,6 +2176,18 @@
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir114-p020</Reference>
 							<Value type="EXAMPLE">3249834</Value>
+						</Element>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:ManufacturersItemIdentification</Term>
+						<Name>Manufacturers Item Identifier</Name>
+						<Element>
+							<Term>cbc:ID</Term>
+							<Name>Manufacturers Item Identifier</Name>
+							<Description>An identifier, assigned by the items manufacturer, for the item.</Description>
+							<DataType>Identifier</DataType>
+							<Reference type="BUSINESS_TERM">tir114-p040</Reference>
+							<Value type="EXAMPLE">manid659</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">

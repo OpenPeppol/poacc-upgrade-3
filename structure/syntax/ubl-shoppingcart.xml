@@ -869,11 +869,12 @@
 					<Element>
 						<Term>cbc:CertificateTypeCode</Term>
 						<Name>Certificate type code</Name>
-						<Description>The UBL structure used for item labeling requires this
-							elements,
-							use the value NA.</Description>
+						<Description>The UBL structure used for item labeling requires this elements,
+							use the value NA if not other applicable package label code.</Description>
 						<DataType>Code</DataType>
-						<Value type="FIXED">NA</Value>
+						<Reference type="CODE_LIST">NA</Reference>
+						<Reference type="CODE_LIST">PackagingMarkedLabelAccreditationCode</Reference>
+						<Value type="EXAMPLE">NA</Value>
 					</Element>
 					<Element>
 						<Term>cbc:CertificateType</Term>

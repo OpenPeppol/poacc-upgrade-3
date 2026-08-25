@@ -68,7 +68,7 @@ RE:: Rejected (Final status)
 
 AP:: Accepted (approved)
 
-PD:: Paid (Final status, The status code “Paid” will probably not be used in relation to credit notes)
+PD:: Paid (Final status), it signals that the invoice (debit/credit) is finished, and that no further action is expected. It is not a remittance advice.
 
 The process may start at any status and not all statuses must be reported.
 

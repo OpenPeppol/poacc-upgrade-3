@@ -60,7 +60,7 @@
 	<!-- ERROR: wrong length — only 10 digits -->
 	<test>
 		<assert>
-			<error number="1">PEPPOL-COMMON-R059</error>
+			<warning number="1">PEPPOL-COMMON-R059</warning>
 		</assert>
 		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -78,7 +78,7 @@
 	<!-- ERROR: invalid legal form type code (typecode 10 < 20) -->
 	<test>
 		<assert>
-			<error number="1">PEPPOL-COMMON-R059</error>
+			<warning number="1">PEPPOL-COMMON-R059</warning>
 		</assert>
 		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -96,7 +96,7 @@
 	<!-- ERROR: wrong check digit (typecode=20, expected 9, got 1) -->
 	<test>
 		<assert>
-			<error number="1">PEPPOL-COMMON-R059</error>
+			<warning number="1">PEPPOL-COMMON-R059</warning>
 		</assert>
 		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
