@@ -18,6 +18,8 @@ Release date:: November 2026
 ** Clarified the name and description of `cbc:LineStatusCode` to state that it carries the Order Change subset of UNCL1229, and to reference the new Advanced Ordering BIS guidance on the business use of codes 1, 2, 3, 4 and 74.
 
 == Changes to code lists and validation artefacts
+* Codelist publication date: 2026-09-11
+* Validation artefacts UBL publication date: 2026-10-09
 
 [cols="1,1,1,1"]
 |===
@@ -34,5 +36,7 @@ Release date:: November 2026
 * Removed rules PEPPOL-T01-R002 and PEPPOL-T114-R002 (warning) which required Order and OrderChange to allways provide a validity end date.
 
 == Other changes
+* removed an unknown codelist reference "2" from catalogue OrderableUnitFactorRate.
+* added missing test folders for catalogue-response and mlr
 * Added an Order Change example file for Advanced Ordering BIS scenario 2 (`OrderChange_sc2b.xml`) showing an order line being reopened with code 74 after having been deleted in a previous Order Change (`OrderChange_sc2.xml`).
 
