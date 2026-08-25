@@ -35,4 +35,36 @@
 
 		</Order>
 	</test>
+    <test id="3">
+		<assert>
+			<error>PEPPOL-COMMON-R040</error>
+		</assert>
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+
+			<cac:BuyerCustomerParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="0088">579000043595434535</cbc:EndpointID>
+				</cac:Party>
+			</cac:BuyerCustomerParty>
+
+		</Order>
+	</test>
+	<test id="4">
+		<assert>
+			<error>PEPPOL-COMMON-R040</error>
+		</assert>
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+
+			<cac:BuyerCustomerParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="0088">0</cbc:EndpointID>
+				</cac:Party>
+			</cac:BuyerCustomerParty>
+
+		</Order>
+	</test>
 </testSet>
