@@ -1,0 +1,100 @@
+[[product-climate-data]]
+== Product Climate Data
+
+To determine the CO~2~ equivalent in kilograms for the despatch line, in total, the following calculation must be performed:
+
+*CO~2~eq despatch line = (Net net weight) x (GWP GHG value per kilogram) x Quantity*
+
+Where *GWP GHG value per kilogram* is one of the following
+
+* GWP GHG A1-3 vA1 EPD value
+* GWP GHG A1-3 vA2 EPD value
+* GWP GHG A1-3 vA3 EPD value
+
+According to table 9 and 10 below.
+
+The GWP GHG value per kilogram can be either a generic value from an authority or specific value from an Enviromental Product Declaration (EPD).
+
+To be able to calculate product climate data the related CO~2~ value and the weight of products are needed. 
+The net weight per item is the recommended way to provide the weight information to the customer. See related information here: link:{ada-dir}/cac-DespatchLine/cac-Item/cac-Dimension/[cac-Dimension]
+
+.Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-30-1.xml[tags=itemnetweight]
+----
+Item identifiers are used for the receiver to understand what article has been received, at least one identifier is required, see related information here: <<item-description-and-identification>>
+In some cases, the authority has specific requirements carbon accounting in regards to where the products are beeing used. This requirement can be fulfilled by the use of Buyers item identification. See related information here: 
+link:{ada-dir}/cac-DespatchLine/cac-Item/cac-BuyersItemIdentification/[cac:BuyersItemIdentification]
+
+.Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-30-1.xml[tags=buyersitemidentification]
+----
+
+[[generic-product-climate-data]]
+=== Generic Product Climate Data
+
+Generic product climate data is often provided from an authority and are related to a product category codes such as UNSPSC or similar.
+Below you will find two examples from Swedish authorities that provide generic product climate data.
+
+The list id IPNC is a reference to the code list {codelist-ItemPropertyNameCode}
+
+.Reference external generic climate data list.
+[cols="1,1,1,3",options="header",stripes=even]
+|====
+|Name |NameCode |listID |Definition
+|Boverket Resource ID |BoVResourceID |IPNC | A representative Resource ID according to the Swedish National Board of Housing, Building and Planning (Boverket) generic product type. Use NA as value if no relevant Resource ID exists.
+|Trafikverket Resource ID |TrVResourceID |IPNC | A representative Resource ID according to the Swedish Transport Administration (Trafikverket) generic product type. Use NA as value if no relevant Resource ID exists.
+|====
+
+If no suitable generic value can be found in the resource lists, it is recommended to use 'NA' to indicate that there are no applicable resources available for the item.
+
+.Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-30-4.xml[tags=genericproductclimatedata]
+----
+[[epd]]
+===  Environmental Product Declaration (EPD) 
+
+Environmental Product Declaration (EPD) provides specific CO~2~ data related to the product.
+EPD:s are related to despatch line but since it is environmental related information it is presented in this section.
+
+Please note that "GWP-GHG" and "GWP-IOBC" are interchangable terms and can be used interchangeably, but in this document
+"GWP-GHG" is used. The term "GWP-IOBC" is commonly utilized by certain program operators, which are organizations responsible for publishing Environmental Product Declarations (EPDs).
+
+.Definitions of the EPD related properties for machine readable information.
+[cols="1,1,1,3",options="header",stripes=even]
+|====
+|Name |NameCode |listID |Definition
+|EPD Dataset ID |EPDDatasetID |IPNC |The EPD dataset id gives the digital reference to a product type in the EDP
+|EPD Dataset URL |EPDDataSetURL |IPNC |URL to fetch the machine readable digital information from a source assigned by the supplier
+|GWP GHG A1-3 vA1 EPD value  |GWP-GHG_A1-3_vA1 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilograms (unitCode="KGM") according to EN15804 amendment version A1
+|GWP GHG A1-3 vA2 EPD value  |GWP-GHG_A1-3_vA2 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A2
+|GWP GHG A1-3 vA3 EPD value  |GWP-GHG_A1-3_vA3 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A2 and characterization factors according to EF 3.1
+|Mother EPD ID |MotherEPDID |IPNC |If a daughter EPD is utilized, the identifier of the corresponding mother EPD should be provided in this element.
+|====
+
+.Definition of the EPD related properties for human readable information, e.g. EPD published as PDF.
+[cols="1,1,1,3",options="header",stripes=even]
+|====
+|Name |NameCode |listID |Definition
+|Program Operator |ProgramOperator |IPNC |The name of the program operator that has published the EPD, if applicable.
+|EPD Number |EPDNumber |IPNC |The number of the published EDP
+|EPD Product name |EPDProductName |IPNC |The product name relating to an individual dataset in the EPD
+|EPD HR URL |EPDHRURL |IPNC |URL to the human readable version of an EPD, for verification purposes
+|GWP GHG A1-3 vA1 EPD value  |GWP-GHG_A1-3_vA1 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A1
+|GWP GHG A1-3 vA2 EPD value  |GWP-GHG_A1-3_vA2 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A2
+|GWP GHG A1-3 vA3 EPD value  |GWP-GHG_A1-3_vA3 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A3
+|Mother EPD ID |MotherEPDID |IPNC |If a daughter EPD is utilized, the identifier of the corresponding mother EPD should be provided in this element.
+|====
+
+See <<reference-to-other-documents>> for more info how to link or attach the PDF.
+
+.Example:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-30-4.xml[tags=epd]
+----

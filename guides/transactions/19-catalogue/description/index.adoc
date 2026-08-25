@@ -35,6 +35,9 @@ include::additionalproperties.adoc[]
 
 include::replaceditem.adoc[]
 
+include::environmentaldata.adoc[]
+
+
 :leveloffset: +1
 
 include::../../../shared/files/vat-cat-line.adoc[]
