@@ -90,7 +90,7 @@
   </cac:AccountingCustomerParty>
   <cac:Delivery>
     <cac:DeliveryLocation>
-      <cbc:ID schemeID="0088">73512333000108</cbc:ID>
+      <cbc:ID schemeID="0088">7351233300102</cbc:ID>
       <cbc:Name>Southern Hospital</cbc:Name>
       <cac:Address>
         <cbc:StreetName>Sjukhusgatan 14</cbc:StreetName>
@@ -111,7 +111,7 @@
     </cac:RequestedDeliveryPeriod>
     <cac:DeliveryParty>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="0088">73512333000115</cbc:ID>
+        <cbc:ID schemeID="0088">7351233300119</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
         <cbc:Name>Southern Hospital</cbc:Name>
