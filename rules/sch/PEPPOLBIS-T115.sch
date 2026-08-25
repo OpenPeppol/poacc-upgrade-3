@@ -29,6 +29,7 @@
 	<xi:include href="parts/function/abn.xml"/>
 	<xi:include href="parts/function/checkSEOrgnr.xml"/>	
 	<xi:include href="parts/function/check-lux-0240.xml"/>
+	<xi:include href="parts/function/check-lux-VAT.xml"/>
 
     <!-- Rules -->
 

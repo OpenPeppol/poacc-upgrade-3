@@ -1,0 +1,8 @@
+  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:mod89-LU_VAT" as="xs:boolean">
+    <param name="val" as="xs:string"/>
+    <variable name="normalized" select="upper-case(normalize-space($val))"/>
+    <variable name="base" select="substring($normalized, 3, 6)"/>
+    <variable name="checkdigits" select="substring($normalized, 9, 2)"/>
+    <variable name="calculated" select="format-integer(xs:integer($base) mod 89, '00')"/>
+    <sequence select="$checkdigits = $calculated"/>
+  </function>
