@@ -1365,7 +1365,7 @@
                             Quantity. If not present, assumed value is 1</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p035</Reference>
-						<Reference type="CODE_LIST">2</Reference>
+						<!--Reference type="CODE_LIST">2</Reference-->
 						<Value type="EXAMPLE">1</Value>
 					</Element>
 

@@ -28,4 +28,6 @@ Release date:: November 2026
 * Removed rules PEPPOL-T01-R002 and PEPPOL-T114-R002 (warning) which required Order and OrderChange to allways provide a validity end date.
 
 == Other changes
+* removed an unknown codelist reference "2" from catalogue OrderableUnitFactorRate.
+* added missing test folders for catalogue-response and mlr
 

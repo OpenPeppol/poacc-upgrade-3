@@ -5,9 +5,11 @@
 
 <!-- unit testing -->
   <testfolder>unit-catalogue</testfolder>
+  <testfolder>unit-catalogue-response</testfolder>
   <testfolder>unit-common</testfolder>
   <testfolder>unit-despatch-advice</testfolder>
   <testfolder>unit-invoice-response</testfolder>
+  <testfolder>unit-mlr</testfolder>
   <testfolder>unit-order</testfolder>
   <testfolder>unit-order-agreement</testfolder>
   <testfolder>unit-order-response</testfolder>

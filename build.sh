@@ -23,6 +23,16 @@ docker run --rm -i \
     -v $PROJECT/target:/target \
     difi/vefa-structure:0.6.1
 
+# Inferred mandatory cardinality, excluding asserts already covered by generated Txx-basic.sch
+if command -v pwsh >/dev/null 2>&1; then
+    pwsh -NoProfile -File "$PROJECT/tools/audit-inferred-mandatory-cardinality.ps1" || exit $?
+elif command -v powershell >/dev/null 2>&1; then
+    powershell -NoProfile -File "$PROJECT/tools/audit-inferred-mandatory-cardinality.ps1" || exit $?
+else
+    echo "ERROR: PowerShell is required to compare inferred cardinality rules with generated basic Schematron." >&2
+    exit 1
+fi
+
 # Testing validation rules
 docker run --rm -i -v $PROJECT:/src phelger/vefa-validator:2.4.3 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
 
@@ -36,7 +46,7 @@ docker run --rm -i -v $PROJECT:/src alpine:3.11 chown -R $(id -g $USER).$(id -g 
 BUILD_RESULT=$?
 
 printf '\nWarnings and errors from %s:\n' "$BUILD_LOG" >&3
-if ! grep -nEi '(^|\|-|\[)(WARN(ING)?|ERROR)([[:space:]:\]]|$)' "$BUILD_LOG" >&3; then
+if ! grep -nE '([0-9]{2}:[0-9]{2}:[0-9]{2}([.,][0-9]{1,3})?[[:space:]]+(\|[[:space:]]*-?)?(WARN(ING)?|ERROR).+)' "$BUILD_LOG" >&3; then
     echo "None." >&3
 fi
 
