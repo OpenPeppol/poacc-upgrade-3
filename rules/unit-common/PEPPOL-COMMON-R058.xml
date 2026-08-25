@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t01-base-3.0">
+	<assert>
+		<description>Luxembourg VAT number MUST follow the format LU followed by 8 digits, where the last 2 digits are the check digits computed as the first 6 digits modulo 89.</description>
+		<scope>PEPPOL-COMMON-R058</scope>
+	</assert>
+	<!-- SUCCESS: valid LU VAT on Seller (123456 mod 89 = 13) -->
+	<test>
+		<assert>
+			<success>PEPPOL-COMMON-R058</success>
+		</assert>
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+			<cac:SellerSupplierParty>
+				<cac:Party>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>LU12345613</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:SellerSupplierParty>
+		</Order>
+	</test>
+	<!-- SUCCESS: valid LU VAT on Buyer (000001 mod 89 = 01) -->
+	<test>
+		<assert>
+			<success>PEPPOL-COMMON-R058</success>
+		</assert>
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+			<cac:BuyerCustomerParty>
+				<cac:Party>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>LU00000101</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:BuyerCustomerParty>
+		</Order>
+	</test>
+	<!-- ERROR: wrong check digits (123456 mod 89 = 13, not 14) -->
+	<test>
+		<assert>
+			<warning number="1">PEPPOL-COMMON-R058</warning>
+		</assert>
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+			<cac:SellerSupplierParty>
+				<cac:Party>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>LU12345614</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:SellerSupplierParty>
+		</Order>
+	</test>
+	<!-- ERROR: too short — only 7 digits after LU -->
+	<test>
+		<assert>
+			<warning number="1">PEPPOL-COMMON-R058</warning>
+		</assert>
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+			<cac:SellerSupplierParty>
+				<cac:Party>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>LU1234561</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:SellerSupplierParty>
+		</Order>
+	</test>
+	<!-- ERROR: non-numeric character in check digits -->
+	<test>
+		<assert>
+			<warning number="1">PEPPOL-COMMON-R058</warning>
+		</assert>
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+			<cac:SellerSupplierParty>
+				<cac:Party>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>LU1234561X</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:SellerSupplierParty>
+		</Order>
+	</test>
+</testSet>

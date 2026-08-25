@@ -105,4 +105,16 @@
       <assert id="PEPPOL-COMMON-R059"
         test="u:check-lux-0240(normalize-space(.))" flag="warning">[PEPPOL-COMMON-R059]-Luxembourg Register of Legal Persons number (Matricule) MUST be stated in the correct format.</assert>
     </rule>
+    <!-- Luxembourg VAT number validation -->
+    <rule
+      context="cac:PartyTaxScheme
+                   [normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']
+                   /cbc:CompanyID
+                   [starts-with(upper-case(normalize-space(.)), 'LU')]">
+      <assert id="PEPPOL-COMMON-R058"
+              flag="warning"
+              test="matches(upper-case(normalize-space(.)), '^LU[0-9]{8}$') and u:mod89-LU_VAT(.)">
+        [PEPPOL-COMMON-R058]-Luxembourg VAT number MUST be stated in the correct format.
+      </assert>	
+	 </rule>
 </pattern>
