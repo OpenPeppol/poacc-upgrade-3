@@ -14,9 +14,21 @@ Release date:: November 2026
 * Advanced Ordering BIS 3.0 (Profile 65)
 ** Added a new section describing the business use of the Order Change line status codes, including code 74 - Reopened, which is used to make a previously deleted order line active again. Added a matching entry to the code list chapter, and a note in scenario 2 on when a buyer may reopen a line. Added an Order Change example showing a line being reopened after deletion.
 
+* BIS Advanced Ordering 3.0
+**Added Clarification on the Rejection guidance FOR Order Response Advanced section 7.2
+
 == Changes to syntax
 * Order Change (T114)
 ** Clarified the name and description of `cbc:LineStatusCode` to state that it carries the Order Change subset of UNCL1229, and to reference the new Advanced Ordering BIS guidance on the business use of codes 1, 2, 3, 4 and 74.
+
+* Punchout transaction (T77)
+**added PackagingMarkedLabelAccreditationCode code list to item label to align with order messages.
+
+* Order Change(T114)
+** Added shippingPriorityLevelCode (Optional) and ManufacturersItemIdentification(Optional) to OrderChange in order to align with order messages
+
+* Order transaction (T01)
+** Changed cardinality to Orderline RequestedDeliveryPeriod from mandatory to optional
 
 == Changes to code lists and validation artefacts
 * Codelist publication date: 2026-09-11
@@ -42,3 +54,9 @@ Release date:: November 2026
 * added missing test folders for catalogue-response and mlr
 * Added an Order Change example file for Advanced Ordering BIS scenario 2 (`OrderChange_sc2b.xml`) showing an order line being reopened with code 74 after having been deleted in a previous Order Change (`OrderChange_sc2.xml`).
 
+
+
+
+
+
+added Clarification on the Order Response Advanced Rejection guidance
