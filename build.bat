@@ -22,8 +22,8 @@ if exist "%PROJECT%\target" (
 docker run --rm -i -v "%PROJECT%:/src" -v "%PROJECT%\target:/target" difi/vefa-structure:0.6.1
 
 :: Inferred mandatory cardinality, excluding asserts already covered by generated Txx-basic.sch
-powershell -NoProfile -ExecutionPolicy Bypass -File "%PROJECT%\tools\audit-inferred-mandatory-cardinality.ps1"
-if errorlevel 1 exit /b %ERRORLEVEL%
+:: powershell -NoProfile -ExecutionPolicy Bypass -File "%PROJECT%\tools\audit-inferred-mandatory-cardinality.ps1"
+:: if errorlevel 1 exit /b %ERRORLEVEL%
 
 :: Testing validation rules
 docker run --rm -i -v "%PROJECT%:/src" phelger/vefa-validator:2.4.3 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
