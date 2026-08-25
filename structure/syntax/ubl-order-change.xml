@@ -2304,7 +2304,6 @@
 							<Term>cbc:ID</Term>
 							<Name>ID</Name>
 							<Description>ID of the property if assigned by an Agency</Description>
-							<Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
 							<Attribute usage="Optional">
 								<Term>schemeDataURI</Term>
 								<Name>Scheme Data URI</Name>
@@ -2323,6 +2322,7 @@
 								<Description>Scheme version identifier</Description>
 								<Value type="EXAMPLE">2022</Value>
 							</Attribute>
+							<Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
 						</Element>
 						<Element>
 							<Term>cbc:Name</Term>
@@ -2340,13 +2340,13 @@
 							<Description>Code for the item property according to a property code system.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir114-p024</Reference>
-							<Value type="EXAMPLE">NameCode</Value>
 							<Attribute>
 								<Term>listID</Term>
 								<Name>Name code list id.</Name>
 								<Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
 								<Value type="EXAMPLE">NameCodeList</Value>
 							</Attribute>
+							<Value type="EXAMPLE">NameCode</Value>
 						</Element>
 						<Element>
 							<Term>cbc:Value</Term>

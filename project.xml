@@ -320,6 +320,10 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ProductTraceIDschemeID.xml</Path>
     </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ItemPropertyNameCode.xml</Path>
+    </Resource>
 
 
     <!-- Files -->

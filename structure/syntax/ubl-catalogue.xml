@@ -1043,7 +1043,6 @@
 					<Description>The quantity of standard units that are in each consumable unit.</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-044</Reference>
-					<Value type="EXAMPLE">20</Value>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Standard unit of measure</Name>
@@ -1052,6 +1051,7 @@
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">EA</Value>
 					</Attribute>
+					<Value type="EXAMPLE">20</Value>
 				</Element>
 			</Element>
 			<Element cardinality="0..n">
@@ -1071,7 +1071,6 @@
 					<Description>The quantity that applies to the relationship.</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-046</Reference>
-					<Value type="EXAMPLE">20</Value>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Packed units</Name>
@@ -1084,6 +1083,7 @@
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
+					<Value type="EXAMPLE">20</Value>
 				</Element>
 			</Element>
 			<Element cardinality="0..n">
@@ -1103,7 +1103,6 @@
 					<Description>The quantity that applies to the relationship.</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-119</Reference>
-					<Value type="EXAMPLE">20</Value>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Related item unit</Name>
@@ -1112,6 +1111,7 @@
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
+					<Value type="EXAMPLE">20</Value>
 				</Element>
 			</Element>
 			<Element cardinality="0..n">
@@ -1131,7 +1131,6 @@
 					<Description>The quantity that applies to the relationship.</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-049</Reference>
-					<Value type="EXAMPLE">20</Value>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Required item units</Name>
@@ -1140,6 +1139,7 @@
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
+					<Value type="EXAMPLE">20</Value>
 				</Element>
 			</Element>
 			<Element cardinality="0..n">
@@ -1159,7 +1159,6 @@
 					<Description>The quantity that applies to the relationship.</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-121</Reference>
-					<Value type="EXAMPLE">20</Value>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Replaced item units</Name>
@@ -1168,7 +1167,7 @@
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
-					 <Value type="EXAMPLE">1</Value>
+					 <Value type="EXAMPLE">20</Value>
 				</Element>
 			</Element>
 			<Element cardinality="0..n">
@@ -1515,8 +1514,6 @@
 							the item with its identification according to a standard system.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-092</Reference>
-						<Value type="EXAMPLE">11111155</Value>
-
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Item standard identifier identification scheme identifier</Name>
@@ -1675,10 +1672,8 @@
 								the United Nations, expressed as a code.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-072</Reference>
-						<Value type="EXAMPLE">ADR</Value>	
-
-
 						<Reference type="CODE_LIST">UNCL8273</Reference>
+						<Value type="EXAMPLE">ADR</Value>	
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:HazardClassID</Term>
@@ -1734,8 +1729,7 @@
 					<Element cardinality="0..1">
 							<Term>cbc:ID</Term>
 							<Name>ID</Name>
-							<Description>ID of the property if assigned by an Agency</Description>
-							<Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
+							<Description>ID of the property if assigned by an Agency</Description>	
 							<Attribute usage="Optional">
 								<Term>schemeDataURI</Term>
 								<Name>Scheme Data URI</Name>
@@ -1754,6 +1748,7 @@
 								<Description>Scheme version identifier</Description>
 								<Value type="EXAMPLE">2022</Value>
 							</Attribute>
+							<Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
 						</Element>
 					<Element>
 						<Term>cbc:Name</Term>
@@ -1769,8 +1764,6 @@
 						<Description>Code for the item property according to a property code system.</Description>
 						<DataType>CODE</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p039</Reference>
-						<Value type="EXAMPLE">aCode</Value>
-						<!-- <Value type="EXAMPLE">should we use eClass for examples?</Value> -->
 						<Attribute>
 							<Term>listID</Term>
 							<Name>Name code list id</Name>
@@ -1781,7 +1774,8 @@
 							<Name>Name code list version</Name>
 							<Description>The code list version identifier</Description>
 							<Value type="EXAMPLE">3.29</Value>						
-						</Attribute>						
+						</Attribute>	
+						<Value type="EXAMPLE">aCode</Value>						
 					</Element>
 					<Element>
 						<Term>cbc:Value</Term>
