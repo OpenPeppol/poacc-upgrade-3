@@ -9,6 +9,7 @@ Release date:: November 2026
 
 * Invoice Response BIS 3.0 (Profile 63)
 ** Extended to support Invoice Responses to self-billed invoices and credit notes. In self-billing, the Seller sends the Invoice Response to the Buyer that issued the referenced document. The same Invoice Response syntax, validation rules, status codes, and clarification codes apply to both standard billing and self-billing.
+** Clarified the usage of status Paid with credit-notes. The status code Paid is used to signal that the invoice (debit/credit) is finished, and that no further action is expected. It is not a remittance advice. 
 
 * Advanced Ordering BIS 3.0 (Profile 65)
 ** Added a new section describing the business use of the Order Change line status codes, including code 74 - Reopened, which is used to make a previously deleted order line active again. Added a matching entry to the code list chapter, and a note in scenario 2 on when a buyer may reopen a line. Added an Order Change example showing a line being reopened after deletion.
@@ -24,7 +25,7 @@ Release date:: November 2026
 [cols="1,1,1,1"]
 |===
 |codelist|removed|added|description changed
-|UNCL1229_CHANGE |0 [] |0 [] |1 [74]
+| | | |
 |===
 
 ==  EN 16931 schematrons updated
