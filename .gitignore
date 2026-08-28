@@ -1,6 +1,7 @@
 target
 *.html
 *.pdf
+build.log
 .idea
 /.project
 /.settings/
