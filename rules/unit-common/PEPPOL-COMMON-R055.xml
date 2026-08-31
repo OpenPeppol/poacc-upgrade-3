@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t01-base-3.0">
+	<assert>
+		<description>Dutch organization identification numbers with scheme 0190 must contain twenty digits.</description>
+		<scope>PEPPOL-COMMON-R055</scope>
+	</assert>
+	<test>
+		<assert><success>PEPPOL-COMMON-R055</success></assert>
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+			<cac:BuyerCustomerParty><cac:Party><cac:PartyIdentification><cbc:ID schemeID="0190">12345678901234567890</cbc:ID></cac:PartyIdentification></cac:Party></cac:BuyerCustomerParty>
+		</Order>
+	</test>
+	<test>
+		<assert><warning number="1">PEPPOL-COMMON-R055</warning></assert>
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+			<cac:BuyerCustomerParty><cac:Party><cac:PartyIdentification><cbc:ID schemeID="0190">1234567890123456789</cbc:ID></cac:PartyIdentification></cac:Party></cac:BuyerCustomerParty>
+		</Order>
+	</test>
+</testSet>
