@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t111-base-3.0">
+	<assert>
+		<description>The Invoice Response process identifier must be the Invoice Response or Billing with Response profile.</description>
+		<scope>PEPPOL-T111-R008</scope>
+	</assert>
+	<test>
+		<assert><success>PEPPOL-T111-R008</success></assert>
+		<ApplicationResponse xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2">
+			<cbc:ProfileID>urn:peppol:bis:billing_with_response</cbc:ProfileID>
+		</ApplicationResponse>
+	</test>
+	<test>
+		<assert><error>PEPPOL-T111-R008</error></assert>
+		<ApplicationResponse xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2">
+			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:not-an-invoice-response:3</cbc:ProfileID>
+		</ApplicationResponse>
+	</test>
+</testSet>

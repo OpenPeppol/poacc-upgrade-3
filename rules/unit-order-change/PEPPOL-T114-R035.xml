@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t114-base-3.0">
+	<assert>
+		<description>A quotation document reference is required when an order change references a quotation line.</description>
+		<scope>PEPPOL-T114-R035</scope>
+	</assert>
+	<test>
+		<assert><success>PEPPOL-T114-R035</success></assert>
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
+			<cac:QuotationDocumentReference><cbc:ID>Q-1</cbc:ID></cac:QuotationDocumentReference>
+			<cac:OrderLine><cac:LineItem><cac:QuotationLineReference><cbc:LineID>1</cbc:LineID></cac:QuotationLineReference></cac:LineItem></cac:OrderLine>
+		</OrderChange>
+	</test>
+	<test>
+		<assert><error>PEPPOL-T114-R035</error></assert>
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
+			<cac:OrderLine><cac:LineItem><cac:QuotationLineReference><cbc:LineID>1</cbc:LineID></cac:QuotationLineReference></cac:LineItem></cac:OrderLine>
+		</OrderChange>
+	</test>
+</testSet>
