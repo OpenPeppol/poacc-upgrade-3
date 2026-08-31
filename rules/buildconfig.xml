@@ -195,6 +195,14 @@
   </configuration>
 
   <configuration>
+    <identifier>peppolbis-66</identifier>
+    <title>PEPPOL BIS Billing with Response 3.0</title>
+    <profileId>urn:peppol:bis:billing_with_response</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns:invoice_response:3</customizationId>
+    <inherit>peppolbis-t111-base-3.0</inherit>
+  </configuration>
+
+  <configuration>
     <identifier>peppolbis-36</identifier>
     <title>PEPPOL BIS Message level response 3.0</title>
     <profileId>urn:fdc:peppol.eu:poacc:bis:mlr:3</profileId>

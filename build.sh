@@ -47,8 +47,6 @@ else
     echo "No test summary found." >&3
 fi
 
-exit "$BUILD_RESULT"
-
 rm -rf $PROJECT/target/site/files/PEPPOLBIS-Upgrade-Schematron.zip
 rm -rf $PROJECT/target/site/files/PEPPOLBIS-Examples.zip
 
@@ -64,3 +62,5 @@ docker run --rm -i -v $PROJECT:/documents -v $PROJECT/target:/target difi/asciid
 
 # Fix ownership
 docker run --rm -i -v $PROJECT:/src alpine:3.11 chown -R $(id -g $USER).$(id -g $USER) /src/target
+
+exit "$BUILD_RESULT"
