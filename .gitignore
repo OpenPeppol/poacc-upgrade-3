@@ -7,3 +7,4 @@ build.log
 /.settings/
 .vscode
 
+.DS_Store
