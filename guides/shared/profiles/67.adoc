@@ -1,0 +1,41 @@
+
+[[prof-67]]
+= Customization and Profile identifiers
+
+In the table below you will find the values to be used as the specification identifier and the business process type for this profile
+
+[cols="3s,6a,3a", options="header"]
+|===
+| Type
+| Element `cbc:CustomizationID`
+| Element `cbc:ProfileID`
+
+
+| Order (Trdm01)
+| urn:fdc:peppol.eu:poacc:trns:order:3
+.3+.^| {bmo-profileid}
+
+| Order change (Trdm114)
+| urn:fdc:peppol.eu:poacc:trns:order_change:3
+
+| Order cancellation (Trdm115)
+| urn:fdc:peppol.eu:poacc:trns:order_cancellation:3
+|===
+
+WARNING: The value of `cbc:ProfileID` shown above is a *placeholder*. The final business process identifier for this BIS has not been decided yet.
+Before publication the placeholder value defined by `:bmo-profileid:` in `guides/shared/links.adoc` has to be replaced by the
+agreed value everywhere it occurs: the profile documentation, the documentation snippets, the validation artefacts, the unit
+tests, the example files and the build configuration.
+
+The three transactions used in this BIS are the same transactions as used in {link-bis-65}.
+They are distinguished from the advanced ordering process only by the value of `cbc:ProfileID`.
+The `cbc:CustomizationID` values are unchanged, so no new transaction or new syntax binding is introduced by this BIS.
+
+[IMPORTANT]
+====
+The Order Response (Trdm76) and Order Response Advanced (Trdm116) transactions are *not* part of this BIS.
+This business process covers the three document types listed above only, and neither party is expected to send a response.
+An Order Response Advanced cannot carry this business process identifier at all, because `cbc:ProfileID` is a fixed value in the
+Order Response Advanced syntax binding. This follows the same pattern as {link-bis-3}, where the order only process also has no
+response transaction.
+====

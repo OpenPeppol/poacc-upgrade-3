@@ -1,0 +1,44 @@
+[[buyer-managed-ordering-scenario3-cancellation]]
+= Scenario 3 – Cancellation of order from buyer
+
+The following diagram shows the business process and choreography for Scenario 3.
+
+image::images/bpmn-bmo-scenario3.png[width=1000]
+
+[cols="1s,5"]
+|====
+|Scenario number
+|3
+
+|Name
+|Cancellation of order from buyer
+
+|Description
+a|
+* A cancellation of a previously sent order.
+* The cancellation always applies to the order in full. Cancelling individual lines is done with an Order Change.
+* No response is returned by the seller.
+
+|Parties involved
+|Buyer +
+Seller
+
+|Assumptions
+|The buyer has sent an order, see scenario 1, possibly followed by one or more changes, see scenario 2. +
+The order has not been prepared for delivery, and any deadline for cancellation agreed between the parties has not passed.
+
+|The flow
+a|The buyer creates an Order Cancellation that
+
+* refers to the order in `cac:OrderReference/cbc:ID`,
+* states the reason for the cancellation in `cbc:CancellationNote`.
+
+The seller receives the Order Cancellation and terminates the order, and sends no Order Response.
+
+|Result
+a|
+. The order is cancelled and will not be delivered.
+
+|XML example file
+|See Appendix A for example files for scenario 3
+|====

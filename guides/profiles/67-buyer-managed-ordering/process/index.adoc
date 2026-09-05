@@ -1,0 +1,74 @@
+
+[[process-and-typical-use-cases]]
+= Business process and scenarios
+
+The Buyer Managed Ordering process comprises the sending of an initial order from the buyer, and any subsequent changes to, or cancellation of,
+that order - all initiated by the buyer. The seller does not send a business response at any point in the process.
+
+[[process-flow]]
+== Process flow
+
+The process flow is shown in the figure below. Each task comprises a scenario that is described in detail in the following chapters.
+
+:leveloffset: +1
+
+include::../../../shared/bpmn/bpmn-legend.adoc[]
+
+:leveloffset: -1
+
+image::images/bpmn-buyer-managed-ordering.png[width=1000]
+
+* A buyer submits an Order to the seller requesting delivery of goods or services.
+** The Order may refer to a framework agreement for its terms and conditions; otherwise the buyer’s terms and conditions apply.
+** The Order may contain items (goods or services) with item identifiers or items with free text description.
+* The seller receives the Order and processes it. The seller does *not* send an Order Response.
+* The buyer may change the order by sending one or more Order Changes, until the order is prepared for delivery or until an agreed deadline is reached.
+** Each Order Change carries the complete order content and replaces the previous version in full.
+** Order Changes are sequenced by the buyer through the sequence number.
+* The buyer may cancel the order by sending an Order Cancellation, until the order is prepared for delivery or until an agreed deadline is reached.
+
+[[order-state]]
+== Order state and the last valid version
+
+Since no response is exchanged, both parties determine the state of the order from the documents sent by the buyer alone.
+
+The following describes how the parties are expected to interpret the documents. It is not enforced by business rules,
+and the parties should confirm it in their agreement.
+
+. The initial Order establishes the order, identified by `cbc:ID`.
+. Every Order Change refers to that order through `cac:OrderReference/cbc:ID`. It is expected to carry a sequence number in
+`cbc:SequenceNumberID`, which the data model makes optional, see <<bmo-sequencing>>.
+. Sequence numbers are assigned by the buyer, using increasing values per order. The Order Change with the highest sequence number
+received before the agreed deadline is taken to be the valid version of the order.
+. An Order Change whose sequence number is lower than or equal to one already processed is not expected to be applied.
+. An Order Cancellation terminates the order. An Order Change received afterwards for the same order is not expected to be applied.
+. The seller is expected to apply an Order Change as a whole rather than partially.
+
+[NOTE]
+====
+The order state is not negotiable within this process. If the seller cannot deliver the last valid version of the order, this has to be
+resolved outside the Peppol process, or the parties can use {link-bis-28} or {link-bis-65} instead, which include response transactions.
+====
+
+[[error-handling]]
+== Error handling
+
+A seller that receives a document that is syntactically invalid, that violates a business rule, or that cannot be processed for technical reasons,
+has no business response transaction available in this BIS.
+
+The parties should agree on the use of {link-bis-36} for this purpose. A Message Level Response is used to report:
+
+* successful reception and technical processing of a document,
+* rejection of a document because of syntax or business rule errors.
+
+A Message Level Response is a technical acknowledgement. It is never an acceptance, rejection or confirmation of the order in a business sense.
+
+:leveloffset: +1
+
+include::scenario1.adoc[]
+
+include::scenario2.adoc[]
+
+include::scenario3.adoc[]
+
+:leveloffset: -1

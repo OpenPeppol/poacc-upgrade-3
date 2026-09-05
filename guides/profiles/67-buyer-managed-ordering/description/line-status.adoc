@@ -1,0 +1,36 @@
+[[bmo-line-status]]
+= Using line status codes in this process
+
+The Order Change line status codes and their business use are described for the transaction itself in
+<<order-change-line-status-code>>, and the valid values are listed in the code list chapter. That description applies
+unchanged in this process, including code `74`, which reopens an order line that a previous Order Change deleted.
+
+This chapter only states what is specific to Buyer Managed Ordering.
+
+Because no response is exchanged, the buyer alone decides the content of each version of the order. Two consequences follow.
+
+The Order Change carries the complete order::
+The Order Change restates all order lines of the order, as described in <<order-change-line-status-code>>. A line the buyer
+does not send is therefore not carried over from the previous version. The parties are expected to agree that the seller
+applies an Order Change as a whole rather than partially, see <<order-state>>.
+
+The codes are relative to the referenced order::
+`cac:OrderReference` always identifies the initial Order, so a line that still differs from that order carries code `3`
+even when it is unchanged since the previous Order Change. Code `4` is used for a line that matches the initial Order.
+
+.A deleted line in an Order Change
+[source, xml, indent=0]
+----
+include::{snippet-change-dir}/snippet-buyer-managed.xml[tags=line-status]
+----
+<1> Line 3 is deleted. In this example the quantity and the line amount are set to zero, so that the document totals
+    match the sum of the remaining lines. This is a presentation choice, not a requirement: rule `PEPPOL-T114-R008`,
+    which compares the total with the sum of the line amounts, is a warning, so a buyer may instead keep the original
+    values and exclude the line from the totals.
+
+.An added line in an Order Change
+[source, xml, indent=0]
+----
+include::{snippet-change-dir}/snippet-buyer-managed.xml[tags=line-added]
+----
+<1> Line 4 is added, with a line identifier that is unique within the order.

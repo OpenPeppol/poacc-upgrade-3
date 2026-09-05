@@ -1,0 +1,32 @@
+[[bmo-identifiers]]
+= Identifying the messages in this process
+
+Every message in this process carries the same business process identifier in `cbc:ProfileID`, while `cbc:CustomizationID`
+identifies which of the three transactions the message represents. The `cbc:CustomizationID` values are the same as in {link-bis-65};
+it is the `cbc:ProfileID` that tells the receiver that no response is to be returned.
+
+.Order in the Buyer Managed Ordering process
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-buyer-managed.xml[tags=identifiers]
+----
+<1> Identifies the message as a Peppol Order.
+<2> Identifies the business process as Buyer Managed Ordering. The same value is used in all three messages.
+
+.Order Change in the Buyer Managed Ordering process
+[source, xml, indent=0]
+----
+include::{snippet-change-dir}/snippet-buyer-managed.xml[tags=identifiers]
+----
+<1> Identifies the message as a Peppol Order Change.
+<2> The same business process identifier as in the order it changes.
+
+.Order Cancellation in the Buyer Managed Ordering process
+[source, xml, indent=0]
+----
+include::{snippet-cancellation-dir}/snippet-buyer-managed.xml[tags=identifiers]
+----
+<1> Identifies the message as a Peppol Order Cancellation.
+<2> The same business process identifier as in the order it cancels.
+
+See <<prof-67>> for the complete list of identifier values.

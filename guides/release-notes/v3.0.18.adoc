@@ -15,6 +15,11 @@ Release date:: November 2026
 ** Added a new section describing the business use of the Order Change line status codes, including code 74 - Reopened, which is used to make a previously deleted order line active again. Added a matching entry to the code list chapter, and a note in scenario 2 on when a buyer may reopen a line. Added an Order Change example showing a line being reopened after deletion. https://openpeppol.atlassian.net/browse/RFC-573
 **Added Clarification on the Rejection guidance FOR Order Response Advanced section 7.2
 
+* Buyer Managed Ordering BIS 3.0 (Profile 67)
+** A new BIS is added for a document flow where the buyer is in control of the order and the seller sends no response. It reuses the Order (T01), Order Change (T114) and Order Cancellation (T115) transactions unchanged and introduces a new business process identifier for `cbc:ProfileID`. The process is aligned with EN 17016-1, Business Process Variant B. The profile requires a separate SMP registration for all three document types. No new transaction, business term, code list or business rule is introduced. https://openpeppol.atlassian.net/browse/RFC-TBD
+** *Open item*: the value of the new `cbc:ProfileID` is not decided. The artefacts carry the placeholder `urn:fdc:peppol.eu:poacc:bis:TBD_PROFILE_ID:3`, which must be replaced before publication in `guides/shared/links.adoc`, `guides/shared/profiles/67.adoc`, the three `rules/snippets/order*/snippet-buyer-managed.xml`, the schematron for T01, T114 and T115, the unit tests, the example files and `rules/buildconfig.xml`.
+** *Open item*: whether this process should mandate `cbc:SequenceNumberID` on the Order Change through a business rule is left to the community. The Order Change transaction documentation states that the sequence number is mandatory, while the syntax binding gives it cardinality 0..1 and no rule enforces it. This BIS does not change that situation for any profile.
+
 * BIS Catalogue with and without response (Profile 1 and Profile 64)
 **Added section 6.16 describing the calculations and usage of Product climate data, including new codelist for Item Property Name Codes(IPNC). https://openpeppol.atlassian.net/browse/RFC-540
 
@@ -22,6 +27,9 @@ Release date:: November 2026
 == Changes to syntax
 * Order Change (T114)
 ** Clarified the name and description of `cbc:LineStatusCode` to state that it carries the Order Change subset of UNCL1229, and to reference the new Advanced Ordering BIS guidance on the business use of codes 1, 2, 3, 4 and 74. https://openpeppol.atlassian.net/browse/RFC-493
+
+* Order Change (T114) and Order Cancellation (T115)
+** `cbc:ProfileID` changed from a fixed value to an example value in the syntax binding, as two business processes now use these transactions. No document changes validity: PEPPOL-T114-R031 and PEPPOL-T115-R031 continue to reject every value outside the allowed list. The generated rules PEPPOL-T114-B00301 and PEPPOL-T115-B00301 no longer exist, so an already invalid document reports one fatal error instead of two.
 
 * Punchout transaction (T77)
 **added PackagingMarkedLabelAccreditationCode code list to item label to align with order messages. https://openpeppol.atlassian.net/browse/RFC-536
@@ -54,6 +62,7 @@ Release date:: November 2026
 
 
 == Changes to transaction rules
+* Extended rules PEPPOL-T01-R031, PEPPOL-T114-R031 and PEPPOL-T115-R031 to accept the business process identifier of Peppol BIS Buyer Managed Ordering, and reworded their assert messages to name it. Unit tests added for all three; PEPPOL-T115-R031 had no unit test before.
 * Removed rules PEPPOL-T01-R002 and PEPPOL-T114-R002 (warning) which required Order and OrderChange to allways provide a validity end date. https://openpeppol.atlassian.net/browse/RFC-500
 
 == Other changes

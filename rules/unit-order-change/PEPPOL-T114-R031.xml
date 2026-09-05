@@ -17,4 +17,30 @@
 		</OrderChange>
 	</test>
 
+	<test id="2">
+		<assert>
+			<success>PEPPOL-T114-R031</success>
+		</assert>
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
+
+			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:TBD_PROFILE_ID:3</cbc:ProfileID>
+
+		</OrderChange>
+	</test>
+
+	<test id="3">
+		<assert>
+			<error>PEPPOL-T114-R031</error>
+		</assert>
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
+
+			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
+
+		</OrderChange>
+	</test>
+
 </testSet>

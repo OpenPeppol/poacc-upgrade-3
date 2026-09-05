@@ -1,0 +1,24 @@
+[[benefit]]
+= Benefit
+
+This BIS standardizes a process that today is implemented through buyer-specific customizations and restrictions on the existing ordering profiles.
+Making it a Peppol BIS removes the need for such bilateral customizations and makes a single implementation reusable across buyers and countries.
+
+Buyers that operate a centralized contract and purchasing system, where the assortment, prices and terms are already fixed by contract, gain:
+
+* A complete, standardized ordering process – order, change and cancellation – without having to implement or operate response handling.
+* A predictable order state. The buyer’s system is the single source of truth for what has been ordered.
+* A lower implementation threshold for small sellers, who only need to be able to receive documents in this process.
+
+Sellers gain:
+
+* One standardized profile to implement instead of a set of buyer-specific restrictions on {link-bis-28} or {link-bis-65}.
+* Clarity about which document types can arrive in the process and how they are intended to be applied.
+
+Other benefits are, among others:
+
+* Fewer messages are exchanged for the same business outcome. For an order that is changed once and then cancelled, the process
+uses three messages instead of the six or more required when every document is responded to. This reduces processing, storage and
+network load, and thereby the environmental impact of ICT.
+* Alignment with {en17016} Business Process Variant B, which supports interoperability with implementations outside the Peppol network.
+* Can be used by procuring agencies as a step towards automation of procurement, and combined with catalogue, despatch advice and invoicing BIS.

@@ -1,0 +1,24 @@
+
+= Introduction to OpenPeppol and BIS
+
+This BIS is a result of work within {OpenPeppol} and is published as part of the {Peppol} specifications.
+
+This BIS provides a set of specifications for implementing a {Peppol} business process.
+The document is concerned with clarifying requirements for ensuring interoperability of pan-European Public eProcurement and provides guidelines for supporting these requirements and how to implement them.
+
+This BIS is based on the CEN WS/BII Profile {bii-order} and is extended to include order change and order cancellation.
+The business process in this BIS is aligned with the European Standard {en17016}, *Business Process Variant B*, in which the buyer is in control of the order and no response from the seller is part of the process.
+
+*The purpose* of this document is to describe formats for the Order, Order Change and Order Cancellation messages in a Buyer Managed Ordering process, and to facilitate an efficient implementation and increased use of electronic collaboration regarding ordering based on these formats.
+
+This BIS reuses three of the four transactions of {link-bis-65} and omits the response transaction.
+It therefore does not introduce any new transaction, only a new business process (profile) identifier.
+
+//.Relationship between BII profiles and Peppol BIS
+//image::../../shared/images/BII_relationship.png[]
+
+:leveloffset: +1
+
+include::../../../shared/files/audience.adoc[]
+
+:leveloffset: -1

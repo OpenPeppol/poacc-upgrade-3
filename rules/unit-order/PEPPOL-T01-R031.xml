@@ -43,4 +43,17 @@
 			
 		</Order>
 	</test>
+	<test id="4">
+		<assert>
+			<success>PEPPOL-T01-R031</success>
+		</assert>
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+
+			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:TBD_PROFILE_ID:3</cbc:ProfileID>
+
+		</Order>
+	</test>
+
 </testSet>

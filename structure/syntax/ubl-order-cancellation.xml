@@ -24,7 +24,7 @@
 				transaction appears.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir01-002</Reference>
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3</Value>
+			<Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>

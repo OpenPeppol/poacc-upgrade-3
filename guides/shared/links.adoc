@@ -20,6 +20,7 @@
 :bii-order: ftp://ftp.cen.eu/public/CWAs/BII2/CWA16562/CWA16562-Annex-A-BII-Profile-03-OrderOnly-V2_0_0.pdf[CEN BII2 Profile 03, Order Only]
 :bii-ordering: ftp://ftp.cen.eu/public/CWAs/BII2/CWA16562/CWA16562-Annex-G-BII-Profile-28-Ordering-V1_0_0.pdf[CEN BII2 Profile 28, Ordering]
 :bii-mlr: ftp://ftp.cen.eu/public/CWAs/BII2/CWA16558/CWA16558-Annex-M-BII-Profile-36-MessageLevelResponse-V1_0_0.pdf[CEN BII2 Profile 36, Message Level Response]
+:en17016: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:69375[EN 17016-1, Electronic public procurement - Business interoperability interfaces (BII) - Part 1]
 
 //UBL
 :ubl: http://docs.oasis-open.org/ubl/UBL-2.1.html[UBL 2.1]
@@ -67,8 +68,21 @@
 :imr-UC: https://docs.peppol.eu/poacc/upgrade-3/files/PEPPOLBIS-Examples.zip[Use case example files]
 :examples-zip: http://docs.peppol.eu/poacc/upgrade-3/files/PEPPOLBIS-Examples.zip[Example files (ZIP)]
 
+//profile identifiers
+// PLACEHOLDER: the business process identifier for Peppol BIS Buyer Managed Ordering (BIS 67) is not decided yet.
+// It must be replaced by the agreed value before publication, here and in the validation artefacts.
+:bmo-profileid: urn:fdc:peppol.eu:poacc:bis:TBD_PROFILE_ID:3
+
 //internal
 :link-codelist: link:/poacc/upgrade-3/codelist/[Code list section]
+:link-bis-1: link:/poacc/upgrade-3/profiles/1-catalogueonly/[Peppol BIS Catalogue with response]
+:link-bis-3: link:/poacc/upgrade-3/profiles/3-order-only/[Peppol BIS Order only]
+:link-bis-18: link:/poacc/upgrade-3/profiles/18-punchout/[Peppol BIS Punch Out]
+:link-bis-28: link:/poacc/upgrade-3/profiles/28-ordering/[Peppol BIS Ordering]
+:link-bis-36: link:/poacc/upgrade-3/profiles/36-mlr/[Peppol BIS Message Level Response]
+:link-bis-64: link:/poacc/upgrade-3/profiles/64-catalogue-wo-response/[Peppol BIS Catalogue without response]
+:link-bis-65: link:/poacc/upgrade-3/profiles/65-advanced-ordering/[Peppol BIS Advanced Ordering]
+:link-bis-67: link:/poacc/upgrade-3/profiles/67-buyer-managed-ordering/[Peppol BIS Buyer Managed Ordering]
 :codelist-ICD: link:/poacc/upgrade-3/codelist/ICD/[ICD codes]
 :codelist-EAS: link:/poacc/upgrade-3/codelist/eas/[EAS codes]
 :vat-codes: link:/poacc/upgrade-3/codelist/UNCL5305/[Code list UNCL5305]

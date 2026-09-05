@@ -1,0 +1,18 @@
+[[bmo-cancellation]]
+= Cancelling an Order
+
+An Order Cancellation always terminates the referenced order in full. To remove individual lines the buyer sends an
+Order Change in which those lines carry line status code `2`, see <<bmo-line-status>>.
+
+.Reason and order reference in an Order Cancellation
+[source, xml, indent=0]
+----
+include::{snippet-cancellation-dir}/snippet-buyer-managed.xml[tags=cancellation]
+----
+<1> The reason for the cancellation. This element is mandatory in the Order Cancellation data model.
+    Since the seller has no transaction available to ask why the order was cancelled, the reason carried here is the
+    only explanation of the cancellation the seller receives.
+<2> The identifier of the order being cancelled, that is `cbc:ID` of the original Order.
+
+After an Order Cancellation received before the agreed deadline the order is terminated. The parties are expected to agree
+that an Order Change for the same order arriving afterwards is not applied, see <<order-state>>.

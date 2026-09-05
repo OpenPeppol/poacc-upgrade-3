@@ -9,8 +9,8 @@
 
         <rule context="cbc:ProfileID">
                 <assert id="PEPPOL-T114-R031"
-                        test="some $p in tokenize('urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3', '\s') satisfies $p = normalize-space(.)"
-                        flag="fatal">[PEPPOL-T114-R031]-An order change transaction MUST use profile advanced_ordering.</assert>
+                        test="some $p in tokenize('urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3 urn:fdc:peppol.eu:poacc:bis:TBD_PROFILE_ID:3', '\s') satisfies $p = normalize-space(.)"
+                        flag="fatal">[PEPPOL-T114-R031]-An order change transaction MUST use profile advanced_ordering or buyer managed ordering.</assert>
         </rule>
 
 		<rule context="cbc:CustomizationID">

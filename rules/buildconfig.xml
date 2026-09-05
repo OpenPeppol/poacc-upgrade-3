@@ -27,6 +27,9 @@
   <testfolder>use-case-examples/advanced-ordering-sc3</testfolder>
   <testfolder>use-case-examples/advanced-ordering-sc4</testfolder>
   <testfolder>use-case-examples/advanced-ordering-sc5</testfolder>
+  <testfolder>use-case-examples/buyer-managed-ordering-sc1</testfolder>
+  <testfolder>use-case-examples/buyer-managed-ordering-sc2</testfolder>
+  <testfolder>use-case-examples/buyer-managed-ordering-sc3</testfolder>
   <testfolder>snippets/order</testfolder>
   <testfolder>snippets/order-response</testfolder>
   <testfolder>snippets/order-agreement</testfolder>
@@ -240,6 +243,32 @@
     <profileId>urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3</profileId>
     <customizationId>urn:fdc:peppol.eu:poacc:trns:order_response_advanced:3</customizationId>
     <inherit>peppolbis-t116-base-3.0</inherit>
+  </configuration>
+
+  <!-- Peppol BIS Buyer Managed Ordering 3.0 (BIS 67).
+       NOTE: the profileId below is a PLACEHOLDER and must be replaced by the agreed value before publication. -->
+  <configuration>
+    <identifier>peppolbis-67</identifier>
+    <title>PEPPOL BIS Buyer Managed Ordering 3.0</title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis:TBD_PROFILE_ID:3</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns:order:3</customizationId>
+    <inherit>peppolbis-t01-base-3.0</inherit>
+  </configuration>
+
+  <configuration>
+    <identifier>peppolbis-67</identifier>
+    <title>PEPPOL BIS Buyer Managed Ordering 3.0</title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis:TBD_PROFILE_ID:3</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns:order_change:3</customizationId>
+    <inherit>peppolbis-t114-base-3.0</inherit>
+  </configuration>
+
+  <configuration>
+    <identifier>peppolbis-67</identifier>
+    <title>PEPPOL BIS Buyer Managed Ordering 3.0</title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis:TBD_PROFILE_ID:3</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns:order_cancellation:3</customizationId>
+    <inherit>peppolbis-t115-base-3.0</inherit>
   </configuration>
 
   </buildConfigurations>

@@ -1,0 +1,44 @@
+[[buyer-managed-ordering-scenario1-order]]
+= Scenario 1 – Order from buyer
+
+The following diagram shows the business process and choreography for Scenario 1.
+
+image::images/bpmn-bmo-scenario1.png[width=1000]
+
+[cols="1s,5"]
+|====
+|Scenario number
+|1
+
+|Name
+|Order from buyer
+
+|Description
+a|
+* An order of numbered articles or services.
+* The Order states the delivery address for the seller.
+* No response is returned by the seller.
+
+|Parties involved
+|Buyer +
+Seller
+
+|Assumptions
+|Buyer and seller have a commercial agreement with general conditions for ordering of goods or services, including the conditions under which
+an order is considered accepted without an electronic response. +
+They may also have exchanged a catalogue with product information and pricing.
+
+|The flow
+a|The buyer creates an Order with one or more lines and sends it to the seller. +
+The seller receives the Order and processes it for delivery, and sends no Order Response.
+
+If agreed between the parties, the seller returns a Message Level Response ({link-bis-36}) confirming that the document was received
+and identified, or reporting that it was rejected because of syntax or business rule errors.
+
+|Result
+a|
+. The order is registered by the seller and is ready for delivery.
+
+|XML example file
+|See Appendix A for example files for scenario 1
+|====

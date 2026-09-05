@@ -1,0 +1,18 @@
+[[principles-and-prerequisites]]
+= Principles and prerequisites
+
+This chapter describes the principles and assumptions that underlie the use of Peppol Buyer Managed Ordering.
+
+:leveloffset: +1
+
+include::scope.adoc[]
+
+include::prerequisites.adoc[]
+
+include::parties.adoc[]
+
+include::benefit.adoc[]
+
+include::interoperability.adoc[]
+
+:leveloffset: -1

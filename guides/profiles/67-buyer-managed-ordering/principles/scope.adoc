@@ -1,0 +1,47 @@
+[[scope]]
+= Scope
+
+This BIS describes a process where the buyer is in control of the order.
+The buyer issues an electronic order and may subsequently change or cancel that order, without the seller sending any business response.
+The seller is expected to process and execute the last valid version of the order received.
+
+Acceptance by the seller is implicit and governed by the underlying contract or framework agreement between the parties.
+Because there is no response transaction in the process, the terms under which an order may be changed or cancelled – in particular any deadline after which
+a change or cancellation is no longer accepted – are assumed to be agreed between buyer and seller before this process is used.
+
+The main activities supported by this profile are
+
+Order from buyer::
+The Order transaction supports the structured ordering of goods or services, using free text or use of identifiers.
+The information source of the ordered products may be a (paper or electronic) catalogue.
+
+Change of order from buyer::
+The buyer may change the order based on new requirements or other reasons.
+Each Order Change replaces the previous version of the order in full and is sequenced by the buyer.
+A change is sent before the order is prepared for delivery, or before any deadline agreed between the parties, see <<prerequisites>>.
+
+Cancellation of order from buyer::
+The buyer may cancel the order in full.
+A cancellation is sent before the order is prepared for delivery, or before any deadline agreed between the parties, see <<prerequisites>>.
+
+The following are explicitly *out of scope* of this BIS:
+
+* Order Response (T76) and Order Response Advanced (T116). No seller response transaction is part of this process.
+Sellers that need to respond to orders should use {link-bis-28}. Sellers that also need to respond to changes and cancellations,
+or to propose changes themselves, should use {link-bis-65}.
+* Changes or cancellations initiated by the seller.
+* Order agreement, despatch advice, invoicing and any other post-award process. These are covered by their own BIS and may be combined with this BIS.
+
+The following aspects are in scope on the same terms as in {link-bis-3}:
+
+Accounting:: The ordering process must support the allocation of budgets, so the value amounts of the ordered products may be stated.
+
+Invoice Verification:: The buyer may provide some information that the seller is required to place on the invoice for aiding and automation of invoice approval.
+
+TAX reporting:: TAX reporting is not a general requirement on orders. In this context the term TAX is used as a generalization of taxes such as VAT, GST or Sales Tax.
+TAX information is informative and does not affect the terms of trade.
+
+Transport and delivery:: Only limited support is in scope for transport related information, but the buyer is able to provide information about requested delivery
+location, some basic terms, time and contact persons for a delivery of an order.
+
+Inventory:: Supporting inventory management is not in scope, but structured orders based on catalogues can be used to automate picking at supplier warehouses.

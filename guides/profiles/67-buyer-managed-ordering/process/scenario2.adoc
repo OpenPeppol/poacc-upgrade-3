@@ -1,0 +1,62 @@
+[[buyer-managed-ordering-scenario2-change]]
+= Scenario 2 – Change of order from buyer
+
+The following diagram shows the business process and choreography for Scenario 2.
+
+image::images/bpmn-bmo-scenario2.png[width=1000]
+
+[cols="1s,5"]
+|====
+|Scenario number
+|2
+
+|Name
+|Change of order from buyer
+
+|Description
+a|
+* A change of a previously sent order of numbered articles or services.
+* The change may add, change or delete order lines, and may change header level information such as delivery date or delivery address.
+* No response is returned by the seller.
+
+|Parties involved
+|Buyer +
+Seller
+
+|Assumptions
+|The buyer has sent an order, see scenario 1. +
+The order has not been prepared for delivery, and any deadline for changes agreed between the parties has not passed. +
+The order has not been cancelled.
+
+|The flow
+a|In this process the buyer is expected to create an Order Change that
+
+* refers to the original order in `cac:OrderReference/cbc:ID`,
+* carries a sequence number in `cbc:SequenceNumberID` higher than the sequence number of any previous change to that order,
+* contains the *complete* content of the order as it is to be after the change, with each line carrying a line status code
+  (`cbc:LineStatusCode`, code list UNCL1229_CHANGE) stating whether the line is added, changed, deleted or unaffected.
+
+The seller receives the Order Change and replaces the previous version of the order in full, and sends no Order Response.
+
+The buyer may repeat this scenario. Each further Order Change is expected to carry a higher sequence number than the previous one.
+
+|Result
+a|
+. The changed order is registered by the seller and is ready for delivery.
+
+|XML example file
+a|See Appendix A for example files for scenario 2. The scenario is illustrated by three documents:
+
+* the initial order,
+* an order change with sequence number 1, which reduces the quantity on one line (line status code 3) and repeats the
+  two unchanged lines (line status code 4),
+* an order change with sequence number 2, which deletes a line (line status code 2), adds a new line (line status code 1),
+  repeats the line that is still changed relative to the order (line status code 3) and the unaffected line (line status code 4).
+|====
+
+[IMPORTANT]
+====
+In this process an Order Change is intended as a full replacement rather than a delta on top of the previous change.
+A seller that receives an Order Change can apply that document alone; it does not need the earlier changes to reconstruct the order.
+Lines that are unchanged relative to the original order are still present in the document, with line status code `4` (No action).
+====

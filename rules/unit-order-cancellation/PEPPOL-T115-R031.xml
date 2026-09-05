@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t115-base-3.0">
+	<assert>
+		<scope>PEPPOL-T115-R031</scope>
+		<description>Verify that ProfileID is correct</description>
+	</assert>
+	<test id="1">
+		<assert>
+			<success>PEPPOL-T115-R031</success>
+		</assert>
+		<OrderCancellation xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderCancellation-2">
+
+			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3</cbc:ProfileID>
+
+		</OrderCancellation>
+	</test>
+
+	<test id="2">
+		<assert>
+			<success>PEPPOL-T115-R031</success>
+		</assert>
+		<OrderCancellation xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderCancellation-2">
+
+			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:TBD_PROFILE_ID:3</cbc:ProfileID>
+
+		</OrderCancellation>
+	</test>
+
+	<test id="3">
+		<assert>
+			<error>PEPPOL-T115-R031</error>
+		</assert>
+		<OrderCancellation xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderCancellation-2">
+
+			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
+
+		</OrderCancellation>
+	</test>
+
+</testSet>

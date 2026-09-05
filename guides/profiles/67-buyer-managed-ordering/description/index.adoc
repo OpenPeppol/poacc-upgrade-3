@@ -1,0 +1,18 @@
+[[buyer-managed-ordering-message]]
+= Description of selected parts of the messages
+
+This chapter describes the parts of the Order, Order Change and Order Cancellation messages that are specific to the
+Buyer Managed Ordering process. All other parts of the three messages are described in the chapters for the individual
+transactions, and are used in this BIS without change.
+
+:leveloffset: +1
+
+include::identifiers.adoc[]
+
+include::sequencing.adoc[]
+
+include::line-status.adoc[]
+
+include::cancellation.adoc[]
+
+:leveloffset: -1

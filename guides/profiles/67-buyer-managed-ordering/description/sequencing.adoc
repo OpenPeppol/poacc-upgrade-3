@@ -1,0 +1,25 @@
+[[bmo-sequencing]]
+= Referencing and sequencing an Order Change
+
+Because the seller returns no response, the buyer alone establishes which version of an order is valid.
+Two elements carry that information. `cbc:SequenceNumberID` is described as mandatory by the Order Change transaction, but the
+syntax binding gives it cardinality 0..1 and no business rule enforces it, so in this process the buyer is expected, not obliged,
+to provide it. `cac:OrderReference` is mandatory in the Order Change data model.
+
+.Order reference and sequence number in an Order Change
+[source, xml, indent=0]
+----
+include::{snippet-change-dir}/snippet-buyer-managed.xml[tags=sequencing]
+----
+<1> The sequence number, assigned by the buyer, see <<sequence-number>>. In this process it is what establishes which
+    version of the order is valid, so the parties are expected to agree that the buyer assigns increasing values per order.
+<2> The identifier of the order being changed, that is `cbc:ID` of the original Order. Every change in a chain refers to
+    the original order, never to the preceding change.
+
+The parties are expected to agree that the seller uses these two values as follows:
+
+* The Order Change with the highest sequence number received for an order, before the agreed deadline, is the valid version.
+* An Order Change whose sequence number is lower than or equal to one already processed is not applied.
+* An Order Change received after an Order Cancellation for the same order is not applied.
+
+None of this is enforced by business rules. See <<order-state>>.

@@ -1,0 +1,47 @@
+[[interoperability]]
+= Interoperability
+
+This BIS structure is based on the European Interoperability Framework 2.0 {EIF}. This BIS applies the Framework as follows:
+
+Legal Interoperability::
+
+* Legal:
+** In implementations supporting public sector buyers, the use of this BIS has to be monitored in order to secure that the parties act in line with EU procurement directives.
+** As no acceptance is exchanged electronically, the legal effect of the order, and of any change or cancellation of it, follows from the contract between the parties.
+
+
+Organizational interoperability::
+
+* Organization (Organization/Business):
+** This BIS supports B2B and B2G.
+** This BIS supports cross border, regional and domestic ordering.
+** This BIS can function as a component in an EDI agreement within a trading community.
+** This BIS supports linking of business processes within the sending and receiving organization.
+
+* Organization (Process):
+** This BIS implements {en17016}, Business Process Variant B, where the buyer is in control of the order and the seller does not respond.
+** This BIS supports a set of “common business processes” that is assumed to be supported by most enterprises whether public or private.
+
+
+Semantic interoperability::
+
+* Semantic:
+** The set of information elements is the same as the one used in {link-bis-65} for the Order, Order Change and Order Cancellation transactions.
+** No new business terms are introduced by this BIS.
+
+** A CORE business message:
+*** Data model, a set of elements that the receiver MUST be able to process.
+*** Business rules, a set of business rules that ensure a common way of processing the information elements.
+The rules are stated in a way that allows for automated validation of document instances.
+Issuers and receivers can verify that the exchanged document conforms to the rules of this BIS. +
+Peppol adds business rules on top of the data model to clarify certain design choices left open by the {bii}.
+
+Technical interoperability::
+* Technical Interaction (Process and semantic implementation):
+** Binding to OASIS UBL 2.1, see {ubl21} (for Order transaction)
+** Binding to OASIS UBL 2.3, see {ubl23} (for Order Change and Order Cancellation transactions)
+** ISO/IEC 19757-3 Schematron, for automation of document validation, see {schematron}
+
+
+* Technical Interaction (eSignature Validation):
+** Not supported in this BIS.

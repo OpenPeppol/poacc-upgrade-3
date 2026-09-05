@@ -1,0 +1,41 @@
+[[prerequisites]]
+= Prerequisites
+
+Because no business response is exchanged in this process, a number of conditions that are otherwise negotiated through the response transaction
+need to be settled before this BIS is used. The following prerequisites are assumed.
+
+[cols="2s,5",options="header"]
+|====
+|Prerequisite
+|Description
+
+|Commercial agreement
+|Buyer and seller have a commercial agreement, framework agreement or contract with general conditions for ordering of goods or services.
+The agreement governs when an order becomes binding, as no acceptance is signalled electronically.
+
+|Change and cancellation deadline
+|Buyer and seller have agreed a deadline, or a rule for determining a deadline, after which an Order Change or Order Cancellation is no longer
+accepted by the seller. A typical rule is “until the order is prepared for delivery”.
+
+|Handling of the last valid version
+|The seller processes the last valid version of the order, that is the initial Order as amended by the highest sequenced Order Change received
+before the agreed deadline. The seller does not partially apply a change.
+
+|Product and price information
+|Product identifiers, descriptions and prices are known to both parties, for example through an exchanged catalogue ({link-bis-1} or {link-bis-64}),
+a punch out session ({link-bis-18}) or the contract.
+
+|Technical acknowledgement
+|Since there is no business response, the parties should agree on the use of {link-bis-36} for technical acknowledgement of receipt and for reporting
+syntactical or business rule errors. A Message Level Response is a technical acknowledgement only, it is not an acceptance of the order.
+
+|Registration in SMP
+|The receiver (seller) is registered in the Peppol network for the business process identifier of this BIS, for all three document types.
+See <<profiles>>.
+|====
+
+[IMPORTANT]
+====
+A seller that cannot fulfil an order, or cannot apply a change or a cancellation, has no transaction available in this BIS to say so.
+Such situations have to be resolved outside the Peppol process, or the parties can use {link-bis-28} or {link-bis-65} instead.
+====

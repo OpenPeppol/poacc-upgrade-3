@@ -19,6 +19,7 @@
     <Documentation path="profiles/63-invoiceresponse/">- Peppol BIS Invoice Response 3.2</Documentation>
     <Documentation path="profiles/66-billing-with-response/">- Peppol BIS Billing with response 3.0</Documentation>
     <Documentation path="profiles/65-advanced-ordering/">- Peppol BIS Advanced Ordering 3.0</Documentation>
+    <Documentation path="profiles/67-buyer-managed-ordering/">- Peppol BIS Buyer Managed Ordering 3.0</Documentation>
     <!-- <Documentation path="work/">Overview and processing of alignments</Documentation> -->
     <!-- <Documentation path="review/">Review of alignments</Documentation> -->
     <!-- <Documentation path="methodology/schematron/">Schematron guideline</Documentation> -->
