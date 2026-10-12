@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalogue xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_only:3</cbc:ProfileID>
+	<cbc:ID>CAT-30-4</cbc:ID>
+	<cbc:ActionCode>Add</cbc:ActionCode>
+	<cbc:IssueDate>2026-01-15</cbc:IssueDate>
+	<cac:CatalogueLine>
+		<cbc:ID>1</cbc:ID>
+		<cac:Item>
+			<cbc:Name>Gypsum board</cbc:Name>
+			<!-- tag::genericproductclimatedata[] -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Boverket Resource ID</cbc:Name>
+				<cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+				<cbc:Value>6000000020</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>SYKE CO2 ID</cbc:Name>
+				<cbc:NameCode listID="IPNC">SYKECO2ID</cbc:NameCode>
+				<cbc:Value>123456789</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Ökobaudat UUID</cbc:Name>
+				<cbc:NameCode listID="IPNC">OekobaudatUUID</cbc:NameCode>
+				<cbc:Value>873699e3-39ee-432a-883d-9942d65d92af</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<!-- end::genericproductclimatedata[] -->
+			<!-- tag::epd[] -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Dataset ID</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDDataSetID</cbc:NameCode>
+				<cbc:Value>165f8554-00cd-43ad-aeb7-ba769854554a</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Dataset URL</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDDataSetURL</cbc:NameCode>
+				<cbc:Value>https://epdnorway.lca-data.com/resource/processes/165f8554-00cd-43ad-aeb7-ba769854554a?format=xml&amp;version=00.01.000</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Program Operator</cbc:Name>
+				<cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+				<cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Number</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+				<cbc:Value>NEPD-2154-978-SE</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Product Name</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+				<cbc:Value>Sweexp55 C30/37</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD HR URL</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDHRURL</cbc:NameCode>
+				<cbc:Value>https://www.epd-norge.no/getfile.php/1313397-1680247896/EPDer/Byggevarer/Ferdig%20betong/NEPD-2154-978_Sweexp55-C30-37-%281%29.pdf</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>GWP GHG A1-3 EPD value per kilogram</cbc:Name>
+				<cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="KGM">0.251</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Mother EPD ID</cbc:Name>
+				<cbc:NameCode listID="IPNC">MotherEPDID</cbc:NameCode>
+				<cbc:Value>NEPD-1717-700-SE</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<!-- end::epd[] -->
+		</cac:Item>
+	</cac:CatalogueLine>
+</Catalogue>

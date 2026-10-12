@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalogue xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_only:3</cbc:ProfileID>
+	<cbc:ID>CAT-30-1</cbc:ID>
+	<cbc:ActionCode>Add</cbc:ActionCode>
+	<cbc:IssueDate>2026-01-15</cbc:IssueDate>
+	<cac:CatalogueLine>
+		<cbc:ID>1</cbc:ID>
+		<cac:Item>
+			<cbc:Name>Gypsum board</cbc:Name>
+			<!-- tag::buyersitemidentification[] -->
+			<cac:BuyersItemIdentification>
+				<cbc:ID>123321</cbc:ID>
+			</cac:BuyersItemIdentification>
+			<!-- end::buyersitemidentification[] -->
+			<cac:SellersItemIdentification>
+				<cbc:ID>010120401</cbc:ID>
+			</cac:SellersItemIdentification>
+			<!-- tag::itemnetweight[] -->
+			<cac:Dimension>
+				<cbc:AttributeID>AAF</cbc:AttributeID>
+				<cbc:Measure unitCode="KGM">12.3</cbc:Measure>
+			</cac:Dimension>
+			<!-- end::itemnetweight[] -->
+		</cac:Item>
+	</cac:CatalogueLine>
+</Catalogue>
