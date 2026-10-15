@@ -16,7 +16,7 @@
 	<rule context="cac:RequiredItemLocationQuantity/cac:Price">
 		<assert id="PEPPOL-T77-R003"
 				test="number(cbc:PriceAmount) &gt;=0"
-				flag="fatal">[PEPPOL-T77-R003]-Prices of items SHALL not be negative</assert>
+				flag="fatal">[PEPPOL-T77-R003]-Prices of items SHALL NOT be negative</assert>
 	</rule>
 
 	<rule context="cac:Item">
@@ -25,7 +25,7 @@
 				flag="fatal">[PEPPOL-T77-R004]-Each item in a shopping cart line SHALL be identifiable by either "item sellers identifier" or "item standard identifier"</assert>
 		<assert id="PEPPOL-T77-R005"
 				test="(count(cac:ItemSpecificationDocumentReference[cbc:DocumentTypeCode = 'PRODUCT_IMAGE']) &lt;= 1)"
-				flag="fatal">[PEPPOL-T77-R005]-Only one attachment may be identified as main image.</assert>
+				flag="fatal">[PEPPOL-T77-R005]-Only one attachment SHALL be identified as main image.</assert>
 	</rule>
 
 	<rule context="cac:CatalogueLine/cac:RequiredItemLocationQuantity">
@@ -40,7 +40,7 @@
 	<rule context="cac:Item/cac:AdditionalItemProperty[cbc:Name = 'ServiceIndicator']">
 		<assert id="PEPPOL-T77-R007"
 				test="(cbc:Value = 'true' or cbc:Value = 'false')"
-				flag="fatal">[PEPPOL-T77-R007]-For AdditionalItemProperties where name is ServiceIndicator the value may only be "true" or "false".</assert>
+				flag="fatal">[PEPPOL-T77-R007]-For AdditionalItemProperties where name is ServiceIndicator the value SHALL only be "true" or "false".</assert>
 	</rule>
 
 	<rule context="cac:ClassifiedTaxCategory">

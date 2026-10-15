@@ -26,7 +26,7 @@
 				flag="fatal">[PEPPOL-T110-R004]-All amounts SHALL have same currency code as document currency</assert>
 		<assert id="PEPPOL-T110-R013"
 				test="ancestor::node()/local-name() = 'Price' or string-length(substring-after(., '.')) &lt;= 2"
-				flag="fatal">[PEPPOL-T110-R013]-Elements of data type amount cannot have more than 2 decimals (I.e. all amounts except unit price amounts)</assert>
+				flag="fatal">[PEPPOL-T110-R013]-Elements of data type amount SHALL NOT have more than 2 decimals (I.e. all amounts except unit price amounts)</assert>
 	</rule>
 	
 	

@@ -73,7 +73,7 @@
 
         <assert id="PEPPOL-T19-R006"
                 test="number(cac:Price/cbc:PriceAmount) &gt;=0"
-                flag="fatal">[PEPPOL-T19-R006]-Prices of items SHALL not be negative</assert>
+                flag="fatal">[PEPPOL-T19-R006]-Prices of items SHALL NOT be negative</assert>
         
         <assert id="PEPPOL-T19-R011"
             test="($CataloguePriceValidityStart &gt;= $CatalogueLineValidityStart) and ($CataloguePriceValidityStart &lt;= $CatalogueLineValidityEnd) 
