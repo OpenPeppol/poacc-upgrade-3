@@ -26,7 +26,7 @@
                 flag="fatal">[PEPPOL-T114-R003]-An order MUST be stated in a single currency</assert>
         <assert id="PEPPOL-T114-R028"
                 test="ancestor::node()/local-name() = 'Price' or string-length(substring-after(., '.')) &lt;= 2"
-                flag="fatal">[PEPPOL-T114-R028]-Elements of data type amount cannot have more than 2 decimals (I.e. all amounts except unit price amounts)</assert>
+                flag="fatal">[PEPPOL-T114-R028]-Elements of data type amount SHALL NOT have more than 2 decimals (I.e. all amounts except unit price amounts)</assert>
     </rule>
 
     <!-- Originator party -->
@@ -63,7 +63,7 @@
                 flag="fatal">[PEPPOL-T114-R007]-Expected total sum of line amounts MUST NOT be negative</assert>
         <assert id="PEPPOL-T114-R008"
                 test="$lineEtensionAmount = $sumLineExtensionAmount"
-                flag="warning">[PEPPOL-T114-R008]-Expected total sum of line amounts MUST equal the sum of the order line amounts at order line level</assert>
+                flag="warning">[PEPPOL-T114-R008]-Expected total sum of line amounts SHOULD equal the sum of the order line amounts at order line level</assert>
         <assert id="PEPPOL-T114-R009"
                 test="$allowanceTotalAmount = $sumAllowance"
                 flag="fatal">[PEPPOL-T114-R009]-Expected total sum of allowance at document level MUST be equal to the sum of allowance amounts at document level</assert>
@@ -138,7 +138,7 @@
                 flag="fatal">[PEPPOL-T114-R001]-Each order line MUST have a document line identifier that is unique within the order.</assert>
         <assert id="PEPPOL-T114-R004"
                 test="number(cbc:Quantity) &gt;=0"
-                flag="fatal">[PEPPOL-T114-R004]-Each order line ordered quantity MUST not be negative</assert>
+                flag="fatal">[PEPPOL-T114-R004]-Each order line ordered quantity MUST NOT be negative</assert>
         <assert id="PEPPOL-T114-R013"
                 test="cbc:Quantity"
                 flag="warning">[PEPPOL-T114-R013]-Each order line SHOULD have an ordered quantity</assert>
@@ -156,7 +156,7 @@
     <rule context="cac:Price">
         <assert id="PEPPOL-T114-R005"
                 test="number(cbc:PriceAmount) &gt;=0"
-                flag="fatal">[PEPPOL-T114-R005]-Each order line item net price MUST not be negative
+                flag="fatal">[PEPPOL-T114-R005]-Each order line item net price MUST NOT be negative
         </assert>
         <assert  id="PEPPOL-T114-R027"
                 test="(cac:AllowanceCharge/cbc:BaseAmount) &gt;= 0 or not(exists(cac:AllowanceCharge/cbc:BaseAmount))"

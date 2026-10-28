@@ -49,8 +49,14 @@
     <rule
       context="cbc:EndpointID[@schemeID = '0208'] | cac:PartyIdentification/cbc:ID[@schemeID = '0208'] | cbc:CompanyID[@schemeID = '0208']">
       <assert id="PEPPOL-COMMON-R043"
-        test="matches(normalize-space(), '^[0-9]{10}$') and u:mod97-0208(normalize-space())"
+        test="matches(normalize-space(), '^[01][0-9]{9}$') and u:mod97-0208(normalize-space())"
         flag="fatal">[PEPPOL-COMMON-R043]-Belgian enterprise number MUST be stated in the correct format.</assert>
+    </rule>
+    <rule
+      context="cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID[starts-with(normalize-space(.), 'BE')]">
+      <assert id="PEPPOL-COMMON-R062"
+        test="matches(upper-case(normalize-space(.)), '^BE[01][0-9]{9}$') and u:mod97-0208(substring(upper-case(normalize-space(.)), 3))"
+        flag="warning">[PEPPOL-COMMON-R062]-Belgian VAT number MUST be stated in the correct format.</assert>
     </rule>
     <rule
       context="cbc:EndpointID[@schemeID = '0201'] | cac:PartyIdentification/cbc:ID[@schemeID = '0201'] | cbc:CompanyID[@schemeID = '0201']">

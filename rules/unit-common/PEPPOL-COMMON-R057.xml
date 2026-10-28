@@ -11,7 +11,7 @@
 		</Order>
 	</test>
 	<test>
-		<assert><warning number="1">PEPPOL-COMMON-R057</warning></assert>
+		<assert><error number="1">PEPPOL-COMMON-R057</error></assert>
 		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 			<cac:BuyerCustomerParty><cac:Party><cac:PartyIdentification><cbc:ID schemeID="0217">12345678901</cbc:ID></cac:PartyIdentification></cac:Party></cac:BuyerCustomerParty>
 		</Order>
