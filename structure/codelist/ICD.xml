@@ -1031,7 +1031,7 @@
 	<Code>
 		<Id>0208</Id>
 		<Name>Numero d'entreprise / ondernemingsnummer / Unternehmensnummer</Name>
-		<Description>Intended Purpose/App. Area: Identification number attributed by the BCE/KBO/ZDU (the Belgian register) to identify entities and establishment units operating in Belgium. Issuing agency: Banque-Carrefour des Entreprises (BCE) / Kruispuntbank van Ondernemingen (KBO) / Zentrale Datenbank der Unternehmen (ZOU) Service public fédéral Economie, P.M.E.in Belgium.
+		<Description>Intended Purpose/App. Area: Identification number attributed by the BCE/KBO/ZDU (the Belgian register) to identify entities operating in Belgium. Issuing agency: Banque-Carrefour des Entreprises (BCE) / Kruispuntbank van Ondernemingen (KBO) / Zentrale Datenbank der Unternehmen (ZOU) Service public fédéral Economie, P.M.E.in Belgium.
 Classes moyennes et Energie</Description>
 	</Code>
 	<Code>
@@ -1210,7 +1210,7 @@ Classes moyennes et Energie</Description>
 	</Code>
 	<Code>
 		<Id>0245</Id>
-		<Name>Tax identification number (DIČ, Slovakia)</Name>
+		<Name>Tax identification number (DIČ), Slovakia</Name>
 	</Code>
 	<Code>
 		<Id>0246</Id>
@@ -1224,4 +1224,15 @@ Classes moyennes et Energie</Description>
 		<Id>0248</Id>
 		<Name>Oman Value Added Tax Identification Number (VATIN)</Name>
 	</Code>
-</CodeList>
+	<Code>
+		<Id>0249</Id>
+		<Name>The Chamber of Commerce &amp; Industry St. Eustatius &amp; Saba establishment number</Name>
+	</Code>
+	<Code>
+		<Id>0250</Id>
+		<Name>SECD - Siemens Energy Classification Dictionary</Name>
+	</Code>
+	<Code>
+		<Id>0251</Id>
+		<Name>The Bonaire Chamber of Commerce and Industry establishment number.</Name>
+	</Code></CodeList>

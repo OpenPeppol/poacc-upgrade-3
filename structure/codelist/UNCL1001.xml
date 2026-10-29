@@ -2908,11 +2908,6 @@
         </Description>
     </Code>
     <Code>
-        <Id>1999</Id>
-        <Name>Kyoto Convention.</Name>
-        <Description></Description>
-    </Code>
-    <Code>
         <Id>424</Id>
         <Name>WCO first step of two-step export declaration</Name>
         <Description>First part of a simplified declaration, in accordance
@@ -4514,6 +4509,54 @@
             item information might be excluded.
         </Description>
     </Code>
+
+    <Code>
+		<Id>752</Id>
+		<Name>Plant Passport</Name>
+		<Description>Document/message issued by a competent body certifying the phytosanitary status of plants or plant products for international trade.</Description>
+	</Code>
+
+    <Code>
+		<Id>753</Id>
+		<Name>Certificate of sustainability</Name>
+		<Description>Document/message issued by a competent body certifying sustainability.</Description>
+	</Code>
+
+    <Code>
+		<Id>754</Id>
+		<Name>Call for tender</Name>
+		<Description>A document/message used by a buyer to define the procurement procedure and request suppliers to participate.</Description>
+	</Code>
+
+    <Code>
+		<Id>755</Id>
+		<Name>Invitation to tender</Name>
+		<Description>A document/message used by a buyer to define the procurement procedure and request specific suppliers to participate.</Description>
+	</Code>
+
+    <Code>
+		<Id>756</Id>
+		<Name>European Single Procurement Document request</Name>
+		<Description>A document/message requesting a self-declaration from the supplier, providing preliminary evidence during the tendering phase.</Description>
+	</Code>
+
+    <Code>
+		<Id>757</Id>
+		<Name>Tendering price/sales catalogue request</Name>
+		<Description>A document/message requesting information regarding pricing and catalogue details for goods and/or services to be offered as part of a tender.</Description>
+	</Code>
+
+    <Code>
+		<Id>758</Id>
+		<Name>Tender</Name>
+		<Description>A document/message used by a supplier to bid in a procurement procedure.</Description>
+	</Code>
+
+    <Code>
+		<Id>759</Id>
+		<Name>European Single Procurement Document</Name>
+		<Description>A document/message containing a self-declaration by the supplier, providing preliminary evidence during the tendering phase.</Description>
+	</Code>
     <Code>
         <Id>760</Id>
         <Name>Multimodal/combined transport document (generic)</Name>
@@ -4537,6 +4580,12 @@
             as set forth in the through bill of lading.
         </Description>
     </Code>
+
+    <Code>
+		<Id>762</Id>
+		<Name>Tendering price/sales catalogue</Name>
+		<Description>A document/message providing information regarding pricing and catalogue details for goods and/or services to be offered as part of a tender.</Description>
+	</Code>
     <Code>
         <Id>763</Id>
         <Name>Forwarder's certificate of transport</Name>
@@ -4585,6 +4634,24 @@
             contract.
         </Description>
     </Code>
+
+    <Code>
+		<Id>767</Id>
+		<Name>Acknowledgment of receipt</Name>
+		<Description>Document/message confirming a receipt to the sending party.</Description>
+	</Code>
+
+    <Code>
+		<Id>768</Id>
+		<Name>Civil status document</Name>
+		<Description>Document which confirms the civil status of a person.</Description>
+	</Code>
+
+    <Code>
+		<Id>769</Id>
+		<Name>Advice report</Name>
+		<Description>Document reporting advice.</Description>
+	</Code>
     <Code>
         <Id>770</Id>
         <Name>Booking confirmation</Name>
@@ -4593,11 +4660,59 @@
             transport.
         </Description>
     </Code>
+
+    <Code>
+		<Id>771</Id>
+		<Name>Binding offer</Name>
+		<Description>Document which is a binding offer from one party to another.</Description>
+	</Code>
+
+    <Code>
+		<Id>772</Id>
+		<Name>Binding customer agreement for contract</Name>
+		<Description>Document which is a binding agreement from the customer for a contract, such as an insurance contract.</Description>
+	</Code>
+
+    <Code>
+		<Id>773</Id>
+		<Name>Coverage confirmation note</Name>
+		<Description>Document confirming that insurance coverage is granted.</Description>
+	</Code>
+
+    <Code>
+		<Id>774</Id>
+		<Name>General terms and conditions</Name>
+		<Description>Document specifying general terms and conditions.</Description>
+	</Code>
     <Code>
         <Id>775</Id>
         <Name>Calling forward notice</Name>
         <Description>Instructions for release or delivery of goods.</Description>
     </Code>
+
+    <Code>
+		<Id>776</Id>
+		<Name>Contract clauses</Name>
+		<Description>Document specifying the clauses applying to a contract.</Description>
+	</Code>
+
+    <Code>
+		<Id>777</Id>
+		<Name>Specific contract conditions</Name>
+		<Description>Document specifying the individual conditions or clauses applying to a specific contract.</Description>
+	</Code>
+
+    <Code>
+		<Id>778</Id>
+		<Name>Group insurance rules</Name>
+		<Description>Document stating the rules of a group insurance contract.</Description>
+	</Code>
+
+    <Code>
+		<Id>779</Id>
+		<Name>Questionnaire</Name>
+		<Description>Document consisting of a series of questions.</Description>
+	</Code>
     <Code>
         <Id>780</Id>
         <Name>Freight invoice</Name>
@@ -4795,6 +4910,48 @@
             in force.
         </Description>
     </Code>
+
+    <Code>
+		<Id>813</Id>
+		<Name>Declaration of final beneficiary</Name>
+		<Description>Declaration document to identify the final beneficiary of an asset.</Description>
+	</Code>
+
+    <Code>
+		<Id>814</Id>
+		<Name>US FATCA statement</Name>
+		<Description>Statement regarding the Foreign Account Tax Compliance Act (FATCA) of the United States of America.</Description>
+	</Code>
+
+    <Code>
+		<Id>815</Id>
+		<Name>Insured status report</Name>
+		<Description>Document reporting (e.g. annually) to the insured the actual details of an insurance contract.</Description>
+	</Code>
+
+    <Code>
+		<Id>816</Id>
+		<Name>Group pension commitment information</Name>
+		<Description>Information document for the group pension commitment to an individual person.</Description>
+	</Code>
+
+    <Code>
+		<Id>817</Id>
+		<Name>Claim notification</Name>
+		<Description>Document notifying a claim.</Description>
+	</Code>
+
+    <Code>
+		<Id>818</Id>
+		<Name>Assessment report</Name>
+		<Description>Document reporting an assessment.</Description>
+	</Code>
+
+    <Code>
+		<Id>819</Id>
+		<Name>Loss statement</Name>
+		<Description>Document specifying the value of a loss.</Description>
+	</Code>
     <Code>
         <Id>820</Id>
         <Name>Despatch note model T</Name>
@@ -4841,6 +4998,30 @@
             delivery point.
         </Description>
     </Code>
+
+    <Code>
+		<Id>826</Id>
+		<Name>Guarantee of cost acceptance</Name>
+		<Description>Document certifying the guarantee of the document issuer that he will pay for costs of the addressee, e.g. the costs for repairing a vehicle.</Description>
+	</Code>
+
+    <Code>
+		<Id>827</Id>
+		<Name>Close of claim</Name>
+		<Description>Document reporting the closing of a claim file.</Description>
+	</Code>
+
+    <Code>
+		<Id>828</Id>
+		<Name>Refusal of claim</Name>
+		<Description>Document stating the refusal of a claim.</Description>
+	</Code>
+
+    <Code>
+		<Id>829</Id>
+		<Name>Valuation report</Name>
+		<Description>Document reporting a valuation.</Description>
+	</Code>
     <Code>
         <Id>830</Id>
         <Name>Goods declaration for exportation</Name>
@@ -4852,6 +5033,18 @@
             as "for exportation".
         </Description>
     </Code>
+
+    <Code>
+		<Id>831</Id>
+		<Name>Claim history certificate</Name>
+		<Description>Document which certifies the history of claims.</Description>
+	</Code>
+
+    <Code>
+		<Id>832</Id>
+		<Name>Accounting statement</Name>
+		<Description>Document specifying an accounting statement.</Description>
+	</Code>
     <Code>
         <Id>833</Id>
         <Name>Cargo declaration (departure)</Name>
@@ -4862,6 +5055,42 @@
             (CCC).
         </Description>
     </Code>
+
+    <Code>
+		<Id>834</Id>
+		<Name>Payment receipt confirmation</Name>
+		<Description>Document confirming the receipt of a payment.</Description>
+	</Code>
+
+    <Code>
+		<Id>835</Id>
+		<Name>Certificate of paid insurance premium</Name>
+		<Description>Document certifying the payment of the insurance premium.</Description>
+	</Code>
+
+    <Code>
+		<Id>836</Id>
+		<Name>Insured party payment report</Name>
+		<Description>Report about payments done towards an insured party.</Description>
+	</Code>
+
+    <Code>
+		<Id>837</Id>
+		<Name>Third party payment report</Name>
+		<Description>Report about payments done towards a third party.</Description>
+	</Code>
+
+    <Code>
+		<Id>838</Id>
+		<Name>Direct debit authorisation</Name>
+		<Description>Document giving the addressee the right to debit from an account of the authorizing party.</Description>
+	</Code>
+
+    <Code>
+		<Id>839</Id>
+		<Name>Physician report</Name>
+		<Description>Report issued by a medical doctor.</Description>
+	</Code>
     <Code>
         <Id>840</Id>
         <Name>Application for goods control certificate</Name>
@@ -4882,6 +5111,54 @@
             as specified in the contract.
         </Description>
     </Code>
+
+    <Code>
+		<Id>842</Id>
+		<Name>Medical certificate</Name>
+		<Description>Document certifying a medical condition.</Description>
+	</Code>
+
+    <Code>
+		<Id>843</Id>
+		<Name>Witness report</Name>
+		<Description>Document containing a report of a witness.</Description>
+	</Code>
+
+    <Code>
+		<Id>844</Id>
+		<Name>Calculation note</Name>
+		<Description>Document detailing a calculation, such as an invoice calculation or a costs calculation.</Description>
+	</Code>
+
+    <Code>
+		<Id>845</Id>
+		<Name>Communication from opposite party</Name>
+		<Description>Document containing a communication from the opposite party, such as in legal action.</Description>
+	</Code>
+
+    <Code>
+		<Id>846</Id>
+		<Name>Amicable agreement</Name>
+		<Description>Document specifying an amicable agreement.</Description>
+	</Code>
+
+    <Code>
+		<Id>847</Id>
+		<Name>Out of court settlement</Name>
+		<Description>Document which specifies an out of court settlement.</Description>
+	</Code>
+
+    <Code>
+		<Id>848</Id>
+		<Name>Legal action</Name>
+		<Description>Document specifying a legal action at court.</Description>
+	</Code>
+
+    <Code>
+		<Id>849</Id>
+		<Name>Summons</Name>
+		<Description>Document specifying a summons to court.</Description>
+	</Code>
     <Code>
         <Id>850</Id>
         <Name>Application for phytosanitary certificate</Name>
@@ -4918,6 +5195,12 @@
             subjected.
         </Description>
     </Code>
+
+    <Code>
+		<Id>854</Id>
+		<Name>Court judgment</Name>
+		<Description>Document specifying a judgment of a court.</Description>
+	</Code>
     <Code>
         <Id>855</Id>
         <Name>Application for inspection certificate</Name>
@@ -4938,6 +5221,24 @@
             inspection is required, or as specified in the contract.
         </Description>
     </Code>
+
+    <Code>
+		<Id>857</Id>
+		<Name>Vehicle aboard document</Name>
+		<Description>Document which must be aboard the vehicle.</Description>
+	</Code>
+
+    <Code>
+		<Id>858</Id>
+		<Name>Image</Name>
+		<Description>Document consisting of an image.</Description>
+	</Code>
+
+    <Code>
+		<Id>859</Id>
+		<Name>Audio</Name>
+		<Description>Document consisting of an audio recording (e.g. a telephone conversation or alike).</Description>
+	</Code>
     <Code>
         <Id>860</Id>
         <Name>Certificate of origin, application for</Name>
@@ -4996,6 +5297,30 @@
             declaration of origin and certificate, form A).
         </Description>
     </Code>
+
+    <Code>
+		<Id>866</Id>
+		<Name>Video</Name>
+		<Description>Document consisting of a video.</Description>
+	</Code>
+
+    <Code>
+		<Id>867</Id>
+		<Name>Introductory letter</Name>
+		<Description>A letter of introduction attached to, or accompanying another document such as an insurance policy.</Description>
+	</Code>
+
+    <Code>
+		<Id>868</Id>
+		<Name>Data protection regulations statement</Name>
+		<Description>Document specifying the terms of data protection regulations.</Description>
+	</Code>
+
+    <Code>
+		<Id>869</Id>
+		<Name>Exclusive brokerage mandate</Name>
+		<Description>Document expressing the mandate of a client for a service only by the mandated broker.</Description>
+	</Code>
     <Code>
         <Id>870</Id>
         <Name>Consular invoice</Name>
@@ -5006,6 +5331,60 @@
             import of the goods described therein.
         </Description>
     </Code>
+
+    <Code>
+		<Id>871</Id>
+		<Name>Inquiry mandate</Name>
+		<Description>Document expressing the mandate of a client for an inquiry service by the mandated provider.</Description>
+	</Code>
+
+    <Code>
+		<Id>872</Id>
+		<Name>Risk analysis</Name>
+		<Description>Document specifying the analysis of risks.</Description>
+	</Code>
+
+    <Code>
+		<Id>873</Id>
+		<Name>Transport equipment movement report partial</Name>
+		<Description>A partial transport equipment movement report, containing only a selected part of the movements of transport equipment for a vessel in a port.</Description>
+	</Code>
+
+    <Code>
+		<Id>874</Id>
+		<Name>Conveyance declaration</Name>
+		<Description>Declaration of the conveyance to a public authority.</Description>
+	</Code>
+
+    <Code>
+		<Id>875</Id>
+		<Name>Partial construction invoice</Name>
+		<Description>Partial invoice in the context of a specific construction project.</Description>
+	</Code>
+
+    <Code>
+		<Id>876</Id>
+		<Name>Partial final construction invoice</Name>
+		<Description>Invoice concluding all previous partial construction invoices of a completed partial rendered service in the context of a specific construction project.</Description>
+	</Code>
+
+    <Code>
+		<Id>877</Id>
+		<Name>Final construction invoice</Name>
+		<Description>Invoice concluding all previous partial invoices and partial final construction invoices in the context of a specific construction project.</Description>
+	</Code>
+
+    <Code>
+		<Id>878</Id>
+		<Name>AEO Certificate of Security and/or Safety</Name>
+		<Description>Certificate issued to business that fulfils specified criteria applied to the security and safety of the logistics chain in the flow of foreign trade operations by a national AEO recognized program (e.g. AEO-Security and Safety (AEOS) - Regulation (EU) No 952/2013).</Description>
+	</Code>
+
+    <Code>
+		<Id>879</Id>
+		<Name>AEO Certificate of Conformity or Compliance</Name>
+		<Description>Certificate issued to business that fulfils specified criteria for compliance with tax and customs obligations, as well as financial solvency by a national AEO recognized program (e.g. AEO-Customs Simplifications (AEOC) - Regulation (EU) No 952/2013).</Description>
+	</Code>
     <Code>
         <Id>890</Id>
         <Name>Dangerous goods declaration</Name>
@@ -5017,6 +5396,30 @@
             relevant conventions or regulations.
         </Description>
     </Code>
+
+    <Code>
+		<Id>891</Id>
+		<Name>AEO Certificate Full</Name>
+		<Description>Certificate issued to business that fulfils specified criteria to both AEO Certificate of Security and/or Safety and AEO Certificate of Conformity or Compliance by a national AEO recognized program (e.g. AEO-Customs Simplifications/Security and Safety (AEOC/AEOS) - Regulation(EU) No 952/2013).</Description>
+	</Code>
+
+    <Code>
+		<Id>892</Id>
+		<Name>Purchase Order Financing Request</Name>
+		<Description>Document enabling the Financing Requestor to initiate the financing process by the First Agent.</Description>
+	</Code>
+
+    <Code>
+		<Id>893</Id>
+		<Name>Purchase Order Financing Request Status</Name>
+		<Description>Document enabling the First Agent to notify the Financing Requestor of the status of a purchase order financing request or the status of a purchase order financing cancellation request previously sent by the Financial Requestor itself.</Description>
+	</Code>
+
+    <Code>
+		<Id>894</Id>
+		<Name>Purchase Order Financing Request Cancellation</Name>
+		<Description>Document enabling the Financing Requestor to request the First Agent to cancel a previously sent purchase order financing request.</Description>
+	</Code>
     <Code>
         <Id>895</Id>
         <Name>Statistical document, export</Name>
