@@ -41,19 +41,23 @@ Release date:: November 2026
 [cols="1,1,1,1"]
 |===
 |codelist|removed|added|description changed
-|icd |0 [] |3 [0249,0250,0251] |1 [0208]
+|icd |0 [] |3 [0249,0250,0251] |2 [0208, 0245]
 |UNCL1001 |1 [1999] |68 [752,753,754,755,756,757,758,759,762,767,768,769,771,772,773,774,776,777,778,779,813,814,815,816,817,818,819,826,827,828,829,831,832,834,835,836,837,838,839,842,843,844,845,846,847,848,849,854,857,858,859,866,867,868,869,871,872,873,874,875,876,877,878,879,891,892,893,894] |0 []
 |===
 
+The name of ICD 0245 is `Tax identification number (DIČ), Slovakia`. The comma sits outside the parentheses, matching Billing and Self-Billing.
+
 ==  EN 16931 schematrons updated
 
+This repository does not ship EN 16931 schematron files. Rules in the notes below apply to UBL only.
+
 == Changes to PEPPOL-COMMON rules
-* Changed rule PEPPOL-COMMON-R040 to allow ONLY GLN13 values with schemeID 0088.
+* Changed rule PEPPOL-COMMON-R040 to allow ONLY GLN13 values with schemeID 0088. The text says MUST.
 * Updated rule PEPPOL-COMMON-R043 (fatal). A Belgian enterprise number (schemeID 0208) must start with 0 or 1, followed by nine digits, and pass the existing modulo 97 check. A number that starts with 2 to 9 is no longer valid.
-* Changed the wording of warning rules PEPPOL-COMMON-R044, PEPPOL-COMMON-R045, PEPPOL-COMMON-R046, and PEPPOL-COMMON-R047 from “must” to “SHOULD” to align the rule text with the severity. [RFC-558](https://openpeppol.atlassian.net/browse/RFC-558)
-* Changed rules PEPPOL-COMMON-R054, PEPPOL-COMMON-R055, PEPPOL-COMMON-R056-1, PEPPOL-COMMON-R056-2, and PEPPOL-COMMON-R057 from warning to fatal after the announced transition period. [RFC-541](https://openpeppol.atlassian.net/browse/RFC-541)
+* Changed the wording of warning rules PEPPOL-COMMON-R044, PEPPOL-COMMON-R045, PEPPOL-COMMON-R046, and PEPPOL-COMMON-R047 from “must” to “SHOULD” to align the rule text with the severity. https://openpeppol.atlassian.net/browse/RFC-558[RFC-558]
+* Changed rules PEPPOL-COMMON-R054, PEPPOL-COMMON-R055, PEPPOL-COMMON-R056-1, PEPPOL-COMMON-R056-2, and PEPPOL-COMMON-R057 from warning to fatal after the announced transition period. https://openpeppol.atlassian.net/browse/RFC-541[RFC-541]
 ** The unit tests now expect a fatal error, matching the rules.
-* Added rule PEPPOL-COMMON-R058 (introduced as warning, will change to fatal in coming release) for validation of Luxembourg VAT numbers. The VAT number must follow the format LU followed by 8 digits, where the last 2 digits are the check digits computed as the first 6 digits modulo 89. Applies to Seller VAT identifier (BT-31), Buyer VAT identifier (BT-48), and Tax representative VAT identifier (BT-63). UBL and CII. https://openpeppol.atlassian.net/browse/RFC-582
+* Added rule PEPPOL-COMMON-R058 (introduced as warning, will change to fatal in coming release) for validation of Luxembourg VAT numbers. The VAT number must follow the format LU followed by 8 digits, where the last 2 digits are the check digits computed as the first 6 digits modulo 89. Applies to Seller VAT identifier (BT-31), Buyer VAT identifier (BT-48), and Tax representative VAT identifier (BT-63). UBL only. This repository has no CII schematron. https://openpeppol.atlassian.net/browse/RFC-582
 * Added rule PEPPOL-COMMON-R059 (introduced as warning, will change to fatal in coming release) for validation of Luxembourg Register of Legal Persons numbers (Matricule, schemeID 0240). The number must be exactly 11 digits; digits 5–6 must be a legal form type code in the range 20–99; and digit 11 must be a valid mod-11 check digit (with an alternative check digit supported for legal form type 24). https://openpeppol.atlassian.net/browse/RFC-584
 * Added rule PEPPOL-COMMON-R062 as a warning. A VAT identifier that starts with BE must have the form BE, then 0 or 1, then nine digits, and the digits must pass the same modulo 97 check as the Belgian enterprise number. The rule is new in this release and stays a warning. It becomes fatal in the May 2027 release.
 

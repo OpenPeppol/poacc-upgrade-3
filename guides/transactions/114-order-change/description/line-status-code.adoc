@@ -30,4 +30,4 @@ The Order Change line status code indicates the action requested for the order l
 include::{snippet-change-dir}/snippet-linestatus.xml[tags=reopen-line]
 ----
 
-See <<advanced-ordering-scenario2-change-from-buyer>> for a complete pair of Order Change examples showing the same order line first deleted and then reopened.
+The pair of Order Change examples is `OrderChange_sc2.xml` (line deleted) and `OrderChange_sc2b.xml` (same line reopened). See <<advanced-ordering-scenario2-change-from-buyer>> for the process description.

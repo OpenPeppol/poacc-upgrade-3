@@ -35,7 +35,7 @@ include::{snippet-dir}/snippet-30-1.xml[tags=buyersitemidentification]
 === Generic Product Climate Data
 
 Generic product climate data is often provided from an authority and are related to a product category codes such as UNSPSC or similar.
-Below you will find two examples from Swedish authorities that provide generic product climate data.
+Below you will find examples from public authorities that provide generic product climate data. One source is Swedish (Boverket), one is Finnish (SYKE) and one is German (Ökobaudat).
 
 The list id IPNC is a reference to the code list {codelist-ItemPropertyNameCode}
 
@@ -70,7 +70,7 @@ Please note that "GWP-GHG" and "GWP-IOBC" are interchangable terms and can be us
 [cols="1,1,1,3",options="header",stripes=even]
 |====
 |Name |NameCode |listID |Definition
-|EPD Dataset ID |EPDDatasetID |IPNC |The EPD dataset id gives the digital reference to a product type in the EDP
+|EPD Dataset ID |EPDDataSetID |IPNC |The EPD dataset id gives the digital reference to a product type in the EDP
 |EPD Dataset URL |EPDDataSetURL |IPNC |URL to fetch the machine readable digital information from a source assigned by the supplier
 |GWP GHG A1-3 vA1 EPD value  |GWP-GHG_A1-3_vA1 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilograms (unitCode="KGM") according to EN15804 amendment version A1
 |GWP GHG A1-3 vA2 EPD value  |GWP-GHG_A1-3_vA2 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A2
@@ -89,7 +89,7 @@ Please note that "GWP-GHG" and "GWP-IOBC" are interchangable terms and can be us
 |EPD HR URL |EPDHRURL |IPNC |URL to the human readable version of an EPD, for verification purposes
 |GWP GHG A1-3 vA1 EPD value  |GWP-GHG_A1-3_vA1 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A1
 |GWP GHG A1-3 vA2 EPD value  |GWP-GHG_A1-3_vA2 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A2
-|GWP GHG A1-3 vA3 EPD value  |GWP-GHG_A1-3_vA3 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A3
+|GWP GHG A1-3 vA3 EPD value  |GWP-GHG_A1-3_vA3 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A2 and characterization factors according to EF 3.1
 |Mother EPD ID |MotherEPDID |IPNC |If a daughter EPD is utilized, the identifier of the corresponding mother EPD should be provided in this element.
 |====
 

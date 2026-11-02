@@ -59,8 +59,8 @@ The issuer may still respond externally if it has comments or objections to the 
 The receiver is rejecting this invoice but not necessarily the commercial transaction.
 Although it can be used also for rejection for commercial reasons (invoice not corresponding to delivery). |YES |YES |YES |YES
 |AP |Accepted |Indication that the referenced offer or transaction (e.g., cargo booking or quotation request) has been accepted. |Status is used only when the receiver has given final approval of the invoice. |NO |NO |YES |NO
-|PD with PPD (1) |Partially Paid |Indicates that the referenced document or transaction has been partially paid. |Status is used together with Clarification Reason code PPD, only when the sender is responsible for payment and has initiated payment without having paid the accepted amount in full. |NO |NO |NO |NO
-|PD |Fully Paid |Indicates that the referenced document or transaction has been paid. |Status is used only when the sender is responsible for payment and has initiated payment of the invoice. |NO |NO |NO |YES
+|PD with PPD (1) |Partially Paid |Indicates that the referenced document or transaction has been partially paid. |Status PD together with clarification PPD means part of the accepted amount has been paid and a remainder is still expected. |NO |NO |NO |NO
+|PD |Fully Paid |Indicates that the referenced document or transaction has been paid. |Status signals that the invoice, debit or credit, is finished and that no further action is expected. It is not a remittance advice. |NO |NO |NO |YES
 
 |====
 

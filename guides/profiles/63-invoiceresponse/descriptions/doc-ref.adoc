@@ -7,7 +7,7 @@ IMPORTANT: One Invoice Response may only reference one business document.
 
 The type of the business document must also be included in the document reference element.
 Document Type Code is coded according to code list 1001 issued by UN/CEFACT.
-For a self-billed invoice, the Document Type Code is `389`.
+For a self-billed invoice the Document Type Code is `389`. A self-billed debit note uses `527`. A self-billed credit note uses `261`. Use the type code of the document you are responding to.
 
 See chapter {link-codelist} for a complete list of all the document types.
 
@@ -22,4 +22,4 @@ See chapter {link-codelist} for a complete list of all the document types.
 ----
 <1> Value from the ID element in the invoice for which this response is valid, found in element `cbc:ID` in the received invoice
 <2> The issue date of the invoice for which this response is valid, found in element `cbc:IssueDate` in the received invoice
-<3> The invoice type in the invoice for which this response is valid, found in element `cbc:DocumentTypeCode` in the received invoice
+<3> The invoice type in the invoice for which this response is valid, found in `cbc:InvoiceTypeCode` on an invoice or `cbc:CreditNoteTypeCode` on a credit note
