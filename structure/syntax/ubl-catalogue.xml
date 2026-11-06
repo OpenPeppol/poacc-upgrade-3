@@ -1764,10 +1764,11 @@
 						<Description>Code for the item property according to a property code system.</Description>
 						<DataType>CODE</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p039</Reference>
+						<Reference type="CODE_LIST">IPNC</Reference>
 						<Attribute>
 							<Term>listID</Term>
 							<Name>Name code list id</Name>
-							<Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+							<Description>An identifier for the code list used for the Name code. Use IPNC for the item property name code list.</Description>
 						</Attribute>
 						<Attribute usage="Optional">
 							<Term>listVersionID</Term>

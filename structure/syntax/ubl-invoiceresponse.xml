@@ -365,7 +365,7 @@
                     <Element>
                         <Term>cbc:Name</Term>
                         <Name>Seller party name</Name>
-                        <Description>The party that issued the reference invoice.</Description>
+                        <Description>The seller named in the referenced invoice. In self-billing the buyer issues the invoice, so this is not the party that issued it.</Description>
                         <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir111-022</Reference>
                         <Value type="EXAMPLE">AS MerTest</Value>
@@ -406,7 +406,7 @@
                     <Element>
                         <Term>cbc:Name</Term>
                         <Name>Buyer party name</Name>
-                        <Description>The party to who the referenced invoice is issued.</Description>
+                        <Description>The buyer named in the referenced invoice. In self-billing the invoice is issued to the seller, so this is not the party that receives the invoice.</Description>
                         <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir111-024</Reference>
                         <Value type="EXAMPLE">Test company AS</Value>

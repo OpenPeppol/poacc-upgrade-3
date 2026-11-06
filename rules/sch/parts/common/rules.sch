@@ -19,7 +19,7 @@
       context="cbc:EndpointID[@schemeID = '0088'] | cac:PartyIdentification/cbc:ID[@schemeID = '0088'] | cbc:CompanyID[@schemeID = '0088']">
       <assert id="PEPPOL-COMMON-R040"
         test="matches(normalize-space(), '^[0-9]{13}$') and u:gln(normalize-space())" flag="fatal">[PEPPOL-COMMON-R040]-GLN13
-        must have a valid format according to GS1 rules.</assert>
+        MUST have a valid format according to GS1 rules.</assert>
     </rule>
     <rule
       context="cbc:EndpointID[@schemeID = '0192'] | cac:PartyIdentification/cbc:ID[@schemeID = '0192'] | cbc:CompanyID[@schemeID = '0192']">
@@ -53,7 +53,7 @@
         flag="fatal">[PEPPOL-COMMON-R043]-Belgian enterprise number MUST be stated in the correct format.</assert>
     </rule>
     <rule
-      context="cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID[starts-with(normalize-space(.), 'BE')]">
+      context="cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID[starts-with(upper-case(normalize-space(.)), 'BE')]">
       <assert id="PEPPOL-COMMON-R062"
         test="matches(upper-case(normalize-space(.)), '^BE[01][0-9]{9}$') and u:mod97-0208(substring(upper-case(normalize-space(.)), 3))"
         flag="warning">[PEPPOL-COMMON-R062]-Belgian VAT number MUST be stated in the correct format.</assert>

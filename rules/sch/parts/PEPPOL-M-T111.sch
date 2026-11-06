@@ -24,7 +24,7 @@
 				test="exists(cbc:StatusReason)"
 				flag="fatal">[PEPPOL-T111-R004]-If Clarification code is PPD, indicating partial payment, then Clarification reason SHALL be provided.</assert>
 		<assert id="PEPPOL-T111-R005"
-				test="exists(/cbc:ResponseCode='PD')"
+				test="normalize-space(../cbc:ResponseCode) = 'PD'"
 				flag="fatal">[PEPPOL-T111-R005]-Clarification Reason "PPD" SHALL only be used in combination with Status "PD".</assert>
 	</rule>
 

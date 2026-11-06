@@ -38,5 +38,5 @@ a|
 . The buyer and seller have confirmed the agreement on delivery of the original order
 
 |XML example file
-|See Appendix A for example files for scenario 2
+|Example files `OrderChange_sc2.xml` and `OrderChange_sc2b.xml` are in the Advanced Ordering download. Scenario 2 has no appendix in this document.
 |====

@@ -37,5 +37,5 @@ a|
 . The order will be cancelled
 
 |XML example file
-|See Appendix A for example files for scenario 3
+|The example files for scenario 3 are in the download section on the main page. This document has no appendix.
 |====

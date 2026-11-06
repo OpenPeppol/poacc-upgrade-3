@@ -51,8 +51,25 @@
 
 		</Order>
 	</test>
-    
-    
-    
-	
+
+	<test>
+		<assert>
+			<error number="3">PEPPOL-COMMON-R043</error>
+		</assert>
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+			<cac:BuyerCustomerParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="0208">2000000042</cbc:EndpointID>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0208">2000000042</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID schemeID="0208">2000000042</cbc:CompanyID>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:BuyerCustomerParty>
+		</Order>
+	</test>
 </testSet>
