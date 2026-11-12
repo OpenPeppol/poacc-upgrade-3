@@ -1,0 +1,61 @@
+= Version 3.0.17
+[horizontal]
+Release date:: May 2026
+* Date of member review: 2026-03-02
+* Date of publication: 2026-05-20
+* Mandatory to use from: 2026-08-17
+
+== BIS documentation
+
+* Billing with response BIS
+** A new BIS which combines BIS Billing and BIS Invoice response is added. A new profile identifier is defined which indicates the process where the invoice response is a required step. The profile requires a separate SMP registration. The same profile identifier has been added to BIS Billing 3.0.
+
+== Changes to syntax
+* Order transaction (T01)
+** Added business term for providing reference to quotation line from order line. Rule added that the quotation line reference is only allowed when the quotation document reference is also provided.
+   https://openpeppol.atlassian.net/browse/RFC-530
+
+* Order Change(T114)
+** Added business term for providing reference to quotation line from order line. Rule added that the quotation line reference is only allowed when the quotation document reference is also provided.
+   https://openpeppol.atlassian.net/browse/RFC-530
+   
+* Order Response Advanced transaction (T116)
+** Bugfix: Correction of example value for CustomizationID
+
+* Order Response Advanced (T116) and Order Response (T76)
+** Bugfix: changed should into must for the following rules:
+   PEPPOL-T76-R008 An order response with code AP (Accepted) must NOT provide order lines.
+   PEPPOL-T76-R009 An order response with code RE (Rejected) must NOT provide order lines.
+ 
+* All transactions
+** Examples added when missing for all business terms
+
+== Changes to code lists and validation artefacts
+* Changed rule PEPPOL-COMMON-R052 and PEPPOL-COMMON-R053 to be errors instead of warnings, as the rules are now mandatory for all profiles.
+
+[cols="1,1,1,1"]
+|===
+|codelist|removed|added|description changed
+|eas |14 [0037,0177,0193,0202,0212,0213,0215,0147,0154,0170,0194,0203,0205,0217] |4 [0242,0245,0246,0248] |11 [0088,0096,0184,0190,0191,0192,0195,0196,0198,0204,9959]
+|icd |0 [] |4 [0245,0246,0247,0248] |4 [0096,0158,0241,0243]
+|ISO4217 |3 [ANG,BGN,STD] |2 [STN,XCG] |0 []
+|UNCL7161 |0 [] |17 [CAX,CAY,CAZ,DAC,DAF,DAG,DAH,DAI,DAJ,DAK,DAL,DAM,DAN,DAO,DAP,DAQ,PRV] |0 []
+|===
+
+EAS was pointing to a wrong codelist, therefore it had a number of unusable codes. This is now corrected.
+
+
+==  EN 16931 schematrons updated
+* New warning rules for Dutch identifiers with scheme 0106, 0190, 0217, 9944, and NL VAT numbers added to UBL and CII schematrons:
+  ** PEPPOL-COMMON-R054: Identifiers with scheme 0106 should be 8 digits
+  ** PEPPOL-COMMON-R055: Identifiers with scheme 0190 should be 20 digits
+  ** PEPPOL-COMMON-R056-1: Identifiers with scheme 9944 should have the format NL123456789B12
+  ** PEPPOL-COMMON-R056-2: VAT identifiers starting with NL should have the format NL123456789B12
+  ** PEPPOL-COMMON-R057: Identifiers with scheme 0217 should be 12 digits
+  ** rules will become fatal in future release, but are warnings in this release to allow for transition period for implementers to update their systems and data.
+
+== Other changes
+* Changed release notes for 3.0.16 on PEPPOL-COMMON-R052 to reflect correct rule check to be ten digits instead of eight digits.
+* vefa/validator bumped from 2.3.1 to 2.4.0, to mitigate certificate expiry date.
+* added assert ids to all schematrons for better traceability and maintenance. No changes to the actual rules, just addition of unique identifiers to each assert statement.
+

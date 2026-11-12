@@ -2,7 +2,7 @@
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
 	configuration="peppolbis-t116-base-3.0">
 	<assert>
-		<description>An order response with code AP (Accepted) should NOT provide order lines.</description>
+		<description>An order response with code AP (Accepted) must NOT provide order lines.</description>
 		<scope>PEPPOL-T116-R008</scope>
 	</assert>
 	

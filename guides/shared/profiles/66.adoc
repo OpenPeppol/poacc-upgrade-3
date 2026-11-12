@@ -1,0 +1,22 @@
+
+[[prof-66]]
+= Customization and Profile identifiers
+
+In the table below you will find the values to be used as the specification identifier and the business process type for this profile
+
+[cols="2s,6a,4a", options="header"]
+|===
+| Type
+| Element `cbc:CustomizationID`
+| Element `cbc:ProfileID`
+
+
+| Invoice and CreditNote
+| urn:cen.eu:en16931:2017#
+compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0
+.2+.^| urn:peppol:bis:billing_with_response
+
+| Invoice response
+| urn:fdc:peppol.eu:poacc:trns:invoice_response:3
+|
+|===

@@ -17,6 +17,9 @@
   <cac:OrderReference>
     <cbc:ID>Order-1</cbc:ID>
   </cac:OrderReference>
+  <cac:QuotationDocumentReference>
+	<cbc:ID>QuoteID123</cbc:ID>
+  </cac:QuotationDocumentReference>  
   <cac:BuyerCustomerParty>
     <cac:Party>
       <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
@@ -142,5 +145,8 @@
         </cac:ClassifiedTaxCategory>
       </cac:Item>
     </cac:LineItem>
+	<cac:QuotationLineReference>
+		<cbc:LineID>12</cbc:LineID>
+	</cac:QuotationLineReference>	
   </cac:OrderLine>
 </OrderChange>
